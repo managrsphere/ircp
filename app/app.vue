@@ -12,12 +12,12 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'de'
   }
 })
 
 useSeoMeta({
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/landing-light.png',
+  ogImage: '/images/IRCP_Logo.png',
   twitterCard: 'summary_large_image'
 })
 </script>
