@@ -61,6 +61,8 @@ function staggerMotion(index: number = 0) {
     transition: { duration: 0.6, delay: index * 0.08 }
   }
 }
+
+const publicAsset = usePublicAsset()
 </script>
 
 <template>
@@ -186,7 +188,7 @@ function staggerMotion(index: number = 0) {
         v-bind="scrollMotionLarge(0.3)"
       >
         <img
-          src="/overview.jpg"
+          :src="publicAsset('/overview.jpg')"
           alt="Country flags"
           class="w-full rounded-lg"
           loading="lazy"
@@ -355,7 +357,7 @@ function staggerMotion(index: number = 0) {
         v-bind="scrollMotionLarge(0.3)"
       >
         <img
-          src="/ircp2026.jpg"
+          :src="publicAsset('/ircp2026.jpg')"
           alt="REF in front of Marinaforum Regensburg"
           class="w-full rounded-lg"
           loading="lazy"
@@ -690,7 +692,7 @@ function staggerMotion(index: number = 0) {
             </p>
           </div>
           <img
-            :src="page.travel.venue.image"
+            :src="publicAsset(page.travel.venue.image)"
             alt="marinaforum Regensburg"
             class="w-full rounded-lg object-cover aspect-video"
             loading="lazy"
@@ -808,7 +810,7 @@ function staggerMotion(index: number = 0) {
           :ui="{ item: 'basis-full sm:basis-1/2 lg:basis-1/3' }"
         >
           <img
-            :src="item.src"
+            :src="publicAsset(item.src)"
             :alt="item.alt"
             class="w-full rounded-lg object-cover aspect-video"
             loading="lazy"
@@ -917,7 +919,7 @@ function staggerMotion(index: number = 0) {
             :description="user.role"
             orientation="vertical"
             :avatar="{
-              src: user.img,
+              src: publicAsset(user.img),
               loading: 'lazy',
               icon: 'i-lucide-image',
               class: 'size-24'
