@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/ircp'
+    baseURL: '/ircp/'
   },
 
   css: ['~/assets/css/main.css'],
