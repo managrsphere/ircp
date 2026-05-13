@@ -17,7 +17,7 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: '/images/IRCP_Logo.png',
+  ogImage: '/IRCP_Logo.png',
   twitterCard: 'summary_large_image'
 })
 </script>

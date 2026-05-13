@@ -188,24 +188,24 @@ travel:
   venue:
     title: Veranstaltungsort – marinaforum Regensburg
     description: Das marinaforum Regensburg bietet den idealen Rahmen für einen internationalen Kongress – modern, offen, zentral gelegen und eingebettet in eine Stadt mit hoher Lebensqualität, Geschichte und internationalem Flair. Das marinaforum liegt zentral im Stadtgebiet und ist gut mit öffentlichen Verkehrsmitteln erreichbar.
-    image: /images/marinaforum.jpg
+    image: /marinaforum.jpg
   regensburg:
     title: Regensburg entdecken
     description: Regensburg gehört zu den besterhaltenen mittelalterlichen Städten Europas und ist seit 2006 UNESCO-Weltkulturerbe. Die lebendige Universitätsstadt am Zusammenfluss von Donau und Regen verbindet Geschichte, Kultur und moderne Lebensqualität auf einzigartige Weise.
     images:
-      - src: /images/regensburg-1.jpg
+      - src: /regensburg-1.jpg
         alt: Steinerne Brücke Regensburg
-      - src: /images/regensburg-2.jpg
+      - src: /regensburg-2.jpg
         alt: Donauufer Regensburg
-      - src: /images/regensburg-3.jpeg
+      - src: /regensburg-3.jpeg
         alt: BRK Regensburg
-      - src: /images/regensburg-4.jpeg
+      - src: /regensburg-4.jpeg
         alt: Skizze Steinerne Brücke Regensburg
-      - src: /images/regensburg-5.jpeg
+      - src: /regensburg-5.jpeg
         alt: REF Aufnahme See
-      - src: /images/regensburg-6.jpeg
+      - src: /regensburg-6.jpeg
         alt: REF Aufnahme Natur
-      - src: /images/regensburg-7.jpeg
+      - src: /regensburg-7.jpeg
         alt: REF Aufnahme Innenstadt
 faq:
   headline: FAQ
@@ -232,11 +232,11 @@ contact:
   description: Wir freuen uns auf Ihre Nachricht und stehen Ihnen gerne zur Verfügung.
   team:
     - name: Andreas Bauer
-      img: /images/bauera.jpg
+      img: /bauera.jpg
     - name: Alexandra Beck
-      img: /images/becka.jpg
+      img: /becka.jpg
     - name: Maximilian Laubert
-      img: /images/laubertm.jpg
+      img: /laubertm.jpg
   info:
     title: Organisationsteam
     mail: ircp.210@brk.de

@@ -186,7 +186,7 @@ function staggerMotion(index: number = 0) {
         v-bind="scrollMotionLarge(0.3)"
       >
         <img
-          src="/images/overview.jpg"
+          src="/overview.jpg"
           alt="Country flags"
           class="w-full rounded-lg"
           loading="lazy"
@@ -355,7 +355,7 @@ function staggerMotion(index: number = 0) {
         v-bind="scrollMotionLarge(0.3)"
       >
         <img
-          src="/images/ircp2026.jpg"
+          src="/ircp2026.jpg"
           alt="REF in front of Marinaforum Regensburg"
           class="w-full rounded-lg"
           loading="lazy"
