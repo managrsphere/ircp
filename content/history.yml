@@ -1,0 +1,23 @@
+seo:
+  title: Geschichte
+  description: "Vom ersten Treffen in Nova Scotia bis zur ersten Ausgabe in Deutschland – eine Reise durch mehr als 20 Jahre Community Paramedicine."
+history:
+  title: Ursprung und Entwicklung
+  description: "Vom ersten Treffen in Nova Scotia bis zur ersten Ausgabe in Deutschland – eine Reise durch mehr als 20 Jahre Community Paramedicine."
+  items:
+      - icon: i-lucide-map-pin
+        date: 2005
+        title: Der Ursprung in Nova Scotia
+        description: Rund 50 Fachleute aus Australien, Kanada, Schottland und den USA trafen sich in Nova Scotia. Gemeinsame Herausforderungen wie eine alternde Bevölkerung, begrenzte medizinische Ressourcen in ländlichen Regionen und steigende Anforderungen an vulnerable Gruppen standen im Fokus. Dieses Treffen markierte den Beginn eines internationalen Dialogs.
+      - icon: i-lucide-globe
+        date: "2005-2010"
+        title: Entstehung eines globalen Netzwerks
+        description: Aus dem ersten Austausch entstand ein internationales Netzwerk. Der IRCP wird seither jährlich in wechselnden Ländern ausgerichtet. Früh wurde deutlich – die Herausforderungen der präklinischen Versorgung sind weltweit vergleichbar. Community Paramedicine entwickelte sich zu einer praxisnahen Antwort auf reale Versorgungsprobleme.
+      - icon: i-lucide-award
+        date: Heute
+        title: Wichtigste internationale Plattform
+        description: Der IRCP zählt heute zu den wichtigsten internationalen Plattformen für den Austausch innovativer und praxisorientierter Versorgungskonzepte.
+      - icon: i-lucide-flag
+        date: 2026
+        title: Erstmals in Deutschland (Regensburg)
+        description: Zum ersten Mal findet der IRCP in Deutschland statt. Viele Entwicklungen im deutschen Rettungswesen haben ihren Ursprung in Regensburg. Als Gastgeber bringt das Bayerische Rote Kreuz und insbesondere der Kreisverband Regensburg seine langjährige Erfahrung, Forschung und internationale Zusammenarbeit ein.

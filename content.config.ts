@@ -15,42 +15,13 @@ const createLinkSchema = () => z.object({
 })
 
 export const collections = {
-  content: defineCollection({
+  landing: defineCollection({
     source: 'index.yml',
     type: 'page',
     schema: z.object({
       hero: z.object({
         headline: z.string().optional(),
         links: z.array(createLinkSchema())
-      }),
-      overview: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty()
-      }),
-      history: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        items: z.array(z.object({
-          date: z.string().nonempty(),
-          icon: z.string().nonempty(),
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }))
-      }),
-      mission: z.object({
-        headline: z.string().optional(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        items: z.array(z.object({
-          icon: z.string(),
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }))
-      }),
-      ircp2026: z.object({
-        headline: z.string().optional(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty()
       }),
       program: z.object({
         headline: z.string().optional(),
@@ -69,7 +40,6 @@ export const collections = {
       callForSpeakers: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
-        description: z.string().nonempty(),
         callout: z.object({
           title: z.string().nonempty(),
           description: z.string().nonempty()
@@ -114,38 +84,6 @@ export const collections = {
           terms: z.string().optional()
         }))
       }),
-      travel: z.object({
-        headline: z.string().optional(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        arrival: z.object({
-          train: z.object({
-            title: z.string().nonempty(),
-            description: z.string().nonempty()
-          }),
-          plane: z.object({
-            title: z.string().nonempty(),
-            description: z.string().nonempty(),
-            airports: z.array(z.object({
-              name: z.string().nonempty(),
-              distance: z.string().nonempty()
-            }))
-          })
-        }),
-        venue: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          image: z.string().nonempty()
-        }),
-        regensburg: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          images: z.array(z.object({
-            src: z.string().nonempty(),
-            alt: z.string().nonempty()
-          }))
-        })
-      }),
       faq: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
@@ -158,7 +96,6 @@ export const collections = {
       contact: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
-        description: z.string().nonempty(),
         team: z.array(z.object({
           img: z.string().nonempty(),
           name: z.string().nonempty(),
@@ -168,6 +105,84 @@ export const collections = {
           title: z.string().nonempty(),
           mail: z.string().nonempty()
         })
+      })
+    })
+  }),
+  general: defineCollection({
+    source: 'general.yml',
+    type: 'page',
+    schema: z.object({
+      overview: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty()
+      })
+    })
+  }),
+  history: defineCollection({
+    source: 'history.yml',
+    type: 'page',
+    schema: z.object({
+      history: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        items: z.array(z.object({
+          date: z.string().nonempty(),
+          icon: z.string().nonempty(),
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        }))
+      })
+    })
+  }),
+  year: defineCollection({
+    source: '2026.yml',
+    type: 'page',
+    schema: z.object({
+      ircp2026: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        description: z.string().nonempty()
+      })
+    })
+  }),
+  travelStay: defineCollection({
+    source: 'travel-stay.yml',
+    type: 'page',
+    schema: z.object({
+      headline: z.string().optional(),
+      arrival: z.object({
+        train: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        }),
+        plane: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          airports: z.array(z.object({
+            name: z.string().nonempty(),
+            distance: z.string().nonempty()
+          }))
+        })
+      })
+    })
+  }),
+  venue: defineCollection({
+    source: 'venue.yml',
+    type: 'page',
+    schema: z.object({
+      venue: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty()
+      })
+    })
+  }),
+  regensburg: defineCollection({
+    source: 'regensburg.yml',
+    type: 'page',
+    schema: z.object({
+      regensburg: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty()
       })
     })
   })

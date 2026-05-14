@@ -21,56 +21,6 @@ hero:
       color: neutral
       variant: soft
       to: '#speakers'
-overview:
-  title: IRCP - Austausch. Innovation. Zukunft
-  description: "Der International Roundtable on Community Paramedicine (IRCP) ist ein globales Netzwerk und eine jährlich stattfindende Konferenz zur Weiterentwicklung präklinischer Versorgungskonzepte. Seit über 20 Jahren bringt der IRCP Expertinnen und Experten aus Rettungsdienst, Wissenschaft, Politik und Gesundheitswesen zusammen – um innovative Versorgungsmodelle zu diskutieren, voneinander zu lernen und gemeinsam Lösungen für die Herausforderungen moderner Gesundheitssysteme zu entwickeln."
-history:
-  title: Ursprung und Entwicklung
-  description: "Vom ersten Treffen in Nova Scotia bis zur ersten Ausgabe in Deutschland – eine Reise durch mehr als 20 Jahre Community Paramedicine."
-  items:
-    - icon: i-lucide-map-pin
-      date: 2005
-      title: Der Ursprung in Nova Scotia
-      description: Rund 50 Fachleute aus Australien, Kanada, Schottland und den USA trafen sich in Nova Scotia. Gemeinsame Herausforderungen wie eine alternde Bevölkerung, begrenzte medizinische Ressourcen in ländlichen Regionen und steigende Anforderungen an vulnerable Gruppen standen im Fokus. Dieses Treffen markierte den Beginn eines internationalen Dialogs.
-    - icon: i-lucide-globe
-      date: "2005-2010"
-      title: Entstehung eines globalen Netzwerks
-      description: Aus dem ersten Austausch entstand ein internationales Netzwerk. Der IRCP wird seither jährlich in wechselnden Ländern ausgerichtet. Früh wurde deutlich – die Herausforderungen der präklinischen Versorgung sind weltweit vergleichbar. Community Paramedicine entwickelte sich zu einer praxisnahen Antwort auf reale Versorgungsprobleme.
-    - icon: i-lucide-award
-      date: Heute
-      title: Wichtigste internationale Plattform
-      description: Der IRCP zählt heute zu den wichtigsten internationalen Plattformen für den Austausch innovativer und praxisorientierter Versorgungskonzepte.
-    - icon: i-lucide-flag
-      date: 2026
-      title: Erstmals in Deutschland (Regensburg)
-      description: Zum ersten Mal findet der IRCP in Deutschland statt. Viele Entwicklungen im deutschen Rettungswesen haben ihren Ursprung in Regensburg. Als Gastgeber bringt das Bayerische Rote Kreuz und insbesondere der Kreisverband Regensburg seine langjährige Erfahrung, Forschung und internationale Zusammenarbeit ein.
-mission:
-  headline: Versorgung neu denken.
-  title: Mission & Vision
-  description: "Versorgungslücken schließen und neue Wege in der ambulanten und präventiven Versorgung gestalten"
-  items:
-    - icon: i-lucide-users
-      title: Curricula & Bildung
-      description: Entwicklung und internationaler Austausch von Curricula im Bereich der Community Paramedicine sowie Förderung von Bildungsreformen.
-    - icon: i-lucide-database
-      title: Forschung & Daten
-      description: Aufbau standardisierter Datensätze und Forschungsstrukturen sowie Förderung internationaler Forschung und Publikationen.
-    - icon: i-lucide-lightbulb
-      title: Best-Practice-Modelle
-      description: Austausch von bewährten Modellen und operativen Konzepten sowie Sichtbarmachung innovativer Projekte und Pilotprogramme.
-    - icon: i-lucide-network
-      title: Internationale Vernetzung
-      description: Strategische Weiterentwicklung präklinischer Versorgungssysteme durch kontinuierlichen internationalen Dialog und Zusammenarbeit.
-    - icon: i-lucide-heart-pulse
-      title: Patientenzentrierte Versorgung
-      description: Vision einer patientenzentrierten Gesundheitsversorgung, in der der Rettungsdienst in erweiterten Rollen tätig ist und vernetzt mit anderen Gesundheitsdienstleistern zusammenarbeitet.
-    - icon: i-lucide-trending-up
-      title: Versorgungslücken schließen
-      description: Neue Wege in der ambulanten und präventiven Versorgung gestalten und durch erweiterte Rollenprofile im Rettungsdienst Versorgungslücken schließen.
-ircp2026:
-  headline: Seien Sie dabei - Jetzt Tickets sichern!
-  title: Erstmals in Deutschland
-  description: Mit dem IRCP 2026 in Regensburg wird der Kongress erstmals in Deutschland ausgerichtet – ein bedeutender Schritt für die Weiterentwicklung innovativer Versorgungsmodelle im deutschsprachigen Raum. Vernetzen Sie sich international, lernen Sie von globalen Best-Practice-Modellen und gestalten Sie die Zukunft des Rettungsdienstes aktiv mit.
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.
   title: Programm
@@ -97,7 +47,6 @@ program:
 callForSpeakers:
   headline: Jetzt Beitrag bis zum 21. Mai 2026 einreichen
   title: Call for Speakers
-  description: Gestalten Sie den IRCP 2026 mit und bringen Sie Ihre Erfahrungen, Forschungsergebnisse oder innovativen Projekte auf eine internationale Bühne.
   callout: 
     title: Sie möchten Ihre Erfahrungen, Forschungsergebnisse oder innovativen Projekte auf einer internationalen Bühne präsentieren?
     description: Dann freuen wir uns auf Ihre Einreichung. Der Call for Speakers richtet sich an Expertinnen und Experten aus Praxis, Wissenschaft, Bildung, Management, Politik und angrenzenden Bereichen, die zur Weiterentwicklung von Community Paramedicine und präklinischer Versorgung beitragen. Willkommen sind sowohl wissenschaftliche Beiträge als auch praxisorientierte Impulse.
@@ -137,7 +86,7 @@ callForSpeakers:
 tickets:
   headline: Jetzt Teil des IRCP 2026 werden
   title: Tickets & Registrierung
-  description: One Profession. Worldwide Community. Die Registrierung erfolgt über eine internationale Plattform und ein globales Organisationsnetzwerk.
+  description: One Profession. Worldwide Community.
   callout:
     title: Warum sind die Ticketpreise in US-Dollar angegeben?
     description: "Die Registrierung erfolgt über eine internationale Plattform und ein globales Organisationsnetzwerk, weshalb die Preise aktuell in US-Dollar (USD) dargestellt werden. Für Teilnehmende aus Europa bedeutet das jedoch keinen Nachteil: Die Zahlung erfolgt automatisch in Ihrer lokalen Währung (z. B. Euro), der Betrag wird zum aktuellen Wechselkurs berechnet, und es entstehen keine zusätzlichen versteckten Gebühren durch den Veranstalter. Der IRCP steht für eine weltweite Community – und genau deshalb ist auch das Ticketing international ausgerichtet."
@@ -169,44 +118,6 @@ tickets:
         to: https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
-travel:
-  headline: Gemeinsam vor Ort
-  title: Anreise & Unterkunft
-  description: Regensburg verbindet historische Kulisse mit moderner Infrastruktur und bietet den idealen Rahmen für einen internationalen Kongress.
-  arrival:
-    train:
-      title: Anreise per Bahn
-      description: Regensburg ist bequem über das Netz der Deutschen Bahn erreichbar, mit direkten Verbindungen aus vielen großen Städten wie München, Nürnberg, Frankfurt und Wien.
-    plane:
-      title: Anreise per Flugzeug
-      description: Von den umliegenden Flughäfen bestehen gute Anschlussmöglichkeiten per Bahn oder Shuttle nach Regensburg.
-      airports:
-        - name: München (MUC)
-          distance: ca. 100 km
-        - name: Nürnberg (NUE)
-          distance: ca. 120 km
-  venue:
-    title: Veranstaltungsort – marinaforum Regensburg
-    description: Das marinaforum Regensburg bietet den idealen Rahmen für einen internationalen Kongress – modern, offen, zentral gelegen und eingebettet in eine Stadt mit hoher Lebensqualität, Geschichte und internationalem Flair. Das marinaforum liegt zentral im Stadtgebiet und ist gut mit öffentlichen Verkehrsmitteln erreichbar.
-    image: /marinaforum.jpg
-  regensburg:
-    title: Regensburg entdecken
-    description: Regensburg gehört zu den besterhaltenen mittelalterlichen Städten Europas und ist seit 2006 UNESCO-Weltkulturerbe. Die lebendige Universitätsstadt am Zusammenfluss von Donau und Regen verbindet Geschichte, Kultur und moderne Lebensqualität auf einzigartige Weise.
-    images:
-      - src: /regensburg-1.jpg
-        alt: Steinerne Brücke Regensburg
-      - src: /regensburg-2.jpg
-        alt: Donauufer Regensburg
-      - src: /regensburg-3.jpeg
-        alt: BRK Regensburg
-      - src: /regensburg-4.jpeg
-        alt: Skizze Steinerne Brücke Regensburg
-      - src: /regensburg-5.jpeg
-        alt: REF Aufnahme See
-      - src: /regensburg-6.jpeg
-        alt: REF Aufnahme Natur
-      - src: /regensburg-7.jpeg
-        alt: REF Aufnahme Innenstadt
 faq:
   headline: FAQ
   title: Häufig gestellte Fragen
@@ -229,14 +140,16 @@ faq:
 contact:
   headline: Kontakt
   title: Sie haben Fragen oder möchten mehr erfahren?
-  description: Wir freuen uns auf Ihre Nachricht und stehen Ihnen gerne zur Verfügung.
   team:
     - name: Andreas Bauer
       img: /bauera.jpg
-    - name: Alexandra Beck
+      role: Projektleitung REF, REF-Notfallsanitäter, Praxisanleiter im Rettungsdienst, Leitung Fachbereich Ausbildung im Rettungswesen, Stellplatzleitung Waltenhofen, Student B.Sc. Außerklinische Akut- und Notfallversorgung 
+    - name: Alexandra Beck M.Sc.
       img: /becka.jpg
-    - name: Maximilian Laubert
+      role: Gesundheits- und Kinderkrankenpflegerin, Rettungssanitäterin, B.Sc. Pflege dual, M.Sc. Global Public Health, Wissenschaftliche Begleitung REF, Wachleitung Hauptrettungswache, Qualitäts- und Compliancemanagement 
+    - name: Max Laubert B.Sc.
       img: /laubertm.jpg
+      role: REF-Notfallsanitäter, ELRD Leitung, B.Sc. Biomedical Engineering, Student Master of Business Administration 
   info:
     title: Organisationsteam
     mail: ircp.210@brk.de

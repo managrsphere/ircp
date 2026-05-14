@@ -1,0 +1,18 @@
+seo: 
+  title: Anreise & Unterkunft
+  description: Regensburg verbindet historische Kulisse mit moderner Infrastruktur und bietet den idealen Rahmen für einen internationalen Kongress.
+headline: Gemeinsam vor Ort
+title: Anreise & Unterkunft
+description: Regensburg verbindet historische Kulisse mit moderner Infrastruktur und bietet den idealen Rahmen für einen internationalen Kongress.
+arrival:
+  train:
+    title: Anreise per Bahn
+    description: Regensburg ist bequem über das Netz der Deutschen Bahn erreichbar, mit direkten Verbindungen aus vielen großen Städten wie München, Nürnberg, Frankfurt und Wien.
+  plane:
+    title: Anreise per Flugzeug
+    description: Von den umliegenden Flughäfen bestehen gute Anschlussmöglichkeiten per Bahn oder Shuttle nach Regensburg.
+    airports:
+      - name: München (MUC)
+        distance: ca. 100 km
+      - name: Nürnberg (NUE)
+        distance: ca. 120 km

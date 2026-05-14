@@ -11,27 +11,15 @@ const items = computed(() => [
     children: [
       {
         label: 'Überblick',
-        to: '#overview',
-        exactHash: true,
-        active: activeSection.value === 'overview'
+        to: '/general'
       },
       {
         label: 'Geschichte',
-        to: '#history',
-        exactHash: true,
-        active: activeSection.value === 'history'
-      },
-      {
-        label: 'Mission',
-        to: '#mission',
-        exactHash: true,
-        active: activeSection.value === 'mission'
+        to: '/history'
       },
       {
         label: 'IRCP 2026',
-        to: '#ircp2026',
-        exactHash: true,
-        active: activeSection.value === 'ircp2026'
+        to: '/2026'
       }
     ]
   },
@@ -42,7 +30,7 @@ const items = computed(() => [
     active: activeSection.value === 'program'
   },
   {
-    label: 'Speakers',
+    label: 'Call for Speakers',
     to: '#speakers',
     exactHash: true,
     active: activeSection.value === 'speakers'
@@ -54,28 +42,27 @@ const items = computed(() => [
     active: activeSection.value === 'tickets'
   },
   {
-    label: 'Anreise',
-    to: '#travel',
-    exactHash: true,
-    active: activeSection.value === 'travel'
+    label: 'Anreise & Aufenthalt',
+    children: [
+      {
+        label: 'Anreise & Unterkunft',
+        to: '/travel-stay'
+      },
+      {
+        label: 'Veranstaltungsort',
+        to: '/venue'
+      },
+      {
+        label: 'Regensburg',
+        to: '/regensburg'
+      }
+    ]
   },
   {
     label: 'FAQ',
     to: '#faq',
     exactHash: true,
     active: activeSection.value === 'faq'
-  },
-  {
-    label: 'Kontakt',
-    to: '#contact',
-    exactHash: true,
-    active: activeSection.value === 'contact'
-  },
-  {
-    label: 'Forschung',
-    to: '#research',
-    exactHash: true,
-    active: activeSection.value === 'research'
   }
 ])
 
@@ -89,7 +76,7 @@ nuxtApp.hooks.hookOnce('page:loading:end', () => {
     }
   }, { rootMargin: '-50% 0px -50% 0px' })
 
-  document.querySelectorAll('#features, #metrics').forEach(el => observer.observe(el))
+  document.querySelectorAll('#program, #speakers, #tickets, #faq').forEach(el => observer.observe(el))
 })
 
 const variants: Record<string, VariantType | ((custom: unknown) => VariantType)> = {
@@ -129,7 +116,6 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
     <template #right>
       <UButton
         label="Tickets"
-        color="neutral"
         class="hidden lg:flex"
         to="https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en"
         target="_blank"
