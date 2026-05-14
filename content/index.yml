@@ -141,15 +141,18 @@ contact:
   headline: Kontakt
   title: Sie haben Fragen oder möchten mehr erfahren?
   team:
+    - name: Sebastian Gerosch B.Sc.
+      img: /geroschs.jpg
+      role: Leiter Rettungsdienst KV Regensburg, Initiator Projekt REF, REF-Notfallsanitäter, B.Sc. Management und Pädagogik im Rettungswesen  
     - name: Andreas Bauer
       img: /bauera.jpg
       role: Projektleitung REF, REF-Notfallsanitäter, Praxisanleiter im Rettungsdienst, Leitung Fachbereich Ausbildung im Rettungswesen, Stellplatzleitung Waltenhofen, Student B.Sc. Außerklinische Akut- und Notfallversorgung 
-    - name: Alexandra Beck M.Sc.
-      img: /becka.jpg
-      role: Gesundheits- und Kinderkrankenpflegerin, Rettungssanitäterin, B.Sc. Pflege dual, M.Sc. Global Public Health, Wissenschaftliche Begleitung REF, Wachleitung Hauptrettungswache, Qualitäts- und Compliancemanagement 
     - name: Max Laubert B.Sc.
       img: /laubertm.jpg
       role: REF-Notfallsanitäter, ELRD Leitung, B.Sc. Biomedical Engineering, Student Master of Business Administration 
+    - name: Alexandra Beck M.Sc.
+      img: /becka.jpg
+      role: Gesundheits- und Kinderkrankenpflegerin, Rettungssanitäterin, B.Sc. Pflege dual, M.Sc. Global Public Health, Wissenschaftliche Begleitung REF, Wachleitung Hauptrettungswache, Qualitäts- und Compliancemanagement 
   info:
     title: Organisationsteam
     mail: ircp.210@brk.de

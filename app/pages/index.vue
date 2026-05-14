@@ -607,10 +607,27 @@ const travelCards = computed(() => [
 
       <Motion
         as="div"
+        v-bind="scrollMotion(0.2)"
+        class="w-full"
+      >
+        <UPageCard
+          :title="page.contact.info.title"
+          :description="page.contact.info.mail"
+          icon="i-lucide-mail"
+          :to="`mailto:${page.contact.info.mail}`"
+          :ui="{
+            wrapper: 'items-center text-center',
+            leading: 'flex justify-center'
+          }"
+        />
+      </Motion>
+
+      <Motion
+        as="div"
         v-bind="scrollMotion(0.3)"
         class="w-full"
       >
-        <UPageGrid>
+        <UPageGrid class="lg:grid-cols-2">
           <UCard
             v-for="(user, index) in page.contact.team"
             :key="index"
@@ -630,24 +647,6 @@ const travelCards = computed(() => [
             />
           </UCard>
         </UPageGrid>
-      </Motion>
-
-      <Motion
-        as="div"
-        v-bind="scrollMotion(0.2)"
-        class="w-full"
-      >
-        <UPageCard
-          :title="page.contact.info.title"
-          :description="page.contact.info.mail"
-          icon="i-lucide-mail"
-          :to="`mailto:${page.contact.info.mail}`"
-          :ui="{
-            wrapper: 'items-center text-center',
-            leading: 'flex justify-center'
-          }"
-          class="mt-6"
-        />
       </Motion>
     </UPageSection>
   </div>
