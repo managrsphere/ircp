@@ -1,10 +1,8 @@
 <script setup lang="ts">
 const links = [
-  { label: 'Docs', to: 'https://ui.nuxt.com', target: '_blank' },
-  { label: 'GitHub', to: 'https://github.com/nuxt/ui', target: '_blank' },
-  { label: 'Twitter', to: 'https://twitter.com/nuxt_js', target: '_blank' },
-  { label: 'Status', to: '#' },
-  { label: 'Privacy', to: '#' }
+  { label: 'Impressum', to: '/impressum' },
+  { label: 'Datenschutz', to: '/datenschutz' },
+  { label: 'Grundsatzerklärung', to: 'https://www.brk.de/rotes-kreuz/ueber-uns/verantwortung.html', target: '_blank' }
 ]
 </script>
 
@@ -16,9 +14,7 @@ const links = [
     }"
   >
     <template #left>
-      <p class="text-sm text-dimmed">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
-      </p>
+      <AppLogo class="h-8 w-auto" />
     </template>
 
     <template #right>
