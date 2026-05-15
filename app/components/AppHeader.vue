@@ -25,19 +25,19 @@ const items = computed(() => [
   },
   {
     label: 'Programm',
-    to: '#program',
+    to: '/#program',
     exactHash: true,
     active: activeSection.value === 'program'
   },
   {
     label: 'Call for Speakers',
-    to: '#speakers',
+    to: '/#speakers',
     exactHash: true,
     active: activeSection.value === 'speakers'
   },
   {
     label: 'Tickets',
-    to: '#tickets',
+    to: '/#tickets',
     exactHash: true,
     active: activeSection.value === 'tickets'
   },
@@ -60,7 +60,7 @@ const items = computed(() => [
   },
   {
     label: 'FAQ',
-    to: '#faq',
+    to: '/#faq',
     exactHash: true,
     active: activeSection.value === 'faq'
   }
