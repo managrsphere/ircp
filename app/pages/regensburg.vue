@@ -8,8 +8,6 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const publicAsset = usePublicAsset()
-
 useSeoMeta({
   title: page.value.seo.title,
   ogTitle: page.value.seo.title,
@@ -34,7 +32,7 @@ useSeoMeta({
         />
       </template>
       <img
-        :src="publicAsset('regensburg-1.jpg')"
+        :src="'/regensburg-1.jpg'"
         alt="Regensburg"
         class="w-full rounded-lg object-cover aspect-video"
         loading="lazy"

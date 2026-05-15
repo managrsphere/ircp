@@ -8,8 +8,6 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const publicAsset = usePublicAsset()
-
 useSeoMeta({
   title: page.value.seo.title,
   ogTitle: page.value.seo.title,
@@ -28,7 +26,7 @@ useSeoMeta({
       :reverse="true"
     >
       <img
-        :src="publicAsset('/2026.jpg')"
+        :src="'/2026.jpg'"
         alt="Landing"
         class="rounded-lg shadow-lg"
       >

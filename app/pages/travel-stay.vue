@@ -8,8 +8,6 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const publicAsset = usePublicAsset()
-
 useSeoMeta({
   title: page.value.seo.title,
   ogTitle: page.value.seo.title,
@@ -28,7 +26,7 @@ useSeoMeta({
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         <UCard class="h-full bg-neutral-300">
           <img
-            :src="publicAsset(page.arrival.train.img)"
+            :src="page.arrival.train.img"
             alt="Train"
             class="w-full aspect-video rounded-md object-cover"
             loading="lazy"
@@ -45,7 +43,7 @@ useSeoMeta({
 
         <UCard class="h-full bg-neutral-300">
           <img
-            :src="publicAsset(page.arrival.plane.img)"
+            :src="page.arrival.plane.img"
             alt="Plane"
             class="w-full aspect-video rounded-md object-cover"
             loading="lazy"

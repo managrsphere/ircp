@@ -62,8 +62,6 @@ function scrollMotionLarge(delay: number = 0) {
   }
 }
 
-const publicAsset = usePublicAsset()
-
 const ircpCards = computed(() => [
   {
     id: 'general',
@@ -202,7 +200,7 @@ const travelCards = computed(() => [
         v-bind="enterMotion(0.75)"
       >
         <img
-          :src="publicAsset('/marinaforum.jpg')"
+          :src="'/marinaforum.jpg'"
           alt="REF in front of marinaforum Regensburg"
           class="w-full rounded-lg shadow-lg"
           loading="lazy"
@@ -258,7 +256,7 @@ const travelCards = computed(() => [
               class="h-full overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg"
             >
               <img
-                :src="publicAsset(card.image)"
+                :src="card.image"
                 :alt="card.alt"
                 class="w-full aspect-video rounded-md object-cover"
                 loading="lazy"
@@ -531,7 +529,7 @@ const travelCards = computed(() => [
               class="h-full overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg"
             >
               <img
-                :src="publicAsset(card.image)"
+                :src="card.image"
                 :alt="card.alt"
                 class="w-full aspect-video rounded-md object-cover"
                 loading="lazy"
@@ -655,7 +653,7 @@ const travelCards = computed(() => [
               :description="user.role"
               orientation="vertical"
               :avatar="{
-                src: publicAsset(user.img),
+                src: user.img,
                 loading: 'lazy',
                 icon: 'i-lucide-image',
                 class: 'size-24'
@@ -723,7 +721,7 @@ const travelCards = computed(() => [
               :target="partner.target"
             >
               <img
-                :src="publicAsset(partner.img)"
+                :src="partner.img"
                 :alt="partner.name"
                 class="h-12 object-contain mx-auto"
                 loading="lazy"

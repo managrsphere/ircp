@@ -12,10 +12,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  app: {
-    baseURL: '/ircp/'
-  },
-
   css: ['~/assets/css/main.css'],
 
   content: {

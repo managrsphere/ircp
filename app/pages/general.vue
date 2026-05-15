@@ -8,8 +8,6 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const publicAsset = usePublicAsset()
-
 useSeoMeta({
   title: page.value.seo.title,
   ogTitle: page.value.seo.title,
@@ -26,7 +24,7 @@ useSeoMeta({
       orientation="horizontal"
     >
       <img
-        :src="publicAsset('/IRCP_Logo.png')"
+        :src="'/IRCP_Logo.png'"
         alt="IRCP Logo"
         class="rounded-lg"
       >
