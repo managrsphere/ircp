@@ -19,8 +19,6 @@ FROM base as build
 
 WORKDIR /src
 
-COPY --from=deps /src/node_modules ./node_modules
-
 COPY . .
 
 RUN pnpm run build
