@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ircp-deployment
+  namespace: ircp
+  labels:
+    app: ircp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ircp
+  template:
+    metadata:
+      labels:
+        app: ircp
+    spec:
+      containers:
+        - name: ircp
+          image: registry.digitalocean.com/ms-container-registry/ircp:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: 256Mi
+              cpu: 500m
+            limits:
+              memory: 2Gi
+              cpu: 1000m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ircp
+  namespace: ircp
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+  selector:
+    app: ircp

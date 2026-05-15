@@ -1,0 +1,172 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-ircp
+  namespace: ircp
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+spec:
+  tls:
+    - hosts:
+        - ircp-regensburg.de
+      secretName: letsencrypt-nginx-ircp-regensburg
+    - hosts:
+        - www.ircp-regensburg.de
+      secretName: letsencrypt-nginx-ircp-regensburg-www
+    - hosts:
+        - ircp-germany.de
+      secretName: letsencrypt-nginx-ircp-germany
+    - hosts:
+        - www.ircp-germany.de
+      secretName: letsencrypt-nginx-ircp-germany-www
+    - hosts:
+        - www.ircp-deutschland.de
+      secretName: letsencrypt-nginx-ircp-deutschland
+    - hosts:
+        - www.ircp-deutschland.de
+      secretName: letsencrypt-nginx-ircp-deutschland-www
+    - hosts:
+        - ircp-eu.de
+      secretName: letsencrypt-nginx-ircp-eu
+    - hosts:
+        - www.ircp-eu.de
+      secretName: letsencrypt-nginx-ircp-eu-www
+  rules:
+    - host: ircp-regensburg.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: www.ircp-regensburg.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: ircp-germany.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: www.ircp-germany.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: ircp-deutschland.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: www.ircp-deutschland.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: ircp-eu.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+    - host: www.ircp-eu.de
+      http:
+        paths:
+          - path: /.well-known/acme-challenge/
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: cm-acme-http-solver-service
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ircp
+                port:
+                  number: 3000
+  ingressClassName: nginx

@@ -1,0 +1,55 @@
+name: Build and Deploy to DigitalOcean
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Step 1: Checkout the repository
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            # Step 2: Setup up Docker Buildx (to build multi-arch images)
+            - name: Set up Docker Buildx
+              uses: docker/setup-buildx-action@v2
+
+            # Step 3: Log in to the DigitalOcean Container Registry
+            - name: Login in to DigitalOcean Container Registry
+              run: echo "${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}" | docker login -u "docker" --password-stdin registry.digitalocean.com
+
+            # Step 4: Build and push Docker image to DigitalOcean Registry
+            - name: Build and Push Docker image
+              run: |
+                  docker build --build-arg NUXT_UI_PRO_LICENSE=${{ secrets.NUXT_UI_PRO_LICENSE }} --build-arg NUXT_PUBLIC_GTM_ID=${{ secrets.NUXT_PUBLIC_GTM_ID }} -t registry.digitalocean.com/ms-container-registry/ircp:latest .
+                  docker push registry.digitalocean.com/ms-container-registry/ircp:latest
+
+            # Step 5: Install kubectl and set up the Kubernetes context
+            - name: Set up Kubectl
+              run: sudo snap install kubectl --classic
+
+            # Step 6: Install doctl (DigitalOcean CLI)
+            - name: Use DigitalOcean action to install doctl
+              uses: digitalocean/action-doctl@v2
+              with:
+                  token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+            # Step 7: Set Kubernetes Context using doctl
+            - name: Set Kubernetes Context
+              run: doctl kubernetes cluster kubeconfig save k8s-1-29-1-do-0-fra1-1711015601550
+
+            # Step 8: Verify kubectl context
+            - name: Verify Kubernetes context
+              run: kubectl config current-context
+
+            # Step 9: Delete the existing Kubernetes deployment (to trigger re-deployment)
+            - name: Delete Kubernetes deployment
+              run: kubectl delete deployment ircp-deployment --namespace ircp
+
+            # Step 10: Apply the Kubernetes manifest to redeploy the Website with the new image
+            - name: Redeploy application
+              run: kubectl apply -f kubernetes/ircp.yaml
