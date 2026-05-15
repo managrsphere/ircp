@@ -1,36 +1,28 @@
 # syntax=docker/dockerfile:1.4
 
-FROM node:26-alpine AS base
+FROM node:26-alpine AS build
 
 ENV NODE_ENV=production
 
-WORKDIR /src
+WORKDIR /app
 
-RUN corepack enable
+# ensure pnpm is available on alpine
+RUN npm install -g pnpm@latest --silent
 
-FROM base AS deps
+COPY pnpm-lock.yaml package.json ./
 
-WORKDIR /src
-COPY package*.json pnpm-lock.yaml ./
-
-RUN pnpm install
-
-FROM base as build
-
-WORKDIR /src
-
-COPY --from=deps /src/node_modules ./node_modules
+# install all dependencies (use frozen lockfile for reproducible builds)
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
 RUN pnpm run build
 
-FROM base AS runtime
-WORKDIR /src
+FROM node:26-alpine AS final
+WORKDIR /app
 
-COPY --from=build /src/.output .
-COPY --from=build /src/node_modules ./node_modules
+# copy built output only
+COPY --from=build /app/.output .output
 
 EXPOSE 3000
-
-CMD ["node", "server/index.mjs"]
+CMD ["node", ".output/server/index.mjs"]
