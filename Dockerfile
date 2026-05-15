@@ -6,6 +6,8 @@ ENV NODE_ENV=production
 
 WORKDIR /src
 
+RUN corepack enable
+
 FROM base AS deps
 
 WORKDIR /src
