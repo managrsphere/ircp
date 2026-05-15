@@ -1,10 +1,10 @@
 seo:
   title: IRCP 2026 in Regensburg
   description: "Eine gemeinsame Vision für die Community Paramedicine: Evidenz, Innovation und Zusammenarbeit"
-title: "Vernetzten. Mitgestalten. \n Vorausdenken."
+title: "Vernetzen. Mitgestalten. Vorausdenken. \n IRCP 2026"
 description: "Eine gemeinsame Vision für die Community Paramedicine: Evidenz, Innovation und Zusammenarbeit"
 hero:
-  headline: "05. - 07. Oktober | marinaforum Regensburg"
+  headline: "05. - 07. Oktober | Bilinguale Veranstaltung"
   links:
     - label: Jetzt Tickets sichern
       color: primary
@@ -156,3 +156,31 @@ contact:
   info:
     title: Organisationsteam
     mail: ircp.210@brk.de
+partners:
+  headline: Unsere Partner
+  title: Gemeinsam für die Zukunft der präklinischen Versorgung
+  items:
+    - name: S+K Verlag
+      img: /skverlag.png
+      to: https://www.skverlag.de/
+      target: _blank
+    - name: Prehos
+      img: /prehos.png
+      to: https://prehos.com/
+      target: _blank
+    - name: Mobile CE
+      img: /mobilece.png
+      to: https://mobilece.org/
+      target: _blank
+    - name: Global College of Paramedicine
+      img: /globalcollege.png
+      to: https://gcparamedics.org/
+      target: _blank
+    - name: Paramedic Foundation
+      img: /paramedicfoundation.png
+      to: https://www.paramedicfoundation.org/
+      target: _blank
+    - name: Paramedic Network
+      img: /paramedicnetwork.png
+      to: https://paramedicnetwork.org/
+      target: _blank

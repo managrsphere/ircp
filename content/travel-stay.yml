@@ -6,9 +6,11 @@ title: Anreise & Unterkunft
 description: Regensburg verbindet historische Kulisse mit moderner Infrastruktur und bietet den idealen Rahmen für einen internationalen Kongress.
 arrival:
   train:
+    img: /train.jpg
     title: Anreise per Bahn
     description: Regensburg ist bequem über das Netz der Deutschen Bahn erreichbar, mit direkten Verbindungen aus vielen großen Städten wie München, Nürnberg, Frankfurt und Wien.
   plane:
+    img: /plane.jpg
     title: Anreise per Flugzeug
     description: Von den umliegenden Flughäfen bestehen gute Anschlussmöglichkeiten per Bahn oder Shuttle nach Regensburg.
     airports:

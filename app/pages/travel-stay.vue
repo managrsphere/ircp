@@ -8,6 +8,8 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+const publicAsset = usePublicAsset()
+
 useSeoMeta({
   title: page.value.seo.title,
   ogTitle: page.value.seo.title,
@@ -24,52 +26,52 @@ useSeoMeta({
       :description="page.description"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-        <UCard>
-          <template #header>
-            <div class="flex items-center gap-2">
-              <UIcon
-                name="i-lucide-train-front"
-                class="size-5 text-primary"
-              />
-              <h3 class="font-semibold tracking-tight">
-                {{ page.arrival.train.title }}
-              </h3>
-            </div>
-          </template>
-          <p class="text-sm leading-relaxed text-dimmed">
-            {{ page.arrival.train.description }}
-          </p>
+        <UCard class="h-full bg-neutral-300">
+          <img
+            :src="publicAsset(page.arrival.train.img)"
+            alt="Train"
+            class="w-full aspect-video rounded-md object-cover"
+            loading="lazy"
+          >
+          <div class="pt-4 space-y-2">
+            <h3 class="text-base font-semibold tracking-tight">
+              {{ page.arrival.train.title }}
+            </h3>
+            <p class="text-sm leading-relaxed text-muted line-clamp-5">
+              {{ page.arrival.train.description }}
+            </p>
+          </div>
         </UCard>
 
-        <UCard>
-          <template #header>
-            <div class="flex items-center gap-2">
-              <UIcon
-                name="i-lucide-plane"
-                class="size-5 text-primary"
-              />
-              <h3 class="font-semibold tracking-tight">
-                {{ page.arrival.plane.title }}
-              </h3>
-            </div>
-          </template>
-          <p class="text-sm leading-relaxed text-dimmed mb-4">
-            {{ page.arrival.plane.description }}
-          </p>
-          <ul class="space-y-2 text-sm">
-            <li
-              v-for="airport in page.arrival.plane.airports"
-              :key="airport.name"
-              class="flex items-center gap-2"
-            >
-              <UIcon
-                name="i-lucide-map-pin"
-                class="size-4 text-primary"
-              />
-              <span class="font-medium">{{ airport.name }}</span>
-              <span class="text-dimmed">- {{ airport.distance }}</span>
-            </li>
-          </ul>
+        <UCard class="h-full bg-neutral-300">
+          <img
+            :src="publicAsset(page.arrival.plane.img)"
+            alt="Plane"
+            class="w-full aspect-video rounded-md object-cover"
+            loading="lazy"
+          >
+          <div class="pt-4 space-y-2">
+            <h3 class="text-base font-semibold tracking-tight">
+              {{ page.arrival.plane.title }}
+            </h3>
+            <p class="text-sm leading-relaxed text-muted line-clamp-5">
+              {{ page.arrival.plane.description }}
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li
+                v-for="airport in page.arrival.plane.airports"
+                :key="airport.name"
+                class="flex items-center gap-2"
+              >
+                <UIcon
+                  name="i-lucide-map-pin"
+                  class="size-4 text-primary"
+                />
+                <span class="font-medium">{{ airport.name }}</span>
+                <span class="text-muted"> - {{ airport.distance }}</span>
+              </li>
+            </ul>
+          </div>
         </UCard>
       </div>
     </UPageHero>

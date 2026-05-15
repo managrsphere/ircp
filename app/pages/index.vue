@@ -70,7 +70,7 @@ const ircpCards = computed(() => [
     description: 'Vom ersten Treffen in Nova Scotia bis zur ersten Ausgabe in Deutschland – eine Reise durch mehr als 20 Jahre Community Paramedicine.',
     image: '/regensburg-4.jpeg',
     alt: 'Historische Skizze von Regensburg',
-    to: '/general'
+    to: '/history'
   },
   {
     id: 'ircp2026',
@@ -78,7 +78,7 @@ const ircpCards = computed(() => [
     description: 'Mit dem IRCP 2026 in Regensburg wird der Kongress erstmals in Deutschland ausgerichtet – ein bedeutender Schritt für die Weiterentwicklung innovativer Versorgungsmodelle im deutschsprachigen Raum. Vernetzen Sie sich international, lernen Sie von globalen Best-Practice-Modellen und gestalten Sie die Zukunft des Rettungsdienstes aktiv mit.',
     image: '/ircp2026.jpg',
     alt: 'IRCP 2026 in Regensburg',
-    to: '/general'
+    to: '/2026'
   }
 ])
 
@@ -86,8 +86,8 @@ const travelCards = computed(() => [
   {
     title: 'Anreise & Unterkunft',
     description: 'Anreiseoptionen, Hotels und praktische Hinweise für Ihren Aufenthalt in Regensburg.',
-    image: '/regensburg-3.jpeg',
-    alt: 'REF in Regensburg',
+    image: '/travel-stay.jpg',
+    alt: 'Plane, train and hotel icons',
     to: '/travel-stay'
   },
   {
@@ -129,7 +129,7 @@ const travelCards = computed(() => [
         <Motion v-bind="enterMotion(0.2)">
           <UBadge
             color="neutral"
-            variant="soft"
+            variant="subtle"
             :label="page.hero.headline"
             class="rounded-full px-3 py-1.5 gap-1.5 backdrop-blur"
           >
@@ -228,7 +228,7 @@ const travelCards = computed(() => [
           v-bind="scrollMotion(0.1)"
           class="inline-block"
         >
-          Überblick, Geschichte und 2026 auf einen Blick
+          Überblick, Geschichte und IRCP 2026 auf einen Blick
         </Motion>
       </template>
 
@@ -311,25 +311,36 @@ const travelCards = computed(() => [
 
       <Motion
         as="div"
-        v-bind="scrollMotionLarge(0.3)"
+        v-bind="scrollMotion(0.25)"
         class="w-full"
+      >
+        <UAlert
+          :icon="page.program.alert.icon"
+          :title="page.program.alert.title"
+          :description="page.program.alert.description"
+          color="info"
+          variant="subtle"
+        />
+      </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotionLarge(0.3)"
+        class="w-full overflow-hidden"
       >
         <UCarousel
           v-slot="{ item }"
           loop
-          arrows
-          :autoplay="{ delay: 2000 }"
+          :autoplay="{ delay: 3000 }"
           wheel-gestures
-          :prev="{ variant: 'ghost' }"
-          :next="{ variant: 'ghost' }"
           :items="page.program.items"
-          :ui="{ item: 'basis-1/3' }"
-          class="max-w-5xl"
+          :ui="{ container: 'items-stretch', item: 'xl:basis-1/3' }"
         >
           <UPageCard
             class="bg-neutral-300"
             :icon="item.icon"
             :title="item.title"
+            :ui="{ root: 'h-full' }"
           />
         </UCarousel>
       </Motion>
@@ -393,7 +404,7 @@ const travelCards = computed(() => [
           :description="page.callForSpeakers.alert.description"
           :actions="page.callForSpeakers.alert.actions"
           color="info"
-          variant="soft"
+          variant="subtle"
           orientation="horizontal"
           class="mt-6"
         />
@@ -450,6 +461,7 @@ const travelCards = computed(() => [
           :title="page.tickets.callout.title"
           :description="page.tickets.callout.description"
           color="warning"
+          variant="subtle"
           class="mb-6"
         />
       </Motion>
@@ -581,10 +593,6 @@ const travelCards = computed(() => [
         description: 'max-w-md mx-auto text-dimmed'
       }"
     >
-      <template #top>
-        <GradientGlow class="bottom-0 w-2/3 h-1/2" />
-      </template>
-
       <template #headline>
         <Motion
           as="span"
@@ -647,6 +655,76 @@ const travelCards = computed(() => [
             />
           </UCard>
         </UPageGrid>
+      </Motion>
+    </UPageSection>
+
+    <!-- Partners -->
+    <UPageSection
+      id="partners"
+      :ui="{
+        root: 'py-16 sm:py-24 scroll-mt-(--ui-header-height)',
+        container: 'max-w-5xl',
+        headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
+        title: 'max-w-lg mx-auto',
+        description: 'max-w-md mx-auto text-dimmed'
+      }"
+    >
+      <template #top>
+        <GradientGlow class="bottom-0 w-2/3 h-1/2" />
+      </template>
+
+      <template #headline>
+        <Motion
+          as="span"
+          v-bind="scrollMotion()"
+          class="inline-block"
+        >
+          {{ page.partners.headline }}
+        </Motion>
+      </template>
+
+      <template #title>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          {{ page.partners.title }}
+        </Motion>
+      </template>
+
+      <Motion
+        as="span"
+        v-bind="scrollMotion(0.2)"
+        class="w-full overflow-hidden"
+      >
+        <UMarquee
+          pause-on-hover
+          :overlay="false"
+          :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
+        >
+          <UCard
+            v-for="partner in page.partners.items"
+            :key="partner.name"
+            variant="outline"
+            class="flex items-center justify-center"
+          >
+            <NuxtLink
+              :to="partner.to"
+              :target="partner.target"
+            >
+              <img
+                :src="publicAsset(partner.img)"
+                :alt="partner.name"
+                class="h-12 object-contain mx-auto"
+                loading="lazy"
+              >
+              <p class="font-semibold text-center mt-2 text-sm">
+                {{ partner.name }}
+              </p>
+            </NuxtLink>
+          </UCard>
+        </UMarquee>
       </Motion>
     </UPageSection>
   </div>

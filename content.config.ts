@@ -105,6 +105,16 @@ export const collections = {
           title: z.string().nonempty(),
           mail: z.string().nonempty()
         })
+      }),
+      partners: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        items: z.array(z.object({
+          img: z.string().nonempty(),
+          name: z.string().nonempty(),
+          to: z.string().nonempty().optional(),
+          target: createEnum(['_blank', '_self']).optional()
+        }))
       })
     })
   }),
@@ -153,11 +163,13 @@ export const collections = {
       arrival: z.object({
         train: z.object({
           title: z.string().nonempty(),
-          description: z.string().nonempty()
+          description: z.string().nonempty(),
+          img: z.string().nonempty()
         }),
         plane: z.object({
           title: z.string().nonempty(),
           description: z.string().nonempty(),
+          img: z.string().nonempty(),
           airports: z.array(z.object({
             name: z.string().nonempty(),
             distance: z.string().nonempty()
