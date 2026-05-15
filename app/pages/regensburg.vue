@@ -22,9 +22,17 @@ useSeoMeta({
   <div v-if="page">
     <UPageSection
       :title="page.regensburg.title"
-      :description="page.regensburg.description"
       orientation="horizontal"
     >
+      <template #description>
+        <p>{{ page.regensburg.description }}</p>
+        <UAlert
+          class="mt-4"
+          :title="page.regensburg.callout.title"
+          :description="page.regensburg.callout.description"
+          variant="subtle"
+        />
+      </template>
       <img
         :src="publicAsset('regensburg-1.jpg')"
         alt="Regensburg"

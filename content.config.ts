@@ -184,7 +184,8 @@ export const collections = {
     schema: z.object({
       venue: z.object({
         title: z.string().nonempty(),
-        description: z.string().nonempty()
+        description: z.string().nonempty(),
+        address: z.string().nonempty()
       })
     })
   }),
@@ -194,7 +195,11 @@ export const collections = {
     schema: z.object({
       regensburg: z.object({
         title: z.string().nonempty(),
-        description: z.string().nonempty()
+        description: z.string().nonempty(),
+        callout: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        })
       })
     })
   })

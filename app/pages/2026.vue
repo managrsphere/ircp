@@ -28,9 +28,9 @@ useSeoMeta({
       :reverse="true"
     >
       <img
-        :src="publicAsset('/regensburg-6.jpeg')"
-        alt="REF in nature"
-        class="rounded-lg"
+        :src="publicAsset('/2026.jpg')"
+        alt="Landing"
+        class="rounded-lg shadow-lg"
       >
     </UPageSection>
   </div>

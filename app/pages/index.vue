@@ -27,6 +27,15 @@ const heroTitle = computed(() => {
   }
 })
 
+const heroDescription = computed(() => {
+  const [primary = '', ...secondaryParts] = (page.value?.description ?? '').split('\n')
+
+  return {
+    primary,
+    secondary: secondaryParts.join(' ').trim()
+  }
+})
+
 function enterMotion(delay: number = 0) {
   return {
     initial: { opacity: 0, y: 16 },
@@ -171,7 +180,7 @@ const travelCards = computed(() => [
           v-bind="enterMotion(0.5)"
           class="inline-block"
         >
-          {{ page.description }}
+          {{ heroDescription.primary }} <br> {{ heroDescription.secondary }}
         </Motion>
       </template>
 
@@ -576,7 +585,7 @@ const travelCards = computed(() => [
         v-bind="scrollMotionLarge(0.2)"
         class="w-full"
       >
-        <UCard variant="outline">
+        <UCard class="bg-neutral-300">
           <UAccordion :items="page.faq.items" />
         </UCard>
       </Motion>

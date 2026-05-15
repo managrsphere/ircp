@@ -20,9 +20,17 @@ useSeoMeta({
   <div v-if="page">
     <UPageSection
       :title="page.venue.title"
-      :description="page.venue.description"
       orientation="horizontal"
     >
+      <template #description>
+        <p>{{ page.venue.description }}</p>
+        <div class="flex gap-2 items-center mt-4 font-medium">
+          <UIcon name="i-lucide-map-pin" />
+          <p>
+            {{ page.venue.address }}
+          </p>
+        </div>
+      </template>
       <div class="rounded-xl overflow-hidden border border-default w-full mt-6">
         <iframe
           width="100%"
