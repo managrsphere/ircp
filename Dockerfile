@@ -1,8 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-ARG NODE_VERSION=24.2.0
-
-FROM ghcr.io/pnpm/pnpm:latest AS base
+FROM node:26-alpine AS base
 
 ENV NODE_ENV=production
 
@@ -11,9 +9,8 @@ WORKDIR /src
 FROM base AS deps
 
 WORKDIR /src
-COPY package*.json ./
+COPY package*.json pnpm-lock.yaml ./
 
-RUN pnpm runtime set node 24 -g
 RUN pnpm install
 
 FROM base as build
