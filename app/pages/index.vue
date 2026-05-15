@@ -68,7 +68,7 @@ const ircpCards = computed(() => [
     id: 'history',
     title: 'Geschichte des IRCP',
     description: 'Vom ersten Treffen in Nova Scotia bis zur ersten Ausgabe in Deutschland – eine Reise durch mehr als 20 Jahre Community Paramedicine.',
-    image: '/regensburg-4.jpeg',
+    image: '/history.jpg',
     alt: 'Historische Skizze von Regensburg',
     to: '/history'
   },
