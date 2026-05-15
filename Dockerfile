@@ -14,10 +14,13 @@ WORKDIR /src
 COPY package*.json ./
 
 RUN pnpm runtime set node 24 -g
+RUN pnpm install
 
 FROM base as build
 
 WORKDIR /src
+
+COPY --from=deps /src/node_modules ./node_modules
 
 COPY . .
 
