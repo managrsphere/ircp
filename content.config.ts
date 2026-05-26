@@ -124,7 +124,13 @@ export const collections = {
     schema: z.object({
       overview: z.object({
         title: z.string().nonempty(),
-        description: z.string().nonempty()
+        description: z.string().nonempty(),
+        button: z.object({
+          icon: z.string(),
+          title: z.string().nonempty(),
+          to: z.string().nonempty(),
+          target: createEnum(['_blank', '_self']).optional()
+        })
       })
     })
   }),

@@ -23,6 +23,17 @@ useSeoMeta({
       :description="page.overview.description"
       orientation="horizontal"
     >
+      <template #description>
+        <p>{{ page.overview.description }}</p>
+        <UButton
+          :icon="page.overview.button.icon"
+          :label="page.overview.button.title"
+          :to="page.overview.button.to"
+          :target="page.overview.button.target"
+          class="mt-4"
+          variant="subtle"
+        />
+      </template>
       <img
         :src="'/IRCP_Logo.png'"
         alt="IRCP Logo"
