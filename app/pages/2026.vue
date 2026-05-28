@@ -14,6 +14,8 @@ useSeoMeta({
   description: page.value.seo.description,
   ogDescription: page.value.seo.description
 })
+
+const { data: response } = await useFetch('https://graph.facebook.com/v25.0/instagram_oembed?url=https://www.instagram.com/ircp.regensburg2026/')
 </script>
 
 <template>
@@ -30,6 +32,7 @@ useSeoMeta({
         alt="Landing"
         class="rounded-lg shadow-lg"
       >
+      <div>{{ response }}</div>
     </UPageSection>
   </div>
 </template>

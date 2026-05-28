@@ -187,11 +187,31 @@ const travelCards = computed(() => [
           class="flex flex-wrap justify-center gap-6"
           v-bind="enterMotion(0.65)"
         >
-          <UButton
+          <template
             v-for="link in page.hero.links"
             :key="link.label"
-            v-bind="link"
-          />
+          >
+            <UPopover
+              v-if="link.label === 'Jetzt Tickets sichern'"
+              mode="hover"
+            >
+              <UButton
+                v-bind="link"
+                trailing-icon="i-lucide-info"
+              />
+
+              <template #content>
+                <div class="max-w-xs p-4 text-sm leading-relaxed text-default">
+                  Die Registrierung ist international organisiert. Deshalb werden Preise in USD angezeigt, die Zahlung erfolgt jedoch automatisch in Ihrer lokalen Währung zum aktuellen Wechselkurs.
+                </div>
+              </template>
+            </UPopover>
+
+            <UButton
+              v-else
+              v-bind="link"
+            />
+          </template>
         </Motion>
       </template>
 
@@ -732,6 +752,38 @@ const travelCards = computed(() => [
             </NuxtLink>
           </UCard>
         </UMarquee>
+      </Motion>
+      <Motion
+        as="div"
+        v-bind="scrollMotion(0.3)"
+        class="w-full mt-8"
+      >
+        <USeparator class="mb-8" />
+        <div class="grid gap-6 md:grid-cols-2">
+          <NuxtLink
+            v-for="host in page.partners.hosts"
+            :key="host.name"
+            :to="host.to"
+            :target="host.target"
+            class="group block h-full"
+          >
+            <UCard class="h-full overflow-hidden border border-default/60 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+              <div class="flex h-full min-h-56 flex-col items-center justify-center px-8 py-8 text-center">
+                <div class="flex w-full items-center justify-center rounded-2xl bg-neutral-100/80 px-6 py-6">
+                  <img
+                    :src="host.img"
+                    :alt="host.name"
+                    class="max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  >
+                </div>
+                <p class="mt-5 text-sm font-semibold tracking-tight text-default">
+                  {{ host.name }}
+                </p>
+              </div>
+            </UCard>
+          </NuxtLink>
+        </div>
       </Motion>
     </UPageSection>
   </div>

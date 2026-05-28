@@ -114,6 +114,12 @@ export const collections = {
           name: z.string().nonempty(),
           to: z.string().nonempty().optional(),
           target: createEnum(['_blank', '_self']).optional()
+        })),
+        hosts: z.array(z.object({
+          img: z.string().nonempty(),
+          name: z.string().nonempty(),
+          to: z.string().nonempty().optional(),
+          target: createEnum(['_blank', '_self']).optional()
         }))
       })
     })

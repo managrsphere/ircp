@@ -1,5 +1,5 @@
 seo:
-  title: IRCP 2026 in Regensburg
+  title: Vernetzen. Mitgestalten. Vorausdenken.
   description: "Eine gemeinsame Vision für die Community Paramedicine: Evidenz, Innovation und Zusammenarbeit"
 title: "Vernetzen. Mitgestalten. Vorausdenken. \n IRCP 2026"
 description: "Eine gemeinsame Vision für die Community Paramedicine: \n Evidenz, Innovation und Zusammenarbeit"
@@ -45,7 +45,7 @@ program:
     - icon: i-lucide-cpu
       title: Innovation, Technologie und Versorgungssteuerung
 callForSpeakers:
-  headline: Jetzt Beitrag bis zum 21. Mai 2026 einreichen
+  headline: Jetzt Beitrag bis zum 24. Mai 2026 einreichen
   title: Call for Speakers
   callout: 
     title: Sie möchten Ihre Erfahrungen, Forschungsergebnisse oder innovativen Projekte auf einer internationalen Bühne präsentieren?
@@ -183,4 +183,13 @@ partners:
     - name: Paramedic Network
       img: /paramedicnetwork.png
       to: https://paramedicnetwork.org/
+      target: _blank
+  hosts:
+    - name: IRCP
+      img: /IRCP_Logo.png
+      to: https://ircp.info/
+      target: _blank
+    - name: BRK Kreisverband Regensburg
+      img: /BRK_Logo.jpg
+      to: https://www.brk-regensburg.de/
       target: _blank

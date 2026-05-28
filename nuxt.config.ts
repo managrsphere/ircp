@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
+    '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/ui',
     '@vueuse/nuxt',
@@ -13,6 +14,12 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://ircp-regensburg.de',
+    name: 'IRCP Regensburg 2026',
+    defaultLocale: 'de'
+  },
 
   content: {
     experimental: {

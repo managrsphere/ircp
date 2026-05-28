@@ -63,6 +63,12 @@ const items = computed(() => [
     to: '/#faq',
     exactHash: true,
     active: activeSection.value === 'faq'
+  },
+  {
+    label: 'Kontakt',
+    to: '/#contact',
+    exactHash: true,
+    active: activeSection.value === 'contact'
   }
 ])
 
@@ -76,7 +82,7 @@ nuxtApp.hooks.hookOnce('page:loading:end', () => {
     }
   }, { rootMargin: '-50% 0px -50% 0px' })
 
-  document.querySelectorAll('#program, #speakers, #tickets, #faq').forEach(el => observer.observe(el))
+  document.querySelectorAll('#program, #speakers, #tickets, #faq, #contact').forEach(el => observer.observe(el))
 })
 
 const variants: Record<string, VariantType | ((custom: unknown) => VariantType)> = {
