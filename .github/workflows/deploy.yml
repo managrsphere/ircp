@@ -25,7 +25,7 @@ jobs:
             # Step 4: Build and push Docker image to DigitalOcean Registry
             - name: Build and Push Docker image
               run: |
-                  docker build --build-arg NUXT_UI_PRO_LICENSE=${{ secrets.NUXT_UI_PRO_LICENSE }} --build-arg NUXT_PUBLIC_GTM_ID=${{ secrets.NUXT_PUBLIC_GTM_ID }} -t registry.digitalocean.com/ms-container-registry/ircp:latest .
+                  docker build -t registry.digitalocean.com/ms-container-registry/ircp:latest .
                   docker push registry.digitalocean.com/ms-container-registry/ircp:latest
 
             # Step 5: Install kubectl and set up the Kubernetes context
