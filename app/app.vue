@@ -32,4 +32,5 @@ useSeoMeta({
 
     <AppFooter />
   </UApp>
+  <CookieControl locale="de" />
 </template>

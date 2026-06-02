@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/ui',
     '@vueuse/nuxt',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    '@dargmuesli/nuxt-cookie-control'
   ],
 
   devtools: {
@@ -47,6 +48,46 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: []
     }
+  },
+
+  cookieControl: {
+    locales: ['de'],
+    barPosition: 'bottom-full',
+    isModalForced: true, // important for compliance
+    closeModalOnClickOutside: false,
+    isAcceptNecessaryButtonEnabled: true,
+    isControlButtonEnabled: true,
+    // IMPORTANT: no iframe auto-load
+    isIframeBlocked: false,
+    cookies: {
+      necessary: [
+        {
+          id: 'essential',
+          name: 'Essenzielle Cookies',
+          description: {
+            de: 'Diese Cookies sind für den Betrieb der Website erforderlich.'
+          },
+          isPreselected: true
+        }
+      ],
+
+      optional: [
+        {
+          id: 'external_media',
+          name: 'Externe Medien (Instagram)',
+          description: {
+            de: 'Lädt Inhalte von Instagram (LightWidget). Erst nach Zustimmung.'
+          }
+        }
+      ]
+    },
+    cookieNameIsConsentGiven: 'ncc_c',
+    cookieNameCookiesEnabledIds: 'ncc_e',
+    cookieOptions: {
+      path: '/',
+      sameSite: 'strict'
+    },
+    cookieExpiryOffsetMs: 1000 * 60 * 60 * 24 * 365
   },
 
   eslint: {

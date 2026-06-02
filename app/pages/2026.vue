@@ -14,8 +14,18 @@ useSeoMeta({
   description: page.value.seo.description,
   ogDescription: page.value.seo.description
 })
+// Load LightWidget script in head so client templates don't contain side-effect tags
+useHead({
+  script: [
+    { src: 'https://cdn.lightwidget.com/widgets/lightwidget.js', defer: true }
+  ]
+})
 
-const { data: response } = await useFetch('https://graph.facebook.com/v25.0/instagram_oembed?url=https://www.instagram.com/ircp.regensburg2026/')
+const { cookiesEnabledIds } = useCookieControl()
+
+const showInstagram = computed(() =>
+  cookiesEnabledIds.value?.includes('external_media')
+)
 </script>
 
 <template>
@@ -25,14 +35,22 @@ const { data: response } = await useFetch('https://graph.facebook.com/v25.0/inst
       :description="page.ircp2026.description"
       :headline="page.ircp2026.headline"
       orientation="horizontal"
-      :reverse="true"
     >
-      <img
-        :src="'/2026.jpg'"
-        alt="Landing"
-        class="rounded-lg shadow-lg"
+      <!-- LightWidget WIDGET -->
+      <iframe
+        v-if="showInstagram"
+        src="//lightwidget.com/widgets/de75947bf2215f939a48c3d90cfd55c9.html"
+        scrolling="no"
+        allowtransparency="true"
+        class="lightwidget-widget"
+        style="width:100%;border:0;overflow:hidden;"
+      />
+      <div
+        v-else
+        class="p-6 text-sm opacity-70"
       >
-      <div>{{ response }}</div>
+        Instagram-Inhalte werden erst nach Zustimmung zu externen Medien geladen.
+      </div>
     </UPageSection>
   </div>
 </template>

@@ -30,7 +30,7 @@ const items = computed(() => [
     active: activeSection.value === 'program'
   },
   {
-    label: 'Call for Speakers',
+    label: 'Speakers',
     to: '/#speakers',
     exactHash: true,
     active: activeSection.value === 'speakers'

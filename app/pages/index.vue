@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { TableColumn, TabsItem } from '@nuxt/ui'
+
 definePageMeta({
   colorMode: 'light'
 })
@@ -61,6 +63,54 @@ function scrollMotionLarge(delay: number = 0) {
     transition: { duration: 0.6, delay }
   }
 }
+
+type ProgramRow = {
+  time: string
+  event: string
+}
+
+type ProgramTrack = {
+  title: string
+  rows: ProgramRow[]
+}
+
+type ProgramDay = {
+  label: string
+  slot: string
+  tracks: ProgramTrack[]
+}
+
+const programColumns: TableColumn<ProgramRow>[] = [
+  {
+    accessorKey: 'time',
+    header: 'Zeit',
+    meta: {
+      class: {
+        th: 'w-44',
+        td: 'font-mono text-sm text-primary whitespace-nowrap'
+      }
+    }
+  },
+  {
+    accessorKey: 'event',
+    header: 'Programmpunkt',
+    meta: {
+      class: {
+        td: 'font-medium text-default'
+      }
+    }
+  }
+]
+
+const programDays = computed<ProgramDay[]>(() => page.value?.program.schedule.days ?? [])
+
+const programTabs = computed<TabsItem[]>(() =>
+  programDays.value.map(day => ({
+    label: day.label,
+    value: day.slot,
+    slot: day.slot
+  }))
+)
 
 const ircpCards = computed(() => [
   {
@@ -300,10 +350,10 @@ const travelCards = computed(() => [
       id="program"
       :ui="{
         root: 'py-16 sm:py-24 scroll-mt-(--ui-header-height)',
-        container: 'max-w-5xl',
+        container: 'max-w-6xl',
         headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
-        title: 'max-w-lg mx-auto',
-        description: 'max-w-md mx-auto text-dimmed'
+        title: 'max-w-2xl mx-auto',
+        description: 'max-w-2xl mx-auto text-dimmed'
       }"
     >
       <template #headline>
@@ -347,33 +397,67 @@ const travelCards = computed(() => [
           :description="page.program.alert.description"
           color="info"
           variant="subtle"
+          class="mx-auto max-w-4xl"
         />
       </Motion>
 
       <Motion
         as="div"
-        v-bind="scrollMotionLarge(0.3)"
+        v-bind="scrollMotionLarge(0.35)"
         class="w-full overflow-hidden"
       >
-        <UCarousel
-          v-slot="{ item }"
-          loop
-          :autoplay="{ delay: 3000 }"
-          wheel-gestures
-          :items="page.program.items"
-          :ui="{ container: 'items-stretch', item: 'xl:basis-1/3' }"
-        >
-          <UPageCard
-            class="bg-neutral-300"
-            :icon="item.icon"
-            :title="item.title"
-            :ui="{ root: 'h-full' }"
-          />
-        </UCarousel>
+        <div class="rounded-3xl border border-default bg-default/80 p-4 shadow-sm backdrop-blur sm:p-6">
+          <UTabs
+            :items="programTabs"
+            color="neutral"
+            variant="link"
+            size="lg"
+            class="w-full"
+          >
+            <template
+              v-for="day in programDays"
+              :key="day.slot"
+              #[day.slot]
+            >
+              <div class="space-y-4 pt-6">
+                <div
+                  v-for="track in day.tracks"
+                  :key="track.title"
+                  class="space-y-3"
+                >
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-lg font-semibold tracking-tight text-default">
+                      {{ track.title }}
+                    </h3>
+                    <UBadge
+                      color="neutral"
+                      variant="subtle"
+                    >
+                      Zeitplan
+                    </UBadge>
+                  </div>
+
+                  <UCard class="overflow-hidden border border-default/60 bg-neutral-300/70">
+                    <UTable
+                      :data="track.rows"
+                      :columns="programColumns"
+                      :ui="{
+                        base: 'min-w-full',
+                        thead: 'bg-transparent',
+                        th: 'bg-transparent',
+                        td: 'align-top'
+                      }"
+                    />
+                  </UCard>
+                </div>
+              </div>
+            </template>
+          </UTabs>
+        </div>
       </Motion>
     </UPageSection>
 
-    <!-- Call for Speakers -->
+    <!-- Speakers -->
     <UPageSection
       id="speakers"
       :ui="{

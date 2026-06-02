@@ -32,10 +32,19 @@ export const collections = {
           title: z.string().nonempty(),
           description: z.string().nonempty()
         }),
-        items: z.array(z.object({
-          icon: z.string(),
-          title: z.string().nonempty()
-        }))
+        schedule: z.object({
+          days: z.array(z.object({
+            label: z.string().nonempty(),
+            slot: z.string().nonempty(),
+            tracks: z.array(z.object({
+              title: z.string().nonempty(),
+              rows: z.array(z.object({
+                time: z.string().nonempty(),
+                event: z.string().nonempty()
+              }))
+            }))
+          }))
+        })
       }),
       callForSpeakers: z.object({
         headline: z.string().optional(),
