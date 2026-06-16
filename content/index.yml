@@ -34,7 +34,7 @@ program:
       - label: Montag, 05. Oktober 2026
         slot: montag
         tracks:
-          - title: Bildungsforum
+          - title: Bildungsforum (Extra Anmeldung erforderlich)
             rows:
               - time: 08:30 – 09:00 Uhr
                 event: Registrierung
@@ -91,7 +91,7 @@ program:
               - time: 12:15 – 13:15 Uhr
                 event: Mittagspause
               - time: 13:15 – 15:35 Uhr
-                event: Fachvortrag
+                event: Fachvorträge
               - time: 15:35 – 16:15 Uhr
                 event: Paneldiskussion
               - time: 16:15 – 17:00 Uhr
@@ -129,12 +129,8 @@ callForSpeakers:
       description: Entwickeln Sie nachhaltige Finanzierungs- und Strategiemodelle gemeinsam weiter.
   alert:
     icon: i-lucide-info
-    title: Einreichungen
-    description: Weitere Informationen zu Einreichungsformaten, Fristen und Auswahlkriterien finden Sie auf der internationalen Website des IRCP.
-    actions:
-      - icon: i-lucide-link
-        to: https://events.prehos.net/IRCP2026#/abstract?lang=en
-        target: _blank
+    title: Hinweis
+    description: Die Speakerinnen und Speaker werden in Kürze veröffentlicht.
 tickets:
   headline: Jetzt Teil des IRCP 2026 werden
   title: Tickets & Registrierung

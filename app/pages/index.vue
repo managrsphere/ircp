@@ -513,7 +513,6 @@ const travelCards = computed(() => [
           :icon="page.callForSpeakers.alert.icon"
           :title="page.callForSpeakers.alert.title"
           :description="page.callForSpeakers.alert.description"
-          :actions="page.callForSpeakers.alert.actions"
           color="info"
           variant="subtle"
           orientation="horizontal"

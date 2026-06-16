@@ -61,12 +61,7 @@ export const collections = {
         alert: z.object({
           icon: z.string(),
           title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          actions: z.array(z.object({
-            to: z.string().nonempty(),
-            icon: z.string(),
-            target: createEnum(['_blank', '_self']).optional()
-          }))
+          description: z.string().nonempty()
         })
       }),
       tickets: z.object({

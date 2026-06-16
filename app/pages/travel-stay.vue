@@ -87,7 +87,7 @@ useSeoMeta({
         <UPageCard
           icon="i-lucide-hotel"
           title="Hampton by Hilton"
-          description="Direkt neben dem marinaforum - ideal für Kongressteilnehmende"
+          description="Direkt neben dem marinaforum - Kontingent für IRCP-Teilnehmende reserviert"
           variant="subtle"
           to="https://www.hilton.com/en/hotels/mucsrhx-hampton-regensburg/"
           target="_blank"
