@@ -33,6 +33,13 @@ useSeoMeta({
           class="mt-4"
           variant="subtle"
         />
+        <UButton
+          :icon="page.overview.internationalButton.icon"
+          :label="page.overview.internationalButton.title"
+          :to="page.overview.internationalButton.to"
+          :target="page.overview.internationalButton.target"
+          class="mt-4 ml-4"
+        />
       </template>
       <img
         :src="'/IRCP_Logo.png'"

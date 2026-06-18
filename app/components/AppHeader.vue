@@ -123,7 +123,7 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
       <UButton
         label="Tickets"
         class="hidden lg:flex"
-        to="https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en"
+        to="https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets"
         target="_blank"
       />
     </template>
@@ -193,7 +193,7 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
         <UButton
           label="Tickets"
           block
-          to="https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en"
+          to="https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets"
           target="_blank"
         />
       </div>

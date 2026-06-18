@@ -9,3 +9,8 @@ overview:
     title: Mehr Informationen
     to: https://ircp.info/
     target: _blank
+  internationalButton:
+    icon: i-lucide-globe
+    title: Internationale Website
+    to: https://tpf.zohobackstage.com/IRCP2026
+    target: _blank

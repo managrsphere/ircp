@@ -140,6 +140,12 @@ export const collections = {
           title: z.string().nonempty(),
           to: z.string().nonempty(),
           target: createEnum(['_blank', '_self']).optional()
+        }),
+        internationalButton: z.object({
+          icon: z.string(),
+          title: z.string().nonempty(),
+          to: z.string().nonempty(),
+          target: createEnum(['_blank', '_self']).optional()
         })
       })
     })

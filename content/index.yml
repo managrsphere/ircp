@@ -9,7 +9,7 @@ hero:
     - label: Jetzt Tickets sichern
       color: primary
       size: xl
-      to: 'https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en'
+      to: 'https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets'
       target: _blank
     - label: Programm entdecken
       size: xl
@@ -151,7 +151,7 @@ tickets:
         - Zugriff auf Kongressmaterialien
       button:
         label: Jetzt registrieren
-        to: https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en
+        to: https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets
         target: _blank
     - title: Student Delegate
       description: Für Studierende in anerkannten Ausbildungs- oder Studiengängen.
@@ -163,7 +163,7 @@ tickets:
         - Teilnahme am vollständigen Programm zu einem reduzierten Tarif
       button:
         label: Jetzt registrieren
-        to: https://events.prehos.net/IRCP2026#/buyTickets/selectTickets?lang=en
+        to: https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
 faq:
