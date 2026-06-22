@@ -241,24 +241,7 @@ const travelCards = computed(() => [
             v-for="link in page.hero.links"
             :key="link.label"
           >
-            <UPopover
-              v-if="link.label === 'Jetzt Tickets sichern'"
-              mode="hover"
-            >
-              <UButton
-                v-bind="link"
-                trailing-icon="i-lucide-info"
-              />
-
-              <template #content>
-                <div class="max-w-xs p-4 text-sm leading-relaxed text-default">
-                  Die Registrierung ist international organisiert. Deshalb werden Preise in USD angezeigt, die Zahlung erfolgt jedoch automatisch in Ihrer lokalen Währung zum aktuellen Wechselkurs.
-                </div>
-              </template>
-            </UPopover>
-
             <UButton
-              v-else
               v-bind="link"
             />
           </template>
@@ -490,22 +473,6 @@ const travelCards = computed(() => [
 
       <Motion
         as="div"
-        v-bind="scrollMotionLarge(0.2)"
-        class="w-full"
-      >
-        <UPageGrid class="lg:grid-cols-2">
-          <UPageCard
-            v-for="feature in page.callForSpeakers.features"
-            :key="feature.title"
-            :icon="feature.icon"
-            :title="feature.title"
-            :description="feature.description"
-          />
-        </UPageGrid>
-      </Motion>
-
-      <Motion
-        as="div"
         v-bind="scrollMotion(0.2)"
         class="w-full"
       >
@@ -518,6 +485,22 @@ const travelCards = computed(() => [
           orientation="horizontal"
           class="mt-6"
         />
+      </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotionLarge(0.3)"
+        class="w-full"
+      >
+        <UPageGrid class="lg:grid-cols-2">
+          <UPageCard
+            v-for="feature in page.callForSpeakers.features"
+            :key="feature.title"
+            :icon="feature.icon"
+            :title="feature.title"
+            :description="feature.description"
+          />
+        </UPageGrid>
       </Motion>
     </UPageSection>
 

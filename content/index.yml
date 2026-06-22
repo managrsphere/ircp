@@ -9,14 +9,20 @@ hero:
     - label: Jetzt Tickets sichern
       color: primary
       size: xl
-      to: 'https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets'
+      to: 'https://buy.stripe.com/5kQ9AU9APf5p8TA6fD9R603'
       target: _blank
-    - label: Programm entdecken
+    - label: Tickets (Student:in)
+      color: primary
+      size: xl
+      variant: outline
+      to: 'https://buy.stripe.com/cNidRaeV95uP5HodI59R604'
+      target: _blank
+    - label: Programm
       size: xl
       color: neutral
       variant: soft
       to: '#program'
-    - label: Speakers
+    - label: Speaker:innen
       size: xl
       color: neutral
       variant: soft
@@ -46,59 +52,91 @@ program:
                 event: Paneldiskussion
               - time: 11:30 – 11:45 Uhr
                 event: Verlassen des Gebäudes für Sicherheitscheck
+          - title: Allgemeine Sitzung
+            rows:
+              - time: 08:30 – 09:00 Uhr
+                event: Registrierung
+              - time: 09:00 – 09:10 Uhr
+                event: Eröffnungszeremonie
+              - time: 09:10 – 10:50 Uhr
+                event: 2 Vorträge à 30 Minuten
+              - time: 10:50 – 11:30 Uhr
+                event: Paneldiskussion
+              - time: 11:30 – 11:45 Uhr
+                event: Pause
           - title: Hauptprogramm
             rows:
               - time: 12:30 – 13:00 Uhr
-                event: Registrierung
+                event: Anmeldung
               - time: 13:00 – 13:45 Uhr
                 event: Eröffnungszeremonie
-              - time: 13:45 – 15:35 Uhr
-                event: Fachvorträge
+              - time: 13:45 – 14:45 Uhr
+                event: 2 Vorträge à 30 Minuten
+              - time: 14:45 – 15:05 Uhr
+                event: Pause
+              - time: 15:05 – 15:35 Uhr
+                event: Vortrag
               - time: 15:35 – 16:15 Uhr
                 event: Paneldiskussion
               - time: 16:15 – 17:00 Uhr
-                event: Abschließender Impulsvortrag
+                event: Keynote
       - label: Dienstag, 06. Oktober 2026
         slot: dienstag
         tracks:
-          - title: Hauptprogramm
+          - title: Allgemeine Sitzung
             rows:
               - time: 08:00 – 08:15 Uhr
-                event: Tagesauftakt
-              - time: 08:15 – 11:35 Uhr
-                event: Fachvorträge
+                event: Eröffnungsworte
+              - time: 08:15 – 09:45 Uhr
+                event: 3 Vorträge à 30 Minuten
+              - time: 09:45 – 10:05 Uhr
+                event: Pause
+              - time: 10:05 – 11:35 Uhr
+                event: 3 Vorträge à 30 Minuten
               - time: 11:35 – 12:15 Uhr
                 event: Paneldiskussion
               - time: 12:15 – 13:15 Uhr
                 event: Mittagspause
-              - time: 13:15 – 15:35 Uhr
-                event: Fachvorträge
+              - time: 13:15 – 14:45 Uhr
+                event: 3 Vorträge à 30 Minuten
+              - time: 14:45 – 15:05 Uhr
+                event: Pause
+              - time: 15:05 – 15:35 Uhr
+                event: Vortrag
               - time: 15:35 – 16:15 Uhr
                 event: Paneldiskussion
               - time: 16:15 – 17:00 Uhr
-                event: Abschließender Impulsvortrag
+                event: Keynote
       - label: Mittwoch, 07. Oktober 2026
         slot: mittwoch
         tracks:
-          - title: Hauptprogramm
+          - title: Allgemeine Sitzung
             rows:
               - time: 08:00 – 08:15 Uhr
-                event: Tagesauftakt
-              - time: 08:15 – 11:35 Uhr
-                event: Fachvorträge
+                event: Eröffnungsworte
+              - time: 08:15 – 09:45 Uhr
+                event: 3 Vorträge à 30 Minuten
+              - time: 09:45 – 10:05 Uhr
+                event: Pause
+              - time: 10:05 – 11:35 Uhr
+                event: 3 Vorträge à 30 Minuten
               - time: 11:35 – 12:15 Uhr
                 event: Paneldiskussion
               - time: 12:15 – 13:15 Uhr
                 event: Mittagspause
-              - time: 13:15 – 15:35 Uhr
-                event: Fachvorträge
+              - time: 13:15 – 14:45 Uhr
+                event: 3 Vorträge à 30 Minuten
+              - time: 14:45 – 15:05 Uhr
+                event: Pause
+              - time: 15:05 – 15:35 Uhr
+                event: Vortrag
               - time: 15:35 – 16:15 Uhr
                 event: Paneldiskussion
               - time: 16:15 – 17:00 Uhr
-                event: Abschließender Impulsvortrag
+                event: Keynote
 callForSpeakers:
   headline: Vorstellung
-  title: Unsere Speaker
+  title: "Unsere Speaker:innen"
   callout: 
     title: Sie möchten Ihre Erfahrungen, Forschungsergebnisse oder innovativen Projekte auf einer internationalen Bühne präsentieren?
     description: Dann freuen wir uns auf Ihre Einreichung. Der Call for Speakers richtet sich an Expertinnen und Experten aus Praxis, Wissenschaft, Bildung, Management, Politik und angrenzenden Bereichen, die zur Weiterentwicklung von Community Paramedicine und präklinischer Versorgung beitragen. Willkommen sind sowohl wissenschaftliche Beiträge als auch praxisorientierte Impulse.
@@ -139,8 +177,8 @@ tickets:
     title: Warum sind die Ticketpreise in US-Dollar angegeben?
     description: "Die Registrierung erfolgt über eine internationale Plattform und ein globales Organisationsnetzwerk, weshalb die Preise aktuell in US-Dollar (USD) dargestellt werden. Für Teilnehmende aus Europa bedeutet das jedoch keinen Nachteil: Die Zahlung erfolgt automatisch in Ihrer lokalen Währung (z. B. Euro), der Betrag wird zum aktuellen Wechselkurs berechnet, und es entstehen keine zusätzlichen versteckten Gebühren durch den Veranstalter. Der IRCP steht für eine weltweite Community – und genau deshalb ist auch das Ticketing international ausgerichtet."
   pricing:
-    - title: Attending Delegate
-      description: Für Expertinnen und Experten aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
+    - title: Teilnehmer:in
+      description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
       price: $450
       highlight: true
       billingCycle: Person
@@ -151,10 +189,10 @@ tickets:
         - Zugriff auf Kongressmaterialien
       button:
         label: Jetzt registrieren
-        to: https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets
+        to: https://buy.stripe.com/5kQ9AU9APf5p8TA6fD9R603
         target: _blank
-    - title: Student Delegate
-      description: Für Studierende in anerkannten Ausbildungs- oder Studiengängen.
+    - title: Student:in
+      description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
       price: $180
       highlight: false
       billingCycle: Person
@@ -163,7 +201,7 @@ tickets:
         - Teilnahme am vollständigen Programm zu einem reduzierten Tarif
       button:
         label: Jetzt registrieren
-        to: https://tpf.zohobackstage.com/IRCP2026#/buyTickets/selectTickets
+        to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
 faq:
@@ -212,10 +250,6 @@ partners:
       img: /skverlag.png
       to: https://www.skverlag.de/
       target: _blank
-    - name: Prehos
-      img: /prehos.png
-      to: https://prehos.com/
-      target: _blank
     - name: Mobile CE
       img: /mobilece.png
       to: https://mobilece.org/
@@ -231,6 +265,10 @@ partners:
     - name: Paramedic Network
       img: /paramedicnetwork.png
       to: https://paramedicnetwork.org/
+      target: _blank
+    - name: Global Paramedic Higher Education Council
+      img: /gphec.png
+      to: https://gphec.org/
       target: _blank
   hosts:
     - name: IRCP
