@@ -49,20 +49,18 @@ export const collections = {
       callForSpeakers: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
-        callout: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }),
-        features: z.array(z.object({
-          icon: z.string(),
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        })),
         alert: z.object({
           icon: z.string(),
           title: z.string().nonempty(),
           description: z.string().nonempty()
-        })
+        }),
+        speaker: z.array(z.object({
+          img: z.string(),
+          name: z.string().nonempty(),
+          role: z.string().nonempty(),
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        }))
       }),
       tickets: z.object({
         headline: z.string().optional(),
@@ -78,7 +76,6 @@ export const collections = {
           price: z.string().nonempty(),
           highlight: z.boolean().optional(),
           billingCycle: z.string().optional(),
-          features: z.array(z.string().nonempty()),
           button: z.object({
             label: z.string().nonempty(),
             to: z.string().nonempty(),

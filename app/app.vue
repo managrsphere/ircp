@@ -24,6 +24,12 @@ useSeoMeta({
 
 <template>
   <UApp :toaster="{ expand: false }">
+    <UBanner
+      id="tickets"
+      icon="i-lucide-tickets"
+      title="Jetzt Tickets sichern - Alle Tickets beinhalten spannende Vorträge, interaktive Workshops und leckeres Catering!"
+      close
+    />
     <AppHeader />
 
     <UMain>

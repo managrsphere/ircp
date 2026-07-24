@@ -80,6 +80,14 @@ type ProgramDay = {
   tracks: ProgramTrack[]
 }
 
+type SpeakerItem = {
+  img: string
+  name: string
+  role: string
+  title: string
+  description: string
+}
+
 const programColumns: TableColumn<ProgramRow>[] = [
   {
     accessorKey: 'time',
@@ -111,6 +119,24 @@ const programTabs = computed<TabsItem[]>(() =>
     slot: day.slot
   }))
 )
+
+const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
+
+const activeSpeaker = ref<SpeakerItem | null>(null)
+const speakerModalOpen = ref(false)
+
+function openSpeaker(speaker: SpeakerItem) {
+  activeSpeaker.value = speaker
+  speakerModalOpen.value = true
+}
+
+function updateSpeakerModalOpen(open: boolean) {
+  speakerModalOpen.value = open
+
+  if (!open) {
+    activeSpeaker.value = null
+  }
+}
 
 const ircpCards = computed(() => [
   {
@@ -392,6 +418,7 @@ const travelCards = computed(() => [
         <div class="rounded-3xl border border-default bg-default/80 p-4 shadow-sm backdrop-blur sm:p-6">
           <UTabs
             :items="programTabs"
+            :default-value="programTabs[0]?.value"
             color="neutral"
             variant="link"
             size="lg"
@@ -445,7 +472,7 @@ const travelCards = computed(() => [
       id="speakers"
       :ui="{
         root: 'py-16 sm:py-24 scroll-mt-(--ui-header-height) bg-neutral-300',
-        container: 'max-w-5xl',
+        container: 'max-w-6xl',
         headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
         title: 'max-w-lg mx-auto',
         description: 'max-w-md mx-auto text-dimmed'
@@ -492,16 +519,80 @@ const travelCards = computed(() => [
         v-bind="scrollMotionLarge(0.3)"
         class="w-full"
       >
-        <UPageGrid class="lg:grid-cols-2">
-          <UPageCard
-            v-for="feature in page.callForSpeakers.features"
-            :key="feature.title"
-            :icon="feature.icon"
-            :title="feature.title"
-            :description="feature.description"
-          />
-        </UPageGrid>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <button
+            v-for="speaker in speakers"
+            :key="speaker.name"
+            type="button"
+            class="group block h-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-default"
+            @click="openSpeaker(speaker)"
+          >
+            <UCard class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+              <img
+                :src="speaker.img"
+                :alt="speaker.name"
+                class="aspect-4/5 w-full rounded-md object-cover"
+                loading="lazy"
+              >
+              <div class="space-y-2 pt-4">
+                <div class="space-y-1">
+                  <p class="text-base font-semibold tracking-tight text-default line-clamp-2">
+                    {{ speaker.name }}
+                  </p>
+                  <p class="text-sm leading-relaxed text-dimmed line-clamp-2">
+                    {{ speaker.role }}
+                  </p>
+                </div>
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-primary/80 transition-colors group-hover:text-primary">
+                  Vortrag ansehen
+                </p>
+              </div>
+            </UCard>
+          </button>
+        </div>
       </Motion>
+
+      <UModal
+        :open="speakerModalOpen"
+        :scrollable="true"
+        :ui="{ content: 'sm:max-w-3xl' }"
+        @update:open="updateSpeakerModalOpen"
+      >
+        <template #body>
+          <div
+            v-if="activeSpeaker"
+            class="grid gap-6 sm:grid-cols-[220px_minmax(0,1fr)]"
+          >
+            <img
+              :src="activeSpeaker.img"
+              :alt="activeSpeaker.name"
+              class="aspect-4/5 w-full rounded-2xl object-cover"
+              loading="lazy"
+            >
+
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <p class="text-xs font-medium uppercase tracking-[0.12em] text-primary">
+                  Speaker:in
+                </p>
+                <h3 class="text-2xl font-semibold tracking-tight text-default">
+                  {{ activeSpeaker.name }}
+                </h3>
+                <p class="text-base leading-relaxed text-dimmed">
+                  {{ activeSpeaker.role }}
+                </p>
+              </div>
+
+              <UAlert
+                color="info"
+                variant="soft"
+                :title="activeSpeaker.title"
+                :description="activeSpeaker.description"
+              />
+            </div>
+          </div>
+        </template>
+      </UModal>
     </UPageSection>
 
     <!-- Tickets -->
@@ -553,7 +644,7 @@ const travelCards = computed(() => [
         <UAlert
           :title="page.tickets.callout.title"
           :description="page.tickets.callout.description"
-          color="warning"
+          color="info"
           variant="subtle"
           class="mb-6"
         />

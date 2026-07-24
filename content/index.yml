@@ -45,18 +45,6 @@ program:
               - time: 08:30 – 09:00 Uhr
                 event: Registrierung
               - time: 09:00 – 09:10 Uhr
-                event: Eröffnung & Begrüßung
-              - time: 09:10 – 10:50 Uhr
-                event: Fachvorträge
-              - time: 10:50 – 11:30 Uhr
-                event: Paneldiskussion
-              - time: 11:30 – 11:45 Uhr
-                event: Verlassen des Gebäudes für Sicherheitscheck
-          - title: Allgemeine Sitzung
-            rows:
-              - time: 08:30 – 09:00 Uhr
-                event: Registrierung
-              - time: 09:00 – 09:10 Uhr
                 event: Eröffnungszeremonie
               - time: 09:10 – 10:50 Uhr
                 event: 2 Vorträge à 30 Minuten
@@ -137,68 +125,38 @@ program:
 callForSpeakers:
   headline: Vorstellung
   title: "Unsere Speaker:innen"
-  callout: 
-    title: Sie möchten Ihre Erfahrungen, Forschungsergebnisse oder innovativen Projekte auf einer internationalen Bühne präsentieren?
-    description: Dann freuen wir uns auf Ihre Einreichung. Der Call for Speakers richtet sich an Expertinnen und Experten aus Praxis, Wissenschaft, Bildung, Management, Politik und angrenzenden Bereichen, die zur Weiterentwicklung von Community Paramedicine und präklinischer Versorgung beitragen. Willkommen sind sowohl wissenschaftliche Beiträge als auch praxisorientierte Impulse.
-  features:
-    - icon: i-lucide-globe-2
-      title: Internationale Best-Practice-Modelle
-      description: Teilen Sie erfolgreiche Konzepte aus Ihrer Region mit einem globalen Publikum.
-    - icon: i-lucide-flask-conical
-      title: Forschung und Evaluation
-      description: Präsentieren Sie evidenzbasierte Erkenntnisse und Studienergebnisse.
-    - icon: i-lucide-landmark
-      title: Governance und Gesundheitspolitik
-      description: Diskutieren Sie regulatorische Rahmenbedingungen und politische Entwicklungen.
-    - icon: i-lucide-graduation-cap
-      title: Ausbildung, Curriculum und Workforce Development
-      description: Gestalten Sie die Bildungsreformen der präklinischen Versorgung mit.
-    - icon: i-lucide-cpu
-      title: Versorgungsinnovation und Technologie
-      description: Zeigen Sie, wie Innovation die Versorgungssteuerung verändert.
-    - icon: i-lucide-stethoscope
-      title: Klinische Konzepte und neue Rollenprofile
-      description: Bringen Sie neue klinische Ansätze und Rollenprofile auf die internationale Bühne.
-    - icon: i-lucide-layers
-      title: Systemintegration und interprofessionelle Zusammenarbeit
-      description: Vernetzen Sie Versorgungssysteme und fördern Sie interprofessionelle Ansätze.
-    - icon: i-lucide-trending-up
-      title: Finanzierung und strategische Weiterentwicklung
-      description: Entwickeln Sie nachhaltige Finanzierungs- und Strategiemodelle gemeinsam weiter.
+  speaker:
+    - img: /redelsteinerc.jpg
+      name: Prof. Dr. Christoph Redelsteiner
+      role: “FH-Prof. DSA Mag. (FH) Dr. PhDr. Christoph Redelsteiner, MSc. | Medizinischen Privatuniversität Burgenland in Gründung - Bereich Forschung & Lehre Rettungswesen, Notfall- und Katastrophenmedizin | Notfallsanitäter-NKI, Sozialarbeiter, Gesundheitswissenschaftler”
+      title: Wie entwickelt sich Community Paramedicine international?
+      description: Welche Unterschiede gibt es zwischen den Versorgungsmodellen in Österreich, Deutschland, der Schweiz und dem Vereinigten Königreich? Auf dem IRCP 2026 in Regensburg gibt Christoph Redelsteiner - selbst Rettungsdienstexperte und Gesundheitswissenschaftler - spannende Einblicke in neue Versorgungsmodelle zwischen Akut- und Community Care. Im Fokus stehen Ausbildung, Kompetenzen, Integration ins Gesundheitssystem, interprofessionelle Zusammenarbeit und die Zukunft des Berufsbildes.
   alert:
     icon: i-lucide-info
     title: Hinweis
-    description: Die Speakerinnen und Speaker werden in Kürze veröffentlicht.
+    description: Weitere Speaker:innen werden in Kürze veröffentlicht.
 tickets:
   headline: Jetzt Teil des IRCP 2026 werden
   title: Tickets & Registrierung
   description: One Profession. Worldwide Community.
   callout:
-    title: Warum sind die Ticketpreise in US-Dollar angegeben?
-    description: "Die Registrierung erfolgt über eine internationale Plattform und ein globales Organisationsnetzwerk, weshalb die Preise aktuell in US-Dollar (USD) dargestellt werden. Für Teilnehmende aus Europa bedeutet das jedoch keinen Nachteil: Die Zahlung erfolgt automatisch in Ihrer lokalen Währung (z. B. Euro), der Betrag wird zum aktuellen Wechselkurs berechnet, und es entstehen keine zusätzlichen versteckten Gebühren durch den Veranstalter. Der IRCP steht für eine weltweite Community – und genau deshalb ist auch das Ticketing international ausgerichtet."
+    title: Was ist alles im Ticket enthalten?
+    description: Die Tickets beinhalten Zutritt zu allen Vorträgen, Workshops und unser leckeres Catering. 
   pricing:
     - title: Teilnehmer:in
       description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
-      price: $450
+      price: 395€
       highlight: true
       billingCycle: Person
-      features:
-        - Zugang zu allen Plenarveranstaltungen, Vorträgen und Panels
-        - Teilnahme an Keynotes und Fachsessions
-        - Zugang zu Networking-Events
-        - Zugriff auf Kongressmaterialien
       button:
         label: Jetzt registrieren
         to: https://buy.stripe.com/5kQ9AU9APf5p8TA6fD9R603
         target: _blank
     - title: Student:in
       description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
-      price: $180
+      price: 160€
       highlight: false
       billingCycle: Person
-      features:
-        - Zugang zu allen Kongresssessions und Networking-Angeboten
-        - Teilnahme am vollständigen Programm zu einem reduzierten Tarif
       button:
         label: Jetzt registrieren
         to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
