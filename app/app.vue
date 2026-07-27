@@ -27,7 +27,7 @@ useSeoMeta({
     <UBanner
       id="tickets"
       icon="i-lucide-tickets"
-      title="Jetzt Tickets sichern - Alle Tickets beinhalten spannende Vorträge, interaktive Workshops und leckeres Catering!"
+      title="Jetzt Tickets sichern - Alle Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, interaktive Workshopsm, offizielles Kongressmaterial und Programmunterlagen & Vollverpflegung an allen drei Tagen!"
       close
     />
     <AppHeader />
