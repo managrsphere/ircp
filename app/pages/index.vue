@@ -941,6 +941,15 @@ const travelCards = computed(() => [
             </UCard>
           </NuxtLink>
         </div>
+        <div>
+          <UCard
+            v-if="page.partners.callout"
+            :description="page.partners.callout.description"
+            color="info"
+            variant="subtle"
+            class="mt-8"
+          />
+        </div>
       </Motion>
     </UPageSection>
   </div>

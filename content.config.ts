@@ -121,7 +121,10 @@ export const collections = {
           name: z.string().nonempty(),
           to: z.string().nonempty().optional(),
           target: createEnum(['_blank', '_self']).optional()
-        }))
+        })),
+        callout: z.object({
+          description: z.string().nonempty()
+        }).optional()
       })
     })
   }),

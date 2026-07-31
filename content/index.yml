@@ -204,6 +204,9 @@ partners:
   headline: Unsere Partner
   title: Gemeinsam für die Zukunft der präklinischen Versorgung
   items:
+    - img: /bayerisches_staatsministerium.jpg
+      to: https://www.stmelf.bayern.de/
+      target: _blank
     - name: S+K Verlag
       img: /skverlag.png
       to: https://www.skverlag.de/
@@ -237,3 +240,5 @@ partners:
       img: /BRK_Logo.jpg
       to: https://www.brk-regensburg.de/
       target: _blank
+  callout:
+    description: Diese Veranstaltung wird im Rahmen der Kongressinitiative für die Bayerische Tourismuswirtschaft (Kongresse in Bayern – KiB) gefördert.
