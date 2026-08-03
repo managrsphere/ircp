@@ -39,7 +39,7 @@ const showInstagram = computed(() =>
       <!-- LightWidget WIDGET -->
       <iframe
         v-if="showInstagram"
-        src="//lightwidget.com/widgets/de75947bf2215f939a48c3d90cfd55c9.html"
+        src="https://cdn.lightwidget.com/widgets/de75947bf2215f939a48c3d90cfd55c9.html"
         scrolling="no"
         allowtransparency="true"
         class="lightwidget-widget"
