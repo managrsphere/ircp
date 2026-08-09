@@ -36,6 +36,12 @@ const items = computed(() => [
     active: activeSection.value === 'speakers'
   },
   {
+    label: 'Workshops',
+    to: '/#workshops',
+    exactHash: true,
+    active: activeSection.value === 'workshops'
+  },
+  {
     label: 'Tickets',
     to: '/#tickets',
     exactHash: true,
@@ -82,7 +88,7 @@ nuxtApp.hooks.hookOnce('page:loading:end', () => {
     }
   }, { rootMargin: '-50% 0px -50% 0px' })
 
-  document.querySelectorAll('#program, #speakers, #tickets, #faq, #contact').forEach(el => observer.observe(el))
+  document.querySelectorAll('#program, #speakers, #workshops, #tickets, #faq, #contact').forEach(el => observer.observe(el))
 })
 
 const variants: Record<string, VariantType | ((custom: unknown) => VariantType)> = {

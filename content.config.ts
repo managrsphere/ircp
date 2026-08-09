@@ -59,8 +59,29 @@ export const collections = {
           name: z.string().nonempty(),
           role: z.string().nonempty(),
           title: z.string().nonempty(),
-          description: z.string().nonempty()
+          description: z.string().nonempty(),
+          language: z.string().nonempty()
         }))
+      }),
+      workshops: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        alert: z.object({
+          icon: z.string(),
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        }),
+        highlights: z.array(z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty()
+        })),
+        registration: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          mail: z.string().nonempty(),
+          subject: z.string().nonempty()
+        })
       }),
       tickets: z.object({
         headline: z.string().optional(),

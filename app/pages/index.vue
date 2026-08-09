@@ -86,6 +86,19 @@ type SpeakerItem = {
   role: string
   title: string
   description: string
+  language?: 'de' | 'en'
+}
+
+function speakerFlag(language?: SpeakerItem['language']) {
+  if (language === 'de') {
+    return '🇩🇪'
+  }
+
+  if (language === 'en') {
+    return '🇬🇧'
+  }
+
+  return ''
 }
 
 const programColumns: TableColumn<ProgramRow>[] = [
@@ -121,6 +134,7 @@ const programTabs = computed<TabsItem[]>(() =>
 )
 
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
+const workshopHighlights = computed(() => page.value?.workshops.highlights ?? [])
 
 const activeSpeaker = ref<SpeakerItem | null>(null)
 const speakerModalOpen = ref(false)
@@ -537,6 +551,13 @@ const travelCards = computed(() => [
               <div class="space-y-2 pt-4">
                 <div class="space-y-1">
                   <p class="text-base font-semibold tracking-tight text-default line-clamp-2">
+                    <span
+                      v-if="speakerFlag(speaker.language)"
+                      class="mr-2"
+                      aria-hidden="true"
+                    >
+                      {{ speakerFlag(speaker.language) }}
+                    </span>
                     {{ speaker.name }}
                   </p>
                   <p class="text-sm leading-relaxed text-dimmed line-clamp-2">
@@ -576,6 +597,13 @@ const travelCards = computed(() => [
                   Speaker:in
                 </p>
                 <h3 class="text-2xl font-semibold tracking-tight text-default">
+                  <span
+                    v-if="speakerFlag(activeSpeaker.language)"
+                    class="mr-2"
+                    aria-hidden="true"
+                  >
+                    {{ speakerFlag(activeSpeaker.language) }}
+                  </span>
                   {{ activeSpeaker.name }}
                 </h3>
                 <p class="text-base leading-relaxed text-dimmed">
@@ -593,6 +621,108 @@ const travelCards = computed(() => [
           </div>
         </template>
       </UModal>
+    </UPageSection>
+
+    <!-- Workshops -->
+    <UPageSection
+      id="workshops"
+      :ui="{
+        root: 'py-16 sm:py-24 scroll-mt-(--ui-header-height)',
+        container: 'max-w-6xl',
+        headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
+        title: 'max-w-lg mx-auto',
+        description: 'max-w-2xl mx-auto text-dimmed'
+      }"
+    >
+      <template #headline>
+        <Motion
+          as="span"
+          v-bind="scrollMotion()"
+          class="inline-block"
+        >
+          {{ page.workshops.headline }}
+        </Motion>
+      </template>
+
+      <template #title>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          {{ page.workshops.title }}
+        </Motion>
+      </template>
+
+      <template #description>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.2)"
+          class="inline-block"
+        >
+          {{ page.workshops.description }}
+        </Motion>
+      </template>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotion(0.25)"
+        class="w-full"
+      >
+        <UAlert
+          :icon="page.workshops.alert.icon"
+          :title="page.workshops.alert.title"
+          :description="page.workshops.alert.description"
+          color="info"
+          variant="subtle"
+          class="mx-auto max-w-4xl"
+        />
+      </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotionLarge(0.35)"
+        class="w-full"
+      >
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+          <UCard
+            v-for="highlight in workshopHighlights"
+            :key="highlight.title"
+            class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+          >
+            <div class="space-y-2">
+              <p class="text-base font-semibold tracking-tight text-default">
+                {{ highlight.title }}
+              </p>
+              <p class="text-sm leading-relaxed text-dimmed">
+                {{ highlight.description }}
+              </p>
+            </div>
+          </UCard>
+
+          <UCard class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2 xl:col-span-1">
+            <div class="flex h-full flex-col justify-between gap-4">
+              <div class="space-y-2">
+                <p class="text-base font-semibold tracking-tight text-default">
+                  {{ page.workshops.registration.title }}
+                </p>
+                <p class="text-sm leading-relaxed text-dimmed">
+                  {{ page.workshops.registration.description }}
+                </p>
+              </div>
+
+              <UButton
+                :to="`mailto:${page.workshops.registration.mail}?subject=${encodeURIComponent(page.workshops.registration.subject)}`"
+                :label="page.workshops.registration.mail"
+                icon="i-lucide-mail"
+                color="primary"
+                variant="solid"
+                block
+              />
+            </div>
+          </UCard>
+        </div>
+      </Motion>
     </UPageSection>
 
     <!-- Tickets -->
