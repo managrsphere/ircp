@@ -11,8 +11,11 @@ RUN npm install -g pnpm@latest --silent
 
 COPY pnpm-lock.yaml package.json ./
 
-# install all dependencies (use frozen lockfile for reproducible builds)
-RUN pnpm install --frozen-lockfile
+# install all dependencies (try frozen lockfile, fall back to updating)
+# If the lockfile is missing platform-specific native binaries (e.g. when
+# the lockfile was generated on a different OS), allow install to proceed
+# by falling back to a normal install inside the container.
+RUN pnpm install --frozen-lockfile || pnpm install
 
 COPY . .
 
