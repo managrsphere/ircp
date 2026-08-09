@@ -7,7 +7,7 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 # ensure pnpm is available on alpine
-RUN npm install -g pnpm@latest --silent
+RUN npm install -g pnpm@10.33.4 --silent
 
 COPY pnpm-lock.yaml package.json ./
 
