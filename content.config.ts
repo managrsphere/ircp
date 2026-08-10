@@ -55,14 +55,24 @@ export const collections = {
           description: z.string().nonempty()
         }),
         speaker: z.array(z.object({
-          img: z.string(),
-          name: z.string().nonempty(),
-          role: z.string().nonempty(),
+          img: z.string().optional(),
+          name: z.string().optional(),
+          role: z.string().optional(),
           title: z.string().nonempty(),
           description: z.string().nonempty(),
           language: z.string().nonempty(),
-          country: z.string().nonempty()
-        }))
+          country: z.string().nonempty(),
+          speakers: z.array(z.object({
+            img: z.string().optional(),
+            name: z.string().nonempty(),
+            role: z.string().optional()
+          })).optional()
+        }).refine(
+          value => Boolean(value.speakers?.length || (value.img && value.name && value.role)),
+          {
+            message: 'Provide either img/name/role or a speakers array'
+          }
+        ))
       }),
       workshops: z.object({
         headline: z.string().optional(),

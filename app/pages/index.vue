@@ -81,13 +81,55 @@ type ProgramDay = {
 }
 
 type SpeakerItem = {
-  img: string
-  name: string
-  role: string
+  img?: string
+  name?: string
+  role?: string
   title: string
   description: string
   language?: string
   country?: string
+  speakers?: Array<{
+    img?: string
+    name: string
+    role?: string
+  }>
+}
+
+function speakerPeople(speaker: SpeakerItem) {
+  if (speaker.speakers?.length) {
+    return speaker.speakers
+  }
+
+  return [{
+    img: speaker.img,
+    name: speaker.name ?? '',
+    role: speaker.role
+  }]
+}
+
+function speakerHeadline(speaker: SpeakerItem) {
+  return speakerPeople(speaker).map(person => person.name).filter(Boolean).join(' & ')
+}
+
+function speakerIsGroup(speaker: SpeakerItem) {
+  return (speaker.speakers?.length ?? 0) > 1
+}
+
+function speakerRoleSummary(speaker: SpeakerItem) {
+  return speakerPeople(speaker).map(person => person.role?.trim()).filter(Boolean).join(' · ')
+}
+
+function speakerPrimaryImage(speaker: SpeakerItem) {
+  return speakerPeople(speaker).find(person => person.img)?.img ?? ''
+}
+
+function speakerInitials(name: string) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(part => part[0]?.toUpperCase())
+    .join('')
 }
 
 function speakerCountryFlag(country?: SpeakerItem['country']) {
@@ -156,10 +198,25 @@ const programTabs = computed<TabsItem[]>(() =>
 )
 
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
-const workshopHighlights = computed(() => page.value?.workshops.highlights ?? [])
+const workshopPosts = computed(() => [
+  {
+    src: '/abendprogramm1.JPG',
+    alt: 'Instagram Post Abendprogramm 1'
+  },
+  {
+    src: '/abendprogramm2.JPG',
+    alt: 'Instagram Post Abendprogramm 2'
+  },
+  {
+    src: '/abendprogramm3.JPG',
+    alt: 'Instagram Post Abendprogramm 3'
+  }
+])
 
 const activeSpeaker = ref<SpeakerItem | null>(null)
 const speakerModalOpen = ref(false)
+const activeWorkshopPost = ref<(typeof workshopPosts.value)[number] | null>(null)
+const workshopModalOpen = ref(false)
 
 function openSpeaker(speaker: SpeakerItem) {
   activeSpeaker.value = speaker
@@ -172,6 +229,33 @@ function updateSpeakerModalOpen(open: boolean) {
   if (!open) {
     activeSpeaker.value = null
   }
+}
+
+function openWorkshopPost(post: (typeof workshopPosts.value)[number]) {
+  activeWorkshopPost.value = post
+  workshopModalOpen.value = true
+}
+
+function updateWorkshopModalOpen(open: boolean) {
+  workshopModalOpen.value = open
+
+  if (!open) {
+    activeWorkshopPost.value = null
+  }
+}
+
+function speakerCardName(speaker: SpeakerItem) {
+  return speaker.name?.trim() || speakerHeadline(speaker)
+}
+
+function speakerCardRole(speaker: SpeakerItem) {
+  return speaker.role?.trim() || speakerRoleSummary(speaker)
+}
+
+function speakerCardBadge(speaker: SpeakerItem) {
+  return speakerIsGroup(speaker)
+    ? `${speakerPeople(speaker).length} Speaker:innen`
+    : (speaker.language ? speaker.language.toUpperCase() : '')
 }
 
 const ircpCards = computed(() => [
@@ -558,18 +642,70 @@ const travelCards = computed(() => [
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <button
             v-for="speaker in speakers"
-            :key="speaker.name"
+            :key="speaker.name || speakerHeadline(speaker)"
             type="button"
             class="group block h-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-default"
             @click="openSpeaker(speaker)"
           >
             <UCard class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-              <img
-                :src="speaker.img"
-                :alt="speaker.name"
-                class="aspect-4/5 w-full rounded-md object-cover"
-                loading="lazy"
-              >
+              <div class="aspect-4/5 w-full overflow-hidden rounded-md bg-neutral-200">
+                <div
+                  v-if="speakerIsGroup(speaker)"
+                  class="flex h-full flex-col gap-3 p-3"
+                >
+                  <div class="grid flex-1 grid-cols-2 gap-2">
+                    <div
+                      v-for="person in speakerPeople(speaker).slice(0, 4)"
+                      :key="person.name"
+                      class="overflow-hidden rounded-xl bg-default/70"
+                    >
+                      <img
+                        v-if="person.img"
+                        :src="person.img"
+                        :alt="person.name"
+                        class="h-full w-full object-cover"
+                        loading="lazy"
+                      >
+                      <div
+                        v-else
+                        class="flex h-full min-h-28 items-center justify-center bg-primary/10 text-sm font-semibold text-primary"
+                      >
+                        {{ speakerInitials(person.name) }}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <p class="text-sm font-semibold tracking-tight text-default line-clamp-2">
+                      {{ speakerHeadline(speaker) }}
+                    </p>
+                    <p class="text-xs font-medium uppercase tracking-[0.12em] text-primary/80">
+                      {{ speakerCardBadge(speaker) }}
+                    </p>
+                  </div>
+                </div>
+
+                <img
+                  v-else-if="speakerPrimaryImage(speaker)"
+                  :src="speakerPrimaryImage(speaker)"
+                  :alt="speakerCardName(speaker)"
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                >
+                <div
+                  v-else
+                  class="flex h-full items-center justify-center p-4 text-center"
+                >
+                  <div class="space-y-2">
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
+                      {{ speakerInitials(speakerCardName(speaker)) }}
+                    </div>
+                    <p class="text-sm font-medium text-default">
+                      {{ speakerCardName(speaker) }}
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="space-y-2 pt-4">
                 <div class="space-y-1">
                   <p class="text-base font-semibold tracking-tight text-default line-clamp-2">
@@ -580,7 +716,7 @@ const travelCards = computed(() => [
                     >
                       {{ speakerCountryFlag(speaker.country) }}
                     </span>
-                    {{ speaker.name }}
+                    {{ speakerCardName(speaker) }}
                     <span
                       v-if="speakerLanguageLabel(speaker.language)"
                       class="ml-2 text-xs font-medium uppercase tracking-[0.12em] text-primary/80"
@@ -588,8 +724,11 @@ const travelCards = computed(() => [
                       {{ speakerLanguageLabel(speaker.language) }}
                     </span>
                   </p>
-                  <p class="text-sm leading-relaxed text-dimmed line-clamp-2">
-                    {{ speaker.role }}
+                  <p
+                    v-if="!speakerIsGroup(speaker)"
+                    class="text-sm leading-relaxed text-dimmed line-clamp-2"
+                  >
+                    {{ speakerCardRole(speaker) }}
                   </p>
                 </div>
                 <p class="text-xs font-medium uppercase tracking-[0.12em] text-primary/80 transition-colors group-hover:text-primary">
@@ -610,11 +749,48 @@ const travelCards = computed(() => [
         <template #body>
           <div
             v-if="activeSpeaker"
-            class="grid gap-6 sm:grid-cols-[220px_minmax(0,1fr)]"
+            class="grid gap-6 sm:grid-cols-[minmax(0,320px)_minmax(0,1fr)]"
           >
+            <div
+              v-if="speakerIsGroup(activeSpeaker)"
+              class="space-y-3"
+            >
+              <div class="grid gap-3 sm:grid-cols-2">
+                <div
+                  v-for="person in activeSpeaker.speakers"
+                  :key="person.name"
+                  class="overflow-hidden rounded-2xl border border-default/60 bg-default/60"
+                >
+                  <img
+                    v-if="person.img"
+                    :src="person.img"
+                    :alt="person.name"
+                    class="aspect-4/5 w-full rounded-2xl object-cover"
+                    loading="lazy"
+                  >
+                  <div
+                    v-else
+                    class="aspect-4/5 flex w-full items-center justify-center bg-neutral-200"
+                  >
+                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
+                      {{ speakerInitials(person.name) }}
+                    </div>
+                  </div>
+                  <div class="space-y-1 p-4 pt-3">
+                    <p class="text-sm font-medium text-default">
+                      {{ person.name }}
+                    </p>
+                    <p class="text-sm leading-relaxed text-dimmed">
+                      {{ person.role }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <img
-              :src="activeSpeaker.img"
-              :alt="activeSpeaker.name"
+              v-else
+              :src="activeSpeaker.img || ''"
+              :alt="speakerCardName(activeSpeaker)"
               class="aspect-4/5 w-full rounded-2xl object-cover"
               loading="lazy"
             >
@@ -632,7 +808,7 @@ const travelCards = computed(() => [
                   >
                     {{ speakerCountryFlag(activeSpeaker.country) }}
                   </span>
-                  {{ activeSpeaker.name }}
+                  {{ speakerCardName(activeSpeaker) }}
                   <span
                     v-if="speakerLanguageLabel(activeSpeaker.language)"
                     class="ml-2 text-sm font-medium uppercase tracking-[0.12em] text-primary/80"
@@ -641,7 +817,7 @@ const travelCards = computed(() => [
                   </span>
                 </h3>
                 <p class="text-base leading-relaxed text-dimmed">
-                  {{ activeSpeaker.role }}
+                  {{ speakerCardRole(activeSpeaker) }}
                 </p>
               </div>
 
@@ -718,45 +894,82 @@ const travelCards = computed(() => [
         v-bind="scrollMotionLarge(0.35)"
         class="w-full"
       >
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-          <UCard
-            v-for="highlight in workshopHighlights"
-            :key="highlight.title"
-            class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+        <div class="grid gap-6 md:grid-cols-3">
+          <button
+            v-for="post in workshopPosts"
+            :key="post.src"
+            type="button"
+            class="group block text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-default"
+            @click="openWorkshopPost(post)"
           >
-            <div class="space-y-2">
-              <p class="text-base font-semibold tracking-tight text-default">
-                {{ highlight.title }}
-              </p>
-              <p class="text-sm leading-relaxed text-dimmed">
-                {{ highlight.description }}
-              </p>
-            </div>
-          </UCard>
-
-          <UCard class="h-full overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:col-span-2 xl:col-span-1">
-            <div class="flex h-full flex-col justify-between gap-4">
-              <div class="space-y-2">
-                <p class="text-base font-semibold tracking-tight text-default">
-                  {{ page.workshops.registration.title }}
-                </p>
-                <p class="text-sm leading-relaxed text-dimmed">
-                  {{ page.workshops.registration.description }}
-                </p>
+            <UCard class="overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+              <div class="relative overflow-hidden rounded-md">
+                <img
+                  :src="post.src"
+                  :alt="post.alt"
+                  class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                >
+                <div class="absolute inset-0 bg-linear-to-t from-black/35 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div class="absolute bottom-3 right-3 rounded-full bg-black/55 px-3 py-1 text-xs font-medium text-white backdrop-blur">
+                  Vergrößern
+                </div>
               </div>
-
-              <UButton
-                :to="`mailto:${page.workshops.registration.mail}?subject=${encodeURIComponent(page.workshops.registration.subject)}`"
-                :label="page.workshops.registration.mail"
-                icon="i-lucide-mail"
-                color="primary"
-                variant="solid"
-                block
-              />
-            </div>
-          </UCard>
+            </UCard>
+          </button>
         </div>
       </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotionLarge(0.45)"
+        class="w-full mt-8"
+      >
+        <UCard class="overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div class="flex h-full flex-col justify-between gap-4 p-1 sm:p-2 md:flex-row md:items-center md:p-6">
+            <div class="space-y-2">
+              <p class="text-base font-semibold tracking-tight text-default">
+                {{ page.workshops.registration.title }}
+              </p>
+              <p class="text-sm leading-relaxed text-dimmed">
+                {{ page.workshops.registration.description }}
+              </p>
+            </div>
+
+            <UButton
+              :to="`mailto:${page.workshops.registration.mail}?subject=${encodeURIComponent(page.workshops.registration.subject)}`"
+              :label="page.workshops.registration.mail"
+              icon="i-lucide-mail"
+              color="primary"
+              variant="solid"
+            />
+          </div>
+        </UCard>
+      </Motion>
+
+      <UModal
+        :open="workshopModalOpen"
+        :scrollable="true"
+        :ui="{ content: 'sm:max-w-4xl' }"
+        @update:open="updateWorkshopModalOpen"
+      >
+        <template #body>
+          <div
+            v-if="activeWorkshopPost"
+            class="space-y-4"
+          >
+            <img
+              :src="activeWorkshopPost.src"
+              :alt="activeWorkshopPost.alt"
+              class="w-full rounded-2xl object-contain"
+              loading="lazy"
+            >
+            <p class="text-sm text-dimmed">
+              {{ activeWorkshopPost.alt }}
+            </p>
+          </div>
+        </template>
+      </UModal>
     </UPageSection>
 
     <!-- Tickets -->

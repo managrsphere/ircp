@@ -87,9 +87,9 @@ useSeoMeta({
         <UPageCard
           icon="i-lucide-hotel"
           title="Hampton by Hilton"
-          description="Direkt neben dem marinaforum - Kontingent für IRCP-Teilnehmende reserviert"
+          description="Direkt neben dem marinaforum - Kontingent für IRCP-Teilnehmende reserviert (Für Rabatt hier klicken)"
           variant="subtle"
-          to="https://www.hilton.com/en/hotels/mucsrhx-hampton-regensburg/"
+          to="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MUCSRHX&arrivalDate=2026-10-04&departureDate=2026-10-07&groupCode=CHH91X&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink"
           target="_blank"
         />
         <UPageCard
