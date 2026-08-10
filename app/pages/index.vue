@@ -86,19 +86,41 @@ type SpeakerItem = {
   role: string
   title: string
   description: string
-  language?: 'de' | 'en'
+  language?: string
+  country?: string
 }
 
-function speakerFlag(language?: SpeakerItem['language']) {
-  if (language === 'de') {
-    return '🇩🇪'
+function speakerCountryFlag(country?: SpeakerItem['country']) {
+  if (!country) {
+    return ''
   }
 
-  if (language === 'en') {
-    return '🇬🇧'
-  }
+  const flags = country
+    .split('|')
+    .map(entry => entry.trim())
+    .map((entry) => {
+      const flagMap: Record<string, string> = {
+        'Austria': '🇦🇹',
+        'Germany': '🇩🇪',
+        'Switzerland': '🇨🇭',
+        'United Kingdom': '🇬🇧',
+        'England': '🇬🇧',
+        'Australia': '🇦🇺',
+        'Canada': '🇨🇦',
+        'United States': '🇺🇸',
+        'USA': '🇺🇸',
+        'Vanuatu': '🇻🇺'
+      }
 
-  return ''
+      return flagMap[entry] ?? ''
+    })
+    .filter(Boolean)
+
+  return flags.join('')
+}
+
+function speakerLanguageLabel(language?: SpeakerItem['language']) {
+  return language?.toUpperCase() ?? ''
 }
 
 const programColumns: TableColumn<ProgramRow>[] = [
@@ -552,13 +574,19 @@ const travelCards = computed(() => [
                 <div class="space-y-1">
                   <p class="text-base font-semibold tracking-tight text-default line-clamp-2">
                     <span
-                      v-if="speakerFlag(speaker.language)"
+                      v-if="speakerCountryFlag(speaker.country)"
                       class="mr-2"
                       aria-hidden="true"
                     >
-                      {{ speakerFlag(speaker.language) }}
+                      {{ speakerCountryFlag(speaker.country) }}
                     </span>
                     {{ speaker.name }}
+                    <span
+                      v-if="speakerLanguageLabel(speaker.language)"
+                      class="ml-2 text-xs font-medium uppercase tracking-[0.12em] text-primary/80"
+                    >
+                      {{ speakerLanguageLabel(speaker.language) }}
+                    </span>
                   </p>
                   <p class="text-sm leading-relaxed text-dimmed line-clamp-2">
                     {{ speaker.role }}
@@ -598,13 +626,19 @@ const travelCards = computed(() => [
                 </p>
                 <h3 class="text-2xl font-semibold tracking-tight text-default">
                   <span
-                    v-if="speakerFlag(activeSpeaker.language)"
+                    v-if="speakerCountryFlag(activeSpeaker.country)"
                     class="mr-2"
                     aria-hidden="true"
                   >
-                    {{ speakerFlag(activeSpeaker.language) }}
+                    {{ speakerCountryFlag(activeSpeaker.country) }}
                   </span>
                   {{ activeSpeaker.name }}
+                  <span
+                    v-if="speakerLanguageLabel(activeSpeaker.language)"
+                    class="ml-2 text-sm font-medium uppercase tracking-[0.12em] text-primary/80"
+                  >
+                    {{ speakerLanguageLabel(activeSpeaker.language) }}
+                  </span>
                 </h3>
                 <p class="text-base leading-relaxed text-dimmed">
                   {{ activeSpeaker.role }}

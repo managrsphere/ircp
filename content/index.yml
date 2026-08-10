@@ -137,64 +137,93 @@ callForSpeakers:
       title: Wie entwickelt sich Community Paramedicine international?
       description: Welche Unterschiede gibt es zwischen den Versorgungsmodellen in Österreich, Deutschland, der Schweiz und dem Vereinigten Königreich? Auf dem IRCP 2026 in Regensburg gibt Christoph Redelsteiner - selbst Rettungsdienstexperte und Gesundheitswissenschaftler - spannende Einblicke in neue Versorgungsmodelle zwischen Akut- und Community Care. Im Fokus stehen Ausbildung, Kompetenzen, Integration ins Gesundheitssystem, interprofessionelle Zusammenarbeit und die Zukunft des Berufsbildes.
       language: de
+      country: Austria
     - img: /andreasbauer.jpg
       name: Andreas Bauer
       role: "Projektleitung REF, Notfallsanitäter, Student B.Sc. Außerklinische Akut- und Notfallversorgung"
       title: Wie kann Community Paramedicine die Zukunft der Notfallversorgung in Deutschland mitgestalten?
       description: Wie können Rettungsdienste Patientinnen und Patienten mit niedrigprioritären Beschwerden sicher und bedarfsgerecht versorgen – ohne dass jeder Einsatz in der Notaufnahme endet? Beim IRCP 2026 berichtet Andreas Bauer, Notfallsanitäter und Projektleiter REF beim BRK Kreisverband Regensburg, über die Erfahrungen aus dem Pilotprojekt des Bayerischen Roten Kreuzes mit dem Rettungseinsatzfahrzeug (REF). Erste wissenschaftliche Auswertungen zeigen das Potenzial neuer Versorgungsmodelle im Rettungsdienst.
       language: de
+      country: Germany
     - img: /patrickristau.jgp
       name: Patrick Ristau
       role: "Prof., PhD, M.A., M.Sc., Experte für Versorgungs- und Registerforschung, rettungsdienstliche Forschung und Public Health"
       title: Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine - Erkenntisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns
       description: Wenn der Rettungsdienst zur Dauerlösung wird – wie kann Versorgung besser gelingen? Menschen, die den Rettungsdienst besonders häufig nutzen, stehen oft vor komplexen gesundheitlichen und sozialen Herausforderungen. Die klassische Notfallversorgung stößt dabei häufig an ihre Grenzen. Prof. Patrick Ristau, Ph.D., M.A., M.Sc. zeigt anhand aktueller Forschungsergebnisse aus einem ländlichen Rettungsdienstbereich in Bayern, warum neue Versorgungsansätze notwendig sind. Im Fokus steht Community Paramedicine – ein patientenzentriertes Versorgungskonzept, das frühzeitig unterstützt und gleichzeitig den Rettungsdienst nachhaltig entlasten kann.
       language: de
+      country: Germany
     - img: /christianfriess.jpg
       name: Christian Friess
       role: "M.A. Medizinpädagogik, Notfallsanitäter, Gesundheits- und Krankenpfleger für Intensivpflege und Anästhesie, Sprecher Deutsche Gesellschaft für Rettungswissenschaften e.V."
       title: Advanced Practise Paramedic - Konzeption eines erweiterten Berufsprofils zwischen Patientenversorgung, Supervision und Wissenschaft
       description: Wie kann sich das Berufsbild von Notfallsanitäterinnen und Notfallsanitätern weiterentwickeln? Christian Friess – selbst Notfallsanitäter, Gesundheits- und Krankenpfleger sowie Medizinpädagoge – stellt ein erweitertes Rollenverständnis vor, das klinische Versorgung, die fachliche Begleitung von Einsatzteams und die Mitarbeit an wissenschaftlichen Projekten miteinander verbindet. Im Mittelpunkt steht die Frage, welche Chancen akademische Qualifikationen auf Bachelor- und Masterniveau für die Professionalisierung des Rettungsdienstes eröffnen. Der Vortrag zeigt auf, wie erfahrene Einsatzkräfte ihre Expertise über die direkte Patientenversorgung hinaus einbringen und damit die Qualität im Rettungsdienst nachhaltig stärken können.
       language: de
+      country: Germany
     - img: /melissaalexander.jpg
       name: Melissa Alexander
       role: Extended Care Community Paramedic, DipParaSci, BN, GCACP, GCHMR, MACP, FACP, FAPP
       title: "From Response to Responsibility: Advancing Autonomous Paramedic Practice in Regional South Australia in response to Health Workforce Shortages"
       description: "I can sprinkle paramedic fairy dust, but I cannot perform miracles. Wie kann Community Paramedicine die Gesundheitsversorgung in ländlichen Regionen nachhaltig verbessern? Melissa Alexander – Extended Care Community Paramedic und Expertin für ländliche Gesundheitsversorgung – gibt Einblicke in die Praxis in Südaustralien, wo lange Wege und fehlendes Fachpersonal neue Versorgungskonzepte erforderlich machen. Im Mittelpunkt ihres Vortrags stehen die erweiterten Aufgaben von Extended Care Paramedics und Community Paramedics, die Patientinnen und Patienten direkt vor Ort untersuchen und behandeln. Gleichzeitig beleuchtet Melissa Alexander die emotionalen Herausforderungen dieses Berufsbildes: Trauer, kumulative Traumatisierung, professionelle Identität und die besonderen Erwartungen einer Gemeinschaft, in der Einsatzkräfte ihre Patientinnen und Patienten häufig persönlich kennen. Darüber hinaus zeigt sie auf, welche rechtlichen, finanziellen und strukturellen Hürden einer erweiterten Paramedic-Praxis noch im Weg stehen – und welches Potenzial dieses Versorgungsmodell für eine wohnortnahe, zukunftsfähige Gesundheitsversorgung bietet."
       language: en
+      country: Australia
     - img: /thomashofmann.jpg
       name: Thomas Hofmann
       role: "Prof. für Rettungswissenschaften, Studiendekan und Studiengangsleiter B.Sc. Rettungswissenschaften, HSD Hochschule Döpfer"
       title: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter"
       description: "Beim IRCP 2026 präsentiert Prof. Thomas Hofmann, Professor für Rettungswissenschaften und selbst Notfallsanitäter, erste Ergebnisse der KoNoS-Studie. Die Untersuchung gibt spannende Einblicke in die Kompetenzerwartungen an Notfallsanitäterinnen und Notfallsanitäter in Deutschland und zeigt auf, wie sich Qualifikationsanforderungen auf Ausbildung, berufliche Entwicklung und die zukünftige Gestaltung des Rettungsdienstes auswirken. Im Fokus stehen: Kompetenzerwartungen an Notfallsanitäterinnen und Notfallsanitäter, Auswirkungen auf die Aus- und Weiterbildung, Berufliche Entwicklung im Rettungsdienst, Perspektiven für die zukünftige Gestaltung des Rettungsdienstes"
       language: de
+      country: Germany
     - img: /andycollen.jpg
       name: Andy Collen
       role: "Consultant Paramedic, South East Coast Ambulance Service NHS Foundation Trust (UK), Medicines and Prescribing Project Lead College of Paramedics (UK), Visiting Senior Lecturer, University of Surrer (UK)"
       title: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making"
       description: "Beim IRCP 2026 zeigt Andy Collen, Consultant Paramedic beim South East Coast Ambulance Service NHS Foundation Trust (UK), wie Erkenntnisse aus Human Factors und moderner Sicherheitswissenschaft dazu beitragen können, komplexe Entscheidungsprozesse besser zu verstehen und die Patientensicherheit nachhaltig zu stärken. Im Fokus stehen: Human Factors in der präklinischen Entscheidungsfindung, Erkenntnisse aus der Sicherheitswissenschaft, Innovative Review-Modelle für Qualitätsmanagement und Lernen, Impulse für die Weiterentwicklung der Community Paramedicine"
       language: en
+      country: United Kingdom
     - img: /marinazoechling.jpg
       name: Marina Zöchling
       role: "Certified Emeergency Communication Nurse (ECNS), Teamleitung Qualitätsmanagement, Notruf Niederösterreich"
       title: "Von der Notrufannahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat"
       description: "Wie kann bereits in der Leitstelle die richtige Versorgung für Patientinnen und Patienten eingeleitet werden – noch bevor ein Rettungsmittel ausrückt? Marina Zöchling, Certified Emergency Communication Nurse (ECNS) und Teamleiterin Qualitätsmanagement bei Notruf Niederösterreich, wird zeigen, wie pflegegeleitete telefonische Triage dazu beiträgt, Anrufende sicher einzuschätzen und gezielt in die passende Versorgung zu vermitteln. Im Fokus stehen: Pflegegeleitete telefonische Triage, Strukturierte Ersteinschätzung medizinischer Anliegen, Gezielte Vermittlung in passende Versorgungsangebote, Erfahrungen aus dem österreichischen Leitstellensystem"
       language: de
+      country: Austria
     - img: /christophschullern.jpg
       name: Christoph Schullern
       role: "MBA, B.Sc., Leiter rettungsdienst, Projekt Manager AKUT Pflege Tirol"
       title: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol"
       description: "Einblicke in das Versorgungskonzept, die ersten Umsetzungsschritte und das Potenzial dieses interprofessionellen Ansatzes"
       language: de
+      country: Austria
     - img: /matthewearl.jpg
       name: Matthew Earl
       role: "Clinical Manager, ProMedical Vanuatu, Registered Paramedic and Humanitarian Health Practitioner, Former Prehospital Emergency Care Specialist, International Committee of the Red Cross (ICRC)"
       title: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EmS in Vanuatu"
       description: "Beim IRCP 2026 gibt Matthew Earl, Clinical Manager bei ProMedical Vanuatu sowie Registered Paramedic und Humanitarian Health Practitioner, Einblicke in die rasante Entwicklung der präklinischen Notfallversorgung in Vanuatu. Sein Vortrag zeigt, wie innovative Ansätze und internationale Zusammenarbeit dazu beitragen, die Notfallversorgung auch in abgelegenen Inselregionen zu stärken. Im Fokus stehen: Die Entwicklung des Rettungsdienstes in Vanuatu, Herausforderungen der Versorgung in abgelegenen Inselgemeinschaften, Qualifizierung von Fachpersonal und datenbasierte Weiterentwicklung, Strategien zur Verbesserung der Versorgungsqualität und des Zugangs zur Notfallhilfe"
       language: en
+      country: Vanuatu
     - name: Jeff Wall | Joseph Martinez
       title: "Developing an Associates in Applied Science Degree in Community Paramedicine (AAS-CP): Based on International Curriculum Frameworks"
-      description: Beim IRCP 2026 zeigen Jeff Wall und Joseph Martinez, wie internationale Kompetenzmodelle in einen modernen Studiengang für Community Paramedicine überführt werden können. Sie geben Einblicke in die Entwicklung eines praxisorientierten Curriculums, das Community Paramedics auf ihre erweiterten Aufgaben in der Primärversorgung und Gesundheitsförderung vorbereitet.
+      description: "Beim IRCP 2026 zeigen Jeff Wall und Joseph Martinez, wie internationale Kompetenzmodelle in einen modernen Studiengang für Community Paramedicine überführt werden können. Sie geben Einblicke in die Entwicklung eines praxisorientierten Curriculums, das Community Paramedics auf ihre erweiterten Aufgaben in der Primärversorgung und Gesundheitsförderung vorbereitet."
       language: en
+      country: Canada | United States
+    - name: James Brogan
+      role: "LL.M., SFHEA, Principal Lecturer in Paramedicine, Robert Gordon University, Geographical Education Lead (Scotland), Royal College of Paramedics"
+      title: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education"
+      description: "Wie können wir Forschung bereits während der Ausbildung von Paramedics erlebbar machen – und welchen Einfluss hat das später auf die Versorgung von Patient:innen? Beim IRCP 2026 in Regensburg gibt James Brogan, LL.M., SFHEA, MCPara von der Robert Gordon University in Schottland Einblicke in die Integration forschungsorientierter Praxisphasen in die Ausbildung von Paramedics vor der Berufszulassung. In seinem Vortrag geht es unter anderem darum, wie Studierende durch die aktive Mitarbeit an Forschungsprojekten wissenschaftliche Erkenntnisse nicht nur kennenlernen, sondern selbst mitgestalten – und welche Fähigkeiten sie dabei für ihre spätere berufliche Praxis entwickeln."
+      language: en
+      country: United Kingdom
+    - name: Duncan McConnell
+      role: "PhD(c), MBA, MCOM, MPARAPRAC, Senior Lecturer in Paramedicine, Griffith University, President Australian Institute of Paramedicine Practitioners"
+      title: "Do I need to go to hospital? Exploring how community paramedicine is transforming patient care pathways, integrated healthcare models, and patient-centred decisions beyond hospital transports."
+      description: "Muss ich wirklich ins Krankenhaus? Eine Frage, die im Rettungsdienst täglich eine zentrale Rolle spielt – und auf die Community Paramedicine neue Antworten geben kann. Beim IRCP 2026 in Regensburg gibt Duncan McConnell von der Griffith University in Australien Einblicke darin, wie sich die Rolle von Paramedics international weiterentwickelt und wie Versorgung stärker an den tatsächlichen Bedürfnissen der Patient:innen ausgerichtet werden kann. Unter dem Titel „Do I need to go to hospital?“ zeigt er, wie Community Paramedicine klassische Versorgungswege erweitert: weg vom alleinigen Prinzip „Eintreffen – untersuchen – behandeln – transportieren“, hin zu differenzierten Entscheidungen und alternativen Versorgungspfaden."
+      language: en
+      country: Australia
+    - name: Mathieu Grenier
+      role: "Deputy Chief, Chief and Commander, Country of Renfrew paramedic service"
+      title: "Mesa Initiative in renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
+      description: "Was passiert, wenn Community Paramedicine nicht nur als Ergänzung des Rettungsdienstes gedacht wird, sondern als Bindeglied zwischen Gesundheitsversorgung, sozialen Diensten und der Bevölkerung? Beim IRCP 2026 in Regensburg gibt Mathieu Grenier, MAL, ACP aus Kanada Einblicke in die Mesa Initiative in Renfrew County, Ontario – ein Modell für integrierte Versorgung im ländlichen Raum. Community Paramedics arbeiten dort eng mit kommunalen Diensten sowie Angeboten der Wohnungs-, Sucht-, Sozial- und Gesundheitsversorgung zusammen. Die Teams begegnen Menschen dort, wo Unterstützung tatsächlich benötigt wird: in Notunterkünften, Übergangswohnungen und direkt in ihrem persönlichen Lebensumfeld."
+      language: en
+      country: Canada
   alert:
     icon: i-lucide-info
     title: Hinweis
@@ -202,19 +231,10 @@ callForSpeakers:
 workshops:
   headline: Praxisnah. Begrenzte Plätze.
   title: Workshops
-  description: Voraussichtlich vier bis sechs Workshops ergänzen das Kongressprogramm. Die Bilder folgen im Stil der Speaker:innen, sobald sie fertig sind.
+  description: Drei Workshops sowie zwei Abendveranstaltungen ergänzen das Kongressprogramm.
   alert:
     icon: i-lucide-info
     title: Coming soon
-  highlights:
-    - title: Im Ticketpreis enthalten
-      description: Alle Workshops sind ohne Aufpreis im Kongressticket enthalten.
-    - title: Begrenzte Plätze
-      description: Die Plätze sind limitiert, damit die Workshops in kleiner Gruppe stattfinden können.
-    - title: Anmeldung per E-Mail
-      description: Die Anmeldung erfolgt über unsere IRCP-E-Mail-Adresse.
-    - title: Bilder und Details folgen
-      description: Die visuelle Gestaltung wird an die Speaker-Bilder angelehnt und sukzessive ergänzt.
   registration:
     title: Workshop-Anmeldung
     description: Schreiben Sie uns einfach per E-Mail, wenn Sie einen Platz anfragen möchten.
@@ -226,7 +246,7 @@ tickets:
   description: One Profession. Worldwide Community.
   callout:
     title: Was ist alles im Ticket enthalten?
-    description: Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Die Workshop-Plätze sind begrenzt; die Anmeldung erfolgt per E-Mail an ircp.210@brk.de.
+    description: Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Die Workshop-Plätze sind begrenzt; die Anmeldung erfolgt per E-Mail an ircp.210@brk.de. Zahlung auch per Überweisung möglich.
   pricing:
     - title: Teilnehmer:in
       description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.

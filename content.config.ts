@@ -60,7 +60,8 @@ export const collections = {
           role: z.string().nonempty(),
           title: z.string().nonempty(),
           description: z.string().nonempty(),
-          language: z.string().nonempty()
+          language: z.string().nonempty(),
+          country: z.string().nonempty()
         }))
       }),
       workshops: z.object({
