@@ -634,11 +634,7 @@ const travelCards = computed(() => [
         />
       </Motion>
 
-      <Motion
-        as="div"
-        v-bind="scrollMotionLarge(0.3)"
-        class="w-full"
-      >
+      <div class="w-full">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <button
             v-for="speaker in speakers"
@@ -738,7 +734,7 @@ const travelCards = computed(() => [
             </UCard>
           </button>
         </div>
-      </Motion>
+      </div>
 
       <UModal
         :open="speakerModalOpen"
