@@ -113,23 +113,23 @@ program:
               - time: 13:20 – 13:50 Uhr
                 event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg) - Prof. Dr. Dr. med. habil. Mathias Burgmaier, Chief Michael Nolan, Prof. Dr. med. habil. Kathrin Burgmaier"
               - time : 13:50 – 14:20 Uhr
-                event: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education - James Brogan"
+                event: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education - James Brogan, LL.M."
               - time: 14:20 – 15:00 Uhr
                 event: Panel II
               - time: 15:00 – 15:20 Uhr
                 event: Pause / Besuch der Industrieausstellung
               - time: 15:20 – 15:50 Uhr
-                event: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter - Thomas Hofmann"
+                event: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter - Prof. Thomas Hofmann"
               - time: 15:50 – 16:20 Uhr
-                event: "Developing an Associates in Applied Science Degree in Community Paramedicine (AAS-CP): Based on International Curriculum Frameworks - Jeff Wall, Joseph Martinez"
+                event: "Developing an Associates in Applied Science Degree in Community Paramedicine (AAS-CP): Based on International Curriculum Frameworks - Dip. HSc Jeff Wall, Joseph Martinez"
               - time: 16:20 – 17:00 Uhr
-                event: Panel III
-          - title: Abendprogramm - Get Together
+                event: Panel III - Prof. Dr. Dr. med. habil. Mathias Burgmaier
+          - title: Abendprogramm - Get Together (Im Ticketpreis enthalten - extra Anmeldung erforderlich)
             rows:
               - time: 17:00 – 19:00 Uhr
-                event: Medizingeschichte in Regensburg - Stadtführung
+                event: Medizingeschichte in Regensburg - Stadtführung (Dr. Florian Kraus)
               - time: 17:00 – 19:00 Uhr
-                event: Wasserrettung mit der Wasserwacht OG Regensburg
+                event: Wasserrettung mit der Wasserwacht OG Regensburg (Andreas Bauer)
       - label: Mittwoch, 07. Oktober 2026
         slot: mittwoch
         tracks:
