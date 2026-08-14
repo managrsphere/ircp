@@ -47,93 +47,127 @@ program:
         tracks:
           - title: Bildungsforum (Extra Anmeldung erforderlich)
             rows:
-              - time: 08:30 – 09:00 Uhr
+              - time: 07:30 – 11:00 Uhr
                 event: Registrierung
               - time: 09:00 – 09:10 Uhr
-                event: Eröffnungszeremonie
-              - time: 09:10 – 10:50 Uhr
-                event: 2 Vorträge à 30 Minuten
+                event: Eröffnung
+              - time: 09:10 – 09:30 Uhr
+                event: "Vortrag: Christoph Redelsteiner"
+              - time: 09:30 – 09:50 Uhr
+                event: "Vortrag: Julia Williams"
+              - time: 09:50 – 10:10 Uhr
+                event: "Vortrag: Dr Peter O'Meara"
+              - time: 10:10 – 10:30 Uhr
+                event: "Vortrag: Dr Alan Batt"
+              - time: 10:30 – 10:50 Uhr
+                event: "Vortrag: Tulja Rasku"
               - time: 10:50 – 11:30 Uhr
                 event: Paneldiskussion
-              - time: 11:30 – 11:45 Uhr
-                event: Pause
           - title: Hauptprogramm
             rows:
-              - time: 12:30 – 13:00 Uhr
-                event: Anmeldung
               - time: 13:00 – 13:45 Uhr
-                event: Eröffnungszeremonie
-              - time: 13:45 – 14:45 Uhr
-                event: 2 Vorträge à 30 Minuten
+                event: Kongresseröffnung
+              - time: 13:45 – 14:15 Uhr
+                event: "Community Paramedicine zwischen Akutversorgung und gemeindenaher Gesundheitsversorgung: Ein internationaler Vergleich neuer rettungsdienstlicher Versorgungsmodelle - Prof. Dr. Christoph Redelsteiner"
+              - time: 14:15 – 14:45 Uhr
+                event: "Sprecherinfos folgen"
               - time: 14:45 – 15:05 Uhr
-                event: Pause
+                event: Pause/Besuch der Industrieausstellung
               - time: 15:05 – 15:35 Uhr
-                event: Vortrag
+                event: "Wie kann Community Paramedicine die Zukunft der Notfallversorgung in Deutschland mitgestalten? - Andreas Bauer"
               - time: 15:35 – 16:15 Uhr
-                event: Paneldiskussion
+                event: Panel I
               - time: 16:15 – 17:00 Uhr
-                event: Keynote
+                event: Keynote I
+          # - title: Abendprogramm - Get Together
+          #   rows:
+          #     - time: 17:30 – 18:00 Uhr
+          #       event: Grußwort des Bayerischen Innenministers Joachim Herrmann
+          #     - time: 18:00 – 20:00 Uhr
+          #       event: Get Together mit Musik (Boazn Briada - Stimmungsband) und Essen (im Ticketpreis enthalten)
       - label: Dienstag, 06. Oktober 2026
         slot: dienstag
         tracks:
           - title: Allgemeine Sitzung
             rows:
               - time: 08:00 – 08:15 Uhr
-                event: Eröffnungsworte
-              - time: 08:15 – 09:45 Uhr
-                event: 3 Vorträge à 30 Minuten
+                event: Kongresseröffnung Tag 2
+              - time: 08:15 – 08:45 Uhr
+                event: "Von der Notaufnahme zur Versurgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat - Marina Zöchling"
+              - time: 08:45 – 09:15 Uhr
+                event: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol - Christoph Schullern"
+              - time: 09:15 – 09:45 Uhr
+                event: Sprecherinfos folgen
               - time: 09:45 – 10:05 Uhr
-                event: Pause
-              - time: 10:05 – 11:35 Uhr
-                event: 3 Vorträge à 30 Minuten
-              - time: 11:35 – 12:15 Uhr
-                event: Paneldiskussion
-              - time: 12:15 – 13:15 Uhr
-                event: Mittagspause
-              - time: 13:15 – 14:45 Uhr
-                event: 3 Vorträge à 30 Minuten
-              - time: 14:45 – 15:05 Uhr
-                event: Pause
-              - time: 15:05 – 15:35 Uhr
-                event: Vortrag
-              - time: 15:35 – 16:15 Uhr
-                event: Paneldiskussion
-              - time: 16:15 – 17:00 Uhr
-                event: Keynote
+                event: Frühstückspause / Besuch der Industrieausstellung
+              - time: 10:05 – 10:35 Uhr
+                event: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making - Andy Collen"
+              - time: 10:35 – 11:05 Uhr
+                event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns - Patrick Ristau"
+              - time: 11:05 – 11:50 Uhr
+                event: Keynote II
+              - time: 11:50 – 12:50 Uhr
+                event: Mittagspause / Besuch der Industrieausstellung
+              - time: 12:50 – 13:20 Uhr
+                event: Sprecherinfos folgen
+              - time: 13:20 – 13:50 Uhr
+                event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg) - Mathias Burgmaier, Michael Nolan, Kathrin Burgmaier"
+              - time : 13:50 – 14:20 Uhr
+                event: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education - James Brogan"
+              - time: 14:20 – 15:00 Uhr
+                event: Panel II
+              - time: 15:00 – 15:20 Uhr
+                event: Pause / Besuch der Industrieausstellung
+              - time: 15:20 – 15:50 Uhr
+                event: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter - Thomas Hofmann"
+              - time: 15:50 – 16:20 Uhr
+                event: "Developing an Associates in Applied Science Degree in Community Paramedicine (AAS-CP): Based on International Curriculum Frameworks - Jeff Wall, Joseph Martinez"
+              - time: 16:20 – 17:00 Uhr
+                event: Panel III
+          - title: Abendprogramm - Get Together
+            rows:
+              - time: 17:00 – 19:00 Uhr
+                event: Medizingeschichte in Regensburg - Stadtführung
+              - time: 17:00 – 19:00 Uhr
+                event: Wasserrettung mit der Wasserwacht OG Regensburg
       - label: Mittwoch, 07. Oktober 2026
         slot: mittwoch
         tracks:
           - title: Allgemeine Sitzung
             rows:
               - time: 08:00 – 08:15 Uhr
-                event: Eröffnungsworte
-              - time: 08:15 – 09:45 Uhr
-                event: 3 Vorträge à 30 Minuten
+                event: Kongresseröffnung Tag 3
+              - time: 08:15 – 08:45 Uhr
+                event: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen - Florian Zahorka, Flavia Bütler, Michael Müller"
+              - time: 08:45 – 09:15 Uhr
+                event: "Advanced Practise Paramedic - Konzeption eines erweiterten Berufsprofils zwischen Patientenversorgung, Supervision und Wissenschaft - Christian Frieß"
+              - time: 09:15 – 09:45 Uhr
+                event: "From Response to Responsibility: Advancing Autonomous Paramedic Practice in Regional South Australia in response to Health Workforce Shortages - Melissa Alexander"
               - time: 09:45 – 10:05 Uhr
-                event: Pause
-              - time: 10:05 – 11:35 Uhr
-                event: 3 Vorträge à 30 Minuten
-              - time: 11:35 – 12:15 Uhr
-                event: Paneldiskussion
-              - time: 12:15 – 13:15 Uhr
-                event: Mittagspause
-              - time: 13:15 – 14:45 Uhr
-                event: 3 Vorträge à 30 Minuten
-              - time: 14:45 – 15:05 Uhr
-                event: Pause
-              - time: 15:05 – 15:35 Uhr
-                event: Vortrag
-              - time: 15:35 – 16:15 Uhr
-                event: Paneldiskussion
-              - time: 16:15 – 17:00 Uhr
-                event: Keynote
+                event: Frühstückspause / Besuch der Industrieausstellung
+              - time: 10:05 – 11:50 Uhr
+                event: Sprecherinfos folgen
+              - time: 11:50 – 12:50 Uhr
+                event: Mittagspause / Besuch der Industrieausstellung
+              - time: 12:50 – 13:20 Uhr
+                event: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EmS in Vanuatu - Matthew Earl"
+              - time: 13:20 – 13:50 Uhr
+                event: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings - Michael R. Wilcox, Joseph Martinez"
+              - time: 13:50 – 14:20 Uhr
+                event: "Development and Application of a Mobile Integrated Healthcare Model: A Feasability Study in a Mid-Sized City in the Seoul Metropolitan Area, South Korea - Sungwoon Moon, Sukyo Lee, Jonghak Park"
+              - time: 14:20 – 15:00 Uhr
+                event: Panel IV
+              - time: 15:00 – 15:20 Uhr
+                event: Pause / Besuch der Industrieausstellung
+              - time: 15:20 – 16:20 Uhr
+                event: Sprecherinfos folgen
 callForSpeakers:
   headline: Vorstellung
   title: "Unsere Speaker:innen"
   speaker:
     - img: /redelsteinerc.jpg
-      name: Prof. Dr. Christoph Redelsteiner
-      role: FH-Prof. DSA Mag. (FH) Dr. PhDr., MSc. | Medizinischen Privatuniversität Burgenland in Gründung - Bereich Forschung & Lehre Rettungswesen, Notfall- und Katastrophenmedizin | Notfallsanitäter-NKI, Sozialarbeiter, Gesundheitswissenschaftler
+      name: Christoph Redelsteiner
+      role: FH-Prof. DSA Mag. (FH) Dr. PhDr., MSc., Medizinischen Privatuniversität Burgenland in Gründung - Bereich Forschung & Lehre Rettungswesen, Notfall- und Katastrophenmedizin, Notfallsanitäter-NKI, Sozialarbeiter, Gesundheitswissenschaftler
       title: Wie entwickelt sich Community Paramedicine international?
       description: Welche Unterschiede gibt es zwischen den Versorgungsmodellen in Österreich, Deutschland, der Schweiz und dem Vereinigten Königreich? Auf dem IRCP 2026 in Regensburg gibt Christoph Redelsteiner - selbst Rettungsdienstexperte und Gesundheitswissenschaftler - spannende Einblicke in neue Versorgungsmodelle zwischen Akut- und Community Care. Im Fokus stehen Ausbildung, Kompetenzen, Integration ins Gesundheitssystem, interprofessionelle Zusammenarbeit und die Zukunft des Berufsbildes.
       language: de
@@ -225,6 +259,43 @@ callForSpeakers:
     #   description: "Was passiert, wenn Community Paramedicine nicht nur als Ergänzung des Rettungsdienstes gedacht wird, sondern als Bindeglied zwischen Gesundheitsversorgung, sozialen Diensten und der Bevölkerung? Beim IRCP 2026 in Regensburg gibt Mathieu Grenier, MAL, ACP aus Kanada Einblicke in die Mesa Initiative in Renfrew County, Ontario – ein Modell für integrierte Versorgung im ländlichen Raum. Community Paramedics arbeiten dort eng mit kommunalen Diensten sowie Angeboten der Wohnungs-, Sucht-, Sozial- und Gesundheitsversorgung zusammen. Die Teams begegnen Menschen dort, wo Unterstützung tatsächlich benötigt wird: in Notunterkünften, Übergangswohnungen und direkt in ihrem persönlichen Lebensumfeld."
     #   language: en
     #   country: Canada
+    - speakers:
+        - name: Florian Zahorka
+          role: B.A., M.A., Notfallsanitäter NKI (AT), Transportsanitäter (CH), WiMa Vorstandsmitglied Bundesverband Rettungsdienst Österreich
+          img: /florianzahorka.jpg
+        - name: Flavia Bütler
+          role: Projektleitung PFS, Abteilungsleitung Bildung, Sanität bei Schutz & Rettung Zürich, Expertin für rettungsdienstliche Aus- und Weiterbildung
+          img: /flaviabuetler.jpg
+        - name: Michael Müller
+          role: Dipl. Rettungssanitäter HF, Dipl. Experte Anästhesiepflege NDS HF, Mitglied AHLS Swiss Faculty, Leiter Fort- und Weiterbildung Rettung St. Gallen
+          img: /michaelmueller.jpg
+      title: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen"
+      description: "Wie gelingt es, neue präklinische Versorgungsmodelle nicht nur zu entwickeln, sondern langfristig in bestehende Strukturen zu integrieren? Beim IRCP 2026 in Regensburg geben Florian Zahorka, Flavia Bütler und Michael Müller praxisnahe Einblicke in die Einführung und Weiterentwicklung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz. Im Mittelpunkt stehen die Erfahrungen aus Zürich und St. Gallen: von den ersten Projektphasen über Herausforderungen und notwendige Kompetenzentwicklung bis hin zur daten- und bedarfsorientierten Weiterentwicklung der Programme. Besonders spannend: In St. Gallen werden Forschung und praktische Implementierung eng miteinander verbunden, um das Modell kontinuierlich weiterzuentwickeln und Erkenntnisse für zukünftige Community-Paramedicine-Strukturen zu gewinnen."
+      language: de
+      country: Switzerland
+    - speakers:
+        - name: Michael Wilcox
+          role: Medical Director, Owner WGH Group LLC, Family Physician and Community Paramedicine Expert
+          img: /michaelwilcox.jpg
+        - name: Joseph Martinez
+          role: ACP, NRP, EMS Faculty, Hennepin Technical College, Community Paramedic and experienced EMS Educator, Specialist in CP and Critical Care Transport
+          img: /josephmartinez.jpg
+      title: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings"
+      description: "Wie kann Community Paramedicine die medizinische Versorgung auch in Justizvollzugseinrichtungen verbessern? Beim IRCP 2026 in Regensburg zeigen Michael Wilcox und Joseph Martinez, welches Potenzial Community Paramedics in diesem besonderen Versorgungsumfeld haben. Menschen in Justizvollzugseinrichtungen haben häufig komplexe medizinische Bedürfnisse – von chronischen Erkrankungen und psychischen Gesundheitsproblemen bis hin zu umfangreichen Medikamentenregimen. Gleichzeitig kann der zeitnahe Zugang zur notwendigen Versorgung eine Herausforderung darstellen. Im Vortrag geht es darum, wie Community Paramedics bestehende medizinische Teams unterstützen, frühzeitige Assessments ermöglichen, die Medikamentenadhärenz fördern und die Versorgungskontinuität stärken können. Gleichzeitig wird beleuchtet, wie dadurch vermeidbare Notfalltransporte reduziert werden könnten."
+    - speakers:
+        - name: Sungwoon Moon
+          role: M.D., PhD, Professor of Emergency Medicine, Korea University Ansan Hospital, Expert in EMS, prehospital and resuscitation
+          img: /sungwoonmoon.jpg
+        - name: Sukyo Lee
+          role: Doctor of Medicine
+          img: /sukyolee.jpg
+        - name: Jonghak Park
+          role: Doctor of Medicine
+          img: /jonghakpark.jpg
+      title: "Development and Application of a Mobile Integrated Healthcare Model: A Feasability Study in a Mid-Sized City in the Seoul Metropolitan Area, South Korea"
+      description: "Wie können Rettungsdienst und ambulante Versorgung besser miteinander verbunden werden, um insbesondere ältere Menschen bedarfsgerecht zu versorgen? Beim IRCP 2026 in Regensburg präsentieren Sungwoo Moon, Sukyo Lee und Jonghak Park die Entwicklung und erstmalige praktische Erprobung eines Mobile Integrated Healthcare (MIH) Modells in einer mittelgroßen Stadt der Metropolregion Seoul. Im Rahmen einer Pilotstudie wurden speziell geschulte Rettungsdienstmitarbeitende als First Responder eingesetzt, unterstützt durch telemedizinische ärztliche Beratung und eine enge Zusammenarbeit mit lokalen Gesundheitsdiensten. Ziel: medizinische Probleme frühzeitig erkennen, die passende Versorgung direkt organisieren und vermeidbare Transporte in die Notaufnahme reduzieren. Die ersten Erfahrungen zeigen die praktische Umsetzbarkeit des Modells und geben wichtige Impulse für die zukünftige Entwicklung von Mobile Integrated Healthcare und Community Paramedicine in Südkorea."
+      language: en
+      country: South Korea
   alert:
     icon: i-lucide-info
     title: Hinweis
@@ -233,9 +304,6 @@ workshops:
   headline: Praxisnah. Begrenzte Plätze.
   title: Workshops
   description: Drei Workshops sowie zwei Abendveranstaltungen ergänzen das Kongressprogramm.
-  alert:
-    icon: i-lucide-info
-    title: Workshops werden bald veröffentlicht
   registration:
     title: Workshop-Anmeldung
     description: Schreiben Sie uns einfach per E-Mail, wenn Sie einen Platz anfragen möchten.

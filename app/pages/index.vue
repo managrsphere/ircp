@@ -200,16 +200,28 @@ const programTabs = computed<TabsItem[]>(() =>
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
 const workshopPosts = computed(() => [
   {
+    src: '/workshop1.JPG',
+    alt: 'Workshop'
+  },
+  {
+    src: '/workshop2.JPG',
+    alt: 'Workshop 1'
+  },
+  {
+    src: '/workshop3.JPG',
+    alt: 'Workshop 2'
+  },
+  {
     src: '/abendprogramm1.JPG',
-    alt: 'Instagram Post Abendprogramm 1'
+    alt: 'Abendprogramm'
   },
   {
     src: '/abendprogramm2.JPG',
-    alt: 'Instagram Post Abendprogramm 2'
+    alt: 'Abendprogramm 1'
   },
   {
     src: '/abendprogramm3.JPG',
-    alt: 'Instagram Post Abendprogramm 3'
+    alt: 'Abendprogramm 2'
   }
 ])
 
@@ -869,21 +881,6 @@ const travelCards = computed(() => [
           {{ page.workshops.description }}
         </Motion>
       </template>
-
-      <Motion
-        as="div"
-        v-bind="scrollMotion(0.25)"
-        class="w-full"
-      >
-        <UAlert
-          :icon="page.workshops.alert.icon"
-          :title="page.workshops.alert.title"
-          :description="page.workshops.alert.description"
-          color="info"
-          variant="subtle"
-          class="mx-auto max-w-4xl"
-        />
-      </Motion>
 
       <Motion
         as="div"

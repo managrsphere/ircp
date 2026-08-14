@@ -78,11 +78,6 @@ export const collections = {
         headline: z.string().optional(),
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        alert: z.object({
-          icon: z.string(),
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }),
         highlights: z.array(z.object({
           title: z.string().nonempty(),
           description: z.string().nonempty()
