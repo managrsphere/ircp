@@ -45,20 +45,20 @@ program:
       - label: Montag, 05. Oktober 2026
         slot: montag
         tracks:
-          - title: Bildungsforum (Extra Anmeldung erforderlich)
+          - title: Bildungsforum (Im Ticketpreis enthalten - extra Anmeldung erforderlich)
             rows:
               - time: 07:30 – 11:00 Uhr
                 event: Registrierung
               - time: 09:00 – 09:10 Uhr
-                event: Eröffnung
+                event: Eröffnung durch Prof. Dr. Dr. med. habil. Mathias Burgmaier
               - time: 09:10 – 09:30 Uhr
-                event: "Vortrag: Christoph Redelsteiner"
+                event: "Vortrag: Prof. Dr. Christoph Redelsteiner"
               - time: 09:30 – 09:50 Uhr
                 event: "Vortrag: Julia Williams"
               - time: 09:50 – 10:10 Uhr
-                event: "Vortrag: Dr Peter O'Meara"
+                event: "Vortrag: Dr. Peter O'Meara"
               - time: 10:10 – 10:30 Uhr
-                event: "Vortrag: Dr Alan Batt"
+                event: "Vortrag: Dr. Alan Batt"
               - time: 10:30 – 10:50 Uhr
                 event: "Vortrag: Tulja Rasku"
               - time: 10:50 – 11:30 Uhr
@@ -95,7 +95,7 @@ program:
               - time: 08:15 – 08:45 Uhr
                 event: "Von der Notaufnahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat - Marina Zöchling"
               - time: 08:45 – 09:15 Uhr
-                event: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol - Christoph Schullern"
+                event: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol - Christoph Schullern, MBA, B.Sc."
               - time: 09:15 – 09:45 Uhr
                 event: Sprecherinfos folgen
               - time: 09:45 – 10:05 Uhr
@@ -103,15 +103,15 @@ program:
               - time: 10:05 – 10:35 Uhr
                 event: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making - Andy Collen"
               - time: 10:35 – 11:05 Uhr
-                event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntnisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns - Patrick Ristau"
+                event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntnisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns - Prof. Patrick Ristau"
               - time: 11:05 – 11:50 Uhr
                 event: Keynote II
               - time: 11:50 – 12:50 Uhr
                 event: Mittagspause / Besuch der Industrieausstellung
               - time: 12:50 – 13:20 Uhr
-                event: Sprecherinfos folgen
+                event: PhD, M.A., B.Sc. Matthew S Leyenaar
               - time: 13:20 – 13:50 Uhr
-                event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg) - Mathias Burgmaier, Michael Nolan, Kathrin Burgmaier"
+                event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg) - Prof. Dr. Dr. med. habil. Mathias Burgmaier, Chief Michael Nolan, Prof. Dr. med. habil. Kathrin Burgmaier"
               - time : 13:50 – 14:20 Uhr
                 event: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education - James Brogan"
               - time: 14:20 – 15:00 Uhr
@@ -237,7 +237,7 @@ callForSpeakers:
       country: Austria
     - img: /christophschullern.jpg
       name: Christoph Schullern
-      role: "MBA, B.Sc., Leiter rettungsdienst, Projekt Manager AKUT Pflege Tirol"
+      role: "MBA, B.Sc., Leiter Rettungsdienst, Projekt Manager AKUT Pflege Tirol"
       title: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol"
       description: "Einblicke in das Versorgungskonzept, die ersten Umsetzungsschritte und das Potenzial dieses interprofessionellen Ansatzes"
       language: de
