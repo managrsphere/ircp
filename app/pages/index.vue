@@ -200,27 +200,27 @@ const programTabs = computed<TabsItem[]>(() =>
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
 const workshopPosts = computed(() => [
   {
-    src: '/workshop1.JPG',
+    src: '/workshop1.jpg',
     alt: 'Workshop'
   },
   {
-    src: '/workshop2.JPG',
+    src: '/workshop2.jpg',
     alt: 'Workshop 1'
   },
   {
-    src: '/workshop3.JPG',
+    src: '/workshop3.jpg',
     alt: 'Workshop 2'
   },
   {
-    src: '/abendprogramm1.JPG',
+    src: '/abendprogramm1.jpg',
     alt: 'Abendprogramm'
   },
   {
-    src: '/abendprogramm2.JPG',
+    src: '/abendprogramm2.jpg',
     alt: 'Abendprogramm 1'
   },
   {
-    src: '/abendprogramm3.JPG',
+    src: '/abendprogramm3.jpg',
     alt: 'Abendprogramm 2'
   }
 ])
