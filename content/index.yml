@@ -34,11 +34,11 @@ hero:
       to: '#workshops'
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.
-  title: Vorläufiges Programm
+  title: Programm
   description: Ein zweisprachiger Zeitplan mit Bildungsforum, Hauptprogramm und fachlichen Diskussionen an drei Kongresstagen.
   alert:
     icon: i-lucide-alert-triangle
-    title: Vorläufiges Programm
+    title: Programm
     description: Der Ablauf zeigt den aktuellen Planungsstand und kann sich bis zur Veröffentlichung des finalen Programms noch verändern.
   schedule:
     days:
@@ -93,7 +93,7 @@ program:
               - time: 08:00 – 08:15 Uhr
                 event: Kongresseröffnung Tag 2
               - time: 08:15 – 08:45 Uhr
-                event: "Von der Notaufnahme zur Versurgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat - Marina Zöchling"
+                event: "Von der Notaufnahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat - Marina Zöchling"
               - time: 08:45 – 09:15 Uhr
                 event: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol - Christoph Schullern"
               - time: 09:15 – 09:45 Uhr
@@ -103,7 +103,7 @@ program:
               - time: 10:05 – 10:35 Uhr
                 event: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making - Andy Collen"
               - time: 10:35 – 11:05 Uhr
-                event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns - Patrick Ristau"
+                event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntnisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns - Patrick Ristau"
               - time: 11:05 – 11:50 Uhr
                 event: Keynote II
               - time: 11:50 – 12:50 Uhr
@@ -140,7 +140,7 @@ program:
               - time: 08:15 – 08:45 Uhr
                 event: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen - Florian Zahorka, Flavia Bütler, Michael Müller"
               - time: 08:45 – 09:15 Uhr
-                event: "Advanced Practise Paramedic - Konzeption eines erweiterten Berufsprofils zwischen Patientenversorgung, Supervision und Wissenschaft - Christian Frieß"
+                event: "Advanced Practice Paramedic - Konzeption eines erweiterten Berufsprofils zwischen Patientenversorgung, Supervision und Wissenschaft - Christian Frieß"
               - time: 09:15 – 09:45 Uhr
                 event: "From Response to Responsibility: Advancing Autonomous Paramedic Practice in Regional South Australia in response to Health Workforce Shortages - Melissa Alexander"
               - time: 09:45 – 10:05 Uhr
@@ -150,7 +150,7 @@ program:
               - time: 11:50 – 12:50 Uhr
                 event: Mittagspause / Besuch der Industrieausstellung
               - time: 12:50 – 13:20 Uhr
-                event: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EmS in Vanuatu - Matthew Earl"
+                event: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EMS in Vanuatu - Matthew Earl"
               - time: 13:20 – 13:50 Uhr
                 event: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings - Michael R. Wilcox, Joseph Martinez"
               - time: 13:50 – 14:20 Uhr
@@ -172,6 +172,20 @@ callForSpeakers:
       description: Welche Unterschiede gibt es zwischen den Versorgungsmodellen in Österreich, Deutschland, der Schweiz und dem Vereinigten Königreich? Auf dem IRCP 2026 in Regensburg gibt Christoph Redelsteiner - selbst Rettungsdienstexperte und Gesundheitswissenschaftler - spannende Einblicke in neue Versorgungsmodelle zwischen Akut- und Community Care. Im Fokus stehen Ausbildung, Kompetenzen, Integration ins Gesundheitssystem, interprofessionelle Zusammenarbeit und die Zukunft des Berufsbildes.
       language: de
       country: Austria
+    - speakers:
+        - name: Mathias Burgmaier
+          role: "Prof. Dr. Dr. med habil., MD PhD, Studiengangsleitung Außerklinische Akut- und Notfallversorgung (THD)"
+          img: /mathiasburgmaier.jpg
+        - name: Michael Nolan
+          role: "Dip. Ed, CCP (F)M.A., Paramedic Chief, Director Emergency Services at County of Renfrew"
+          img: /michaelnolan.jpg
+        - name: Kathrin Burgmaier
+          role: "Prof. Dr. med. habil., Leitung Registerstudie PA-Reg, Technische Hochschule Deggendorf"
+          img: /kathrinburgmaier.jpg
+      title: "Implementation of an International Longitudinal Community Paramedicine Registry for Professional Development and Health System Innovation – the Community Paramedicine Registry (CP-Reg)"
+      description: "Community Paramedicine entwickelt sich weltweit – doch Strukturen, Aufgabenbereiche und Kompetenzen unterscheiden sich zum Teil erheblich. Wie können wir diese unterschiedlichen Modelle international vergleichen und voneinander lernen? Beim IRCP 2026 stellen Mathias Burgmaier, Michael Nolan und Kathrin Burgmaier mit dem Community Paramedicine Registry (CP-Reg) ein neues internationales Registerprojekt vor. Ziel ist der Aufbau einer standardisierten, multizentrischen und langfristigen Datengrundlage für Community Paramedicine über Länder- und Gesundheitssystemgrenzen hinweg. Das Register soll unter anderem ermöglichen: Rollen, Kompetenzen und Tätigkeitsfelder von Community Paramedics international zu erfassen, berufliche Entwicklung, Arbeitszufriedenheit und Gesundheit am Arbeitsplatz zu untersuchen, unterschiedliche Modelle und Strukturen miteinander zu vergleichen, Best Practices zu identifizieren und internationales Benchmarking zu ermöglichen, die Zusammenarbeit und Forschung zwischen verschiedenen Ländern zu stärken. Dabei geht es nicht nur um Daten: CP-Reg soll dazu beitragen, Community Paramedicine als Profession weiterzuentwickeln, internationale Standards zu fördern und die wissenschaftliche Grundlage für zukünftige Versorgungsmodelle zu schaffen. Mit Deutschland und Kanada treffen dabei unterschiedliche Erfahrungen und Perspektiven aufeinander – genau das, wofür der International Roundtable on Community Paramedicine steht."
+      language: en
+      country: Germany | Canada | Germany
     - img: /andreasbauer.jpg
       name: Andreas Bauer
       role: "Projektleitung REF, Notfallsanitäter, Student B.Sc. Außerklinische Akut- und Notfallversorgung"
@@ -216,7 +230,7 @@ callForSpeakers:
       country: United Kingdom
     - img: /marinazoechling.jpg
       name: Marina Zöchling
-      role: "Certified Emeergency Communication Nurse (ECNS), Teamleitung Qualitätsmanagement, Notruf Niederösterreich"
+      role: "Certified Emergency Communication Nurse (ECNS), Teamleitung Qualitätsmanagement, Notruf Niederösterreich"
       title: "Von der Notrufannahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat"
       description: "Wie kann bereits in der Leitstelle die richtige Versorgung für Patientinnen und Patienten eingeleitet werden – noch bevor ein Rettungsmittel ausrückt? Marina Zöchling, Certified Emergency Communication Nurse (ECNS) und Teamleiterin Qualitätsmanagement bei Notruf Niederösterreich, wird zeigen, wie pflegegeleitete telefonische Triage dazu beiträgt, Anrufende sicher einzuschätzen und gezielt in die passende Versorgung zu vermitteln. Im Fokus stehen: Pflegegeleitete telefonische Triage, Strukturierte Ersteinschätzung medizinischer Anliegen, Gezielte Vermittlung in passende Versorgungsangebote, Erfahrungen aus dem österreichischen Leitstellensystem"
       language: de
@@ -231,7 +245,7 @@ callForSpeakers:
     - img: /matthewearl.jpg
       name: Matthew Earl
       role: "Clinical Manager, ProMedical Vanuatu, Registered Paramedic and Humanitarian Health Practitioner, Former Prehospital Emergency Care Specialist, International Committee of the Red Cross (ICRC)"
-      title: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EmS in Vanuatu"
+      title: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EMS in Vanuatu"
       description: "Beim IRCP 2026 gibt Matthew Earl, Clinical Manager bei ProMedical Vanuatu sowie Registered Paramedic und Humanitarian Health Practitioner, Einblicke in die rasante Entwicklung der präklinischen Notfallversorgung in Vanuatu. Sein Vortrag zeigt, wie innovative Ansätze und internationale Zusammenarbeit dazu beitragen, die Notfallversorgung auch in abgelegenen Inselregionen zu stärken. Im Fokus stehen: Die Entwicklung des Rettungsdienstes in Vanuatu, Herausforderungen der Versorgung in abgelegenen Inselgemeinschaften, Qualifizierung von Fachpersonal und datenbasierte Weiterentwicklung, Strategien zur Verbesserung der Versorgungsqualität und des Zugangs zur Notfallhilfe"
       language: en
       country: Vanuatu
@@ -296,6 +310,13 @@ callForSpeakers:
       description: "Wie können Rettungsdienst und ambulante Versorgung besser miteinander verbunden werden, um insbesondere ältere Menschen bedarfsgerecht zu versorgen? Beim IRCP 2026 in Regensburg präsentieren Sungwoo Moon, Sukyo Lee und Jonghak Park die Entwicklung und erstmalige praktische Erprobung eines Mobile Integrated Healthcare (MIH) Modells in einer mittelgroßen Stadt der Metropolregion Seoul. Im Rahmen einer Pilotstudie wurden speziell geschulte Rettungsdienstmitarbeitende als First Responder eingesetzt, unterstützt durch telemedizinische ärztliche Beratung und eine enge Zusammenarbeit mit lokalen Gesundheitsdiensten. Ziel: medizinische Probleme frühzeitig erkennen, die passende Versorgung direkt organisieren und vermeidbare Transporte in die Notaufnahme reduzieren. Die ersten Erfahrungen zeigen die praktische Umsetzbarkeit des Modells und geben wichtige Impulse für die zukünftige Entwicklung von Mobile Integrated Healthcare und Community Paramedicine in Südkorea."
       language: en
       country: South Korea
+    - img: /matthewleyenaar.jpg
+      name: Matthew S Leyenaar
+      role: PhD, B.Sc., M.A., Health System Impact Scientist, University of Prince Edward Island, Paramedic and Health Services Researcher in Community Paramedicine
+      title: Informing Care Planning with the Interrail Community Paramedicine Contact Assessment
+      description: "Wie können Community Paramedics bereits beim ersten Kontakt systematisch erkennen, welche Versorgung ein Mensch tatsächlich benötigt – und daraus die richtige weitere Betreuung ableiten? Beim IRCP 2026 stellt Dr. Matthew Leyenaar, PhD, B.Sc., M.A., Health System Impact Scientist an der University of Prince Edward Island in Kanada, das interRAI Community Paramedicine Contact Assessment vor. Das standardisierte Assessment wurde entwickelt, um Community Paramedics bei einer strukturierten Einschätzung des individuellen Versorgungsbedarfs und der weiteren Versorgungsplanung zu unterstützen. In seinem Vortrag zeigt Matthew Leyenaar, wie ein standardisiertes Vorgehen dabei helfen kann, Versorgungslücken bereits beim Erstkontakt zu erkennen, relevante Informationen für die weitere Versorgungsplanung zu erfassen, sichere und bedarfsgerechte Entscheidungen zu unterstützen, Erkenntnisse für Qualitätsverbesserung und Programmevaluation zu gewinnen, Ressourcen gezielter einzusetzen und Community-Paramedicine-Programme weiterzuentwickeln. Damit geht der Vortrag über die einzelne Patient:innenversorgung hinaus: Wie können strukturierte Assessments dazu beitragen, Community Paramedicine messbar, vergleichbar und nachhaltig in Versorgungssysteme zu integrieren?"
+      language: en
+      country: Canada
   alert:
     icon: i-lucide-info
     title: Hinweis

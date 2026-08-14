@@ -181,7 +181,7 @@ const programColumns: TableColumn<ProgramRow>[] = [
     header: 'Programmpunkt',
     meta: {
       class: {
-        td: 'font-medium text-default'
+        td: 'min-w-0 whitespace-normal break-words hyphens-auto font-medium text-default'
       }
     }
   }
@@ -584,7 +584,7 @@ const travelCards = computed(() => [
                       :data="track.rows"
                       :columns="programColumns"
                       :ui="{
-                        base: 'min-w-full',
+                        base: 'w-full table-fixed',
                         thead: 'bg-transparent',
                         th: 'bg-transparent',
                         td: 'align-top'
