@@ -78,6 +78,8 @@ export default defineNuxtConfig({
           description: {
             de: 'Google Analytics zur Auswertung anonymisierter Besucherzahlen.'
           },
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-CYMSSCYN03',
+          targetCookieIds: ['_ga', '_gid'],
           isPreselected: false
         },
         {
