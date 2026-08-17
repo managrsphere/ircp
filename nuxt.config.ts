@@ -73,6 +73,14 @@ export default defineNuxtConfig({
 
       optional: [
         {
+          id: 'analytics',
+          name: 'Analytics',
+          description: {
+            de: 'Google Analytics zur Auswertung anonymisierter Besucherzahlen.'
+          },
+          isPreselected: false
+        },
+        {
           id: 'external_media',
           name: 'Externe Medien (Instagram)',
           description: {
