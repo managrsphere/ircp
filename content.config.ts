@@ -30,7 +30,7 @@ export const collections = {
         items: z.array(z.object({
           img: z.string().nonempty(),
           name: z.string().nonempty(),
-          tier: createEnum(['main', 'gold', 'silver', 'bronze', 'exhibitor']).optional(),
+          tier: createEnum(['main', 'sponsor', 'exhibitor']).optional(),
           to: z.string().nonempty().optional(),
           target: createEnum(['_blank', '_self']).optional()
         }))
@@ -52,6 +52,7 @@ export const collections = {
               title: z.string().nonempty(),
               rows: z.array(z.object({
                 time: z.string().nonempty(),
+                type: createEnum(['break', 'session']).optional(),
                 event: z.string().nonempty().optional(),
                 speakers: z.array(z.object({
                   name: z.string().nonempty()

@@ -44,7 +44,7 @@ sponsors:
     #   target: _blank
     - img: /healthcaresoftware.png
       name: HealthCare Software
-      tier: bronze
+      tier: sponsor
       to: https://healthcaresoftware.com.au/
       target: _blank
     - img: /corpuls.jpg
@@ -100,13 +100,18 @@ program:
               - time: 13:00 – 13:45 Uhr
                 event: Kongresseröffnung
               - time: 13:45 – 14:15 Uhr
-                event: "Community Paramedicine zwischen Akutversorgung und gemeindenaher Gesundheitsversorgung: Ein internationaler Vergleich neuer rettungsdienstlicher Versorgungsmodelle - Prof. Dr. Christoph Redelsteiner"
+                event: "Community Paramedicine zwischen Akutversorgung und gemeindenaher Gesundheitsversorgung: Ein internationaler Vergleich neuer rettungsdienstlicher Versorgungsmodelle"
+                speakers:
+                  - name: Prof. Dr. Christoph Redelsteiner
               - time: 14:15 – 14:45 Uhr
                 event: "Sprecherinfos folgen"
               - time: 14:45 – 15:05 Uhr
+                type: break
                 event: Pause/Besuch der Industrieausstellung
               - time: 15:05 – 15:35 Uhr
-                event: "Wie kann Community Paramedicine die Zukunft der Notfallversorgung in Deutschland mitgestalten? - Andreas Bauer"
+                event: "Wie kann Community Paramedicine die Zukunft der Notfallversorgung in Deutschland mitgestalten?"
+                speakers:
+                  - name: Andreas Bauer
               - time: 15:35 – 16:15 Uhr
                 event: Panel I
               - time: 16:15 – 17:00 Uhr
@@ -135,6 +140,7 @@ program:
               - time: 09:15 – 09:45 Uhr
                 event: Sprecherinfos folgen
               - time: 09:45 – 10:05 Uhr
+                type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
               - time: 10:05 – 10:35 Uhr
                 event: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making"
@@ -147,6 +153,7 @@ program:
               - time: 11:05 – 11:50 Uhr
                 event: Keynote II
               - time: 11:50 – 12:50 Uhr
+                type: break
                 event: Mittagspause / Besuch der Industrieausstellung
               - time: 12:50 – 13:20 Uhr
                 event: "Informing Care Planning with the Interrail Community Paramedicine Contact Assessment"
@@ -165,6 +172,7 @@ program:
               - time: 14:20 – 15:00 Uhr
                 event: Panel II
               - time: 15:00 – 15:20 Uhr
+                type: break
                 event: Pause / Besuch der Industrieausstellung
               - time: 15:20 – 15:50 Uhr
                 event: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter"
@@ -207,10 +215,12 @@ program:
                 speakers:
                   - name: Melissa Alexander
               - time: 09:45 – 10:05 Uhr
+                type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
               - time: 10:05 – 11:50 Uhr
                 event: Sprecherinfos folgen
               - time: 11:50 – 12:50 Uhr
+                type: break
                 event: Mittagspause / Besuch der Industrieausstellung
               - time: 12:50 – 13:20 Uhr
                 event: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EMS in Vanuatu"
@@ -230,6 +240,7 @@ program:
               - time: 14:20 – 15:00 Uhr
                 event: Panel IV
               - time: 15:00 – 15:20 Uhr
+                type: break
                 event: Pause / Besuch der Industrieausstellung
               - time: 15:20 – 16:20 Uhr
                 event: Sprecherinfos folgen

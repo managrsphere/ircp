@@ -67,6 +67,7 @@ function scrollMotionLarge(delay: number = 0) {
 type ProgramRow = {
   time: string
   event?: string
+  type?: string
   speakers?: Array<{
     name: string
   }>
@@ -74,6 +75,10 @@ type ProgramRow = {
 
 function programSpeakerNames(row: ProgramRow) {
   return row.speakers?.map(speaker => speaker.name?.trim()).filter(Boolean).join(', ') ?? ''
+}
+
+function isBreakRow(row: ProgramRow) {
+  return row.type === 'break'
 }
 
 type ProgramTrack = {
@@ -204,7 +209,7 @@ const programTabs = computed<TabsItem[]>(() =>
   }))
 )
 
-type SponsorTier = 'main' | 'gold' | 'silver' | 'bronze' | 'exhibitor'
+type SponsorTier = 'main' | 'sponsor' | 'exhibitor'
 
 type SponsorItem = {
   img: string
@@ -214,12 +219,10 @@ type SponsorItem = {
   target?: '_blank' | '_self'
 }
 
-const sponsorTierOrder: SponsorTier[] = ['main', 'gold', 'silver', 'bronze', 'exhibitor']
+const sponsorTierOrder: SponsorTier[] = ['main', 'sponsor', 'exhibitor']
 const sponsorTierLabels: Record<SponsorTier, string> = {
   main: 'Main Sponsor',
-  gold: 'Gold Sponsor',
-  silver: 'Silver Sponsor',
-  bronze: 'Bronze Sponsor',
+  sponsor: 'Sponsor',
   exhibitor: 'Aussteller'
 }
 
@@ -241,12 +244,10 @@ function sponsorTierClasses(tier: SponsorTier) {
   switch (tier) {
     case 'main':
       return `${common} border-primary/30 bg-primary/5 shadow-sm`
-    case 'gold':
-      return `${common} border-amber-300/50 bg-amber-50/70`
-    case 'silver':
+    case 'sponsor':
+      return `${common} border-sky-300/50 bg-sky-50/70`
+    case 'exhibitor':
       return `${common} border-slate-300/80 bg-slate-50/80`
-    case 'bronze':
-      return `${common} border-orange-200 bg-orange-50/70`
     default:
       return `${common} border-default/60 bg-default/80`
   }
@@ -533,8 +534,7 @@ const travelCards = computed(() => [
           <div
             :class="[
               'grid gap-4',
-              group.tier === 'main' ? 'md:grid-cols-1' : 'md:grid-cols-2',
-              group.tier === 'silver' || group.tier === 'bronze' || group.tier === 'exhibitor' ? 'lg:grid-cols-3' : ''
+              group.tier === 'main' ? 'md:grid-cols-1' : 'md:grid-cols-3'
             ]"
           >
             <div
@@ -745,6 +745,11 @@ const travelCards = computed(() => [
                     <UTable
                       :data="track.rows"
                       :columns="programColumns"
+                      :meta="{
+                        class: {
+                          tr: row => isBreakRow(row.original) ? 'bg-neutral-200' : ''
+                        }
+                      }"
                       :ui="{
                         base: 'w-full table-fixed',
                         thead: 'bg-transparent',
