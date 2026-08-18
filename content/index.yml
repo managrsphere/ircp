@@ -42,15 +42,15 @@ sponsors:
     #   tier: main
     #   to: https://www.meddv.de/
     #   target: _blank
-    - img: /healthcaresoftware.png
-      name: HealthCare Software
-      tier: sponsor
-      to: https://healthcaresoftware.com.au/
-      target: _blank
     - img: /corpuls.jpg
       name: Corpuls
       tier: exhibitor
       to: https://corpuls.de
+      target: _blank
+    - img: /healthcaresoftware.png
+      name: HealthCare Software
+      tier: sponsor
+      to: https://healthcaresoftware.com.au/
       target: _blank
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.

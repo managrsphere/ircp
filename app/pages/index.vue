@@ -209,7 +209,7 @@ const programTabs = computed<TabsItem[]>(() =>
   }))
 )
 
-type SponsorTier = 'main' | 'sponsor' | 'exhibitor'
+type SponsorTier = 'mainsponsor' | 'sponsor'
 
 type SponsorItem = {
   img: string
@@ -219,11 +219,10 @@ type SponsorItem = {
   target?: '_blank' | '_self'
 }
 
-const sponsorTierOrder: SponsorTier[] = ['main', 'sponsor', 'exhibitor']
+const sponsorTierOrder: SponsorTier[] = ['mainsponsor', 'sponsor']
 const sponsorTierLabels: Record<SponsorTier, string> = {
-  main: 'Main Sponsor',
-  sponsor: 'Sponsor',
-  exhibitor: 'Aussteller'
+  mainsponsor: 'Hauptsponsor',
+  sponsor: 'Sponsoren'
 }
 
 const sponsorGroups = computed(() => {
@@ -242,12 +241,10 @@ function sponsorTierClasses(tier: SponsorTier) {
   const common = 'h-full overflow-hidden border transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg'
 
   switch (tier) {
-    case 'main':
+    case 'mainsponsor':
       return `${common} border-primary/30 bg-primary/5 shadow-sm`
     case 'sponsor':
       return `${common} border-sky-300/50 bg-sky-50/70`
-    case 'exhibitor':
-      return `${common} border-slate-300/80 bg-slate-50/80`
     default:
       return `${common} border-default/60 bg-default/80`
   }
@@ -534,7 +531,7 @@ const travelCards = computed(() => [
           <div
             :class="[
               'grid gap-4',
-              group.tier === 'main' ? 'md:grid-cols-1' : 'md:grid-cols-3'
+              group.tier === 'mainsponsor' ? 'md:grid-cols-1' : 'md:grid-cols-3'
             ]"
           >
             <div

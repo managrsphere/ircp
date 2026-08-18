@@ -30,7 +30,7 @@ export const collections = {
         items: z.array(z.object({
           img: z.string().nonempty(),
           name: z.string().nonempty(),
-          tier: createEnum(['main', 'sponsor', 'exhibitor']).optional(),
+          tier: createEnum(['mainsponsor', 'sponsor']).optional(),
           to: z.string().nonempty().optional(),
           target: createEnum(['_blank', '_self']).optional()
         }))
