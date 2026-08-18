@@ -23,6 +23,18 @@ export const collections = {
         headline: z.string().optional(),
         links: z.array(createLinkSchema())
       }),
+      sponsors: z.object({
+        headline: z.string().optional(),
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        items: z.array(z.object({
+          img: z.string().nonempty(),
+          name: z.string().nonempty(),
+          tier: createEnum(['main', 'gold', 'silver', 'bronze', 'exhibitor']).optional(),
+          to: z.string().nonempty().optional(),
+          target: createEnum(['_blank', '_self']).optional()
+        }))
+      }),
       program: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
@@ -40,7 +52,10 @@ export const collections = {
               title: z.string().nonempty(),
               rows: z.array(z.object({
                 time: z.string().nonempty(),
-                event: z.string().nonempty()
+                event: z.string().nonempty().optional(),
+                speakers: z.array(z.object({
+                  name: z.string().nonempty()
+                })).optional()
               }))
             }))
           }))

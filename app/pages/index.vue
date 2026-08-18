@@ -66,7 +66,14 @@ function scrollMotionLarge(delay: number = 0) {
 
 type ProgramRow = {
   time: string
-  event: string
+  event?: string
+  speakers?: Array<{
+    name: string
+  }>
+}
+
+function programSpeakerNames(row: ProgramRow) {
+  return row.speakers?.map(speaker => speaker.name?.trim()).filter(Boolean).join(', ') ?? ''
 }
 
 type ProgramTrack = {
@@ -196,6 +203,54 @@ const programTabs = computed<TabsItem[]>(() =>
     slot: day.slot
   }))
 )
+
+type SponsorTier = 'main' | 'gold' | 'silver' | 'bronze' | 'exhibitor'
+
+type SponsorItem = {
+  img: string
+  name: string
+  tier?: SponsorTier
+  to?: string
+  target?: '_blank' | '_self'
+}
+
+const sponsorTierOrder: SponsorTier[] = ['main', 'gold', 'silver', 'bronze', 'exhibitor']
+const sponsorTierLabels: Record<SponsorTier, string> = {
+  main: 'Main Sponsor',
+  gold: 'Gold Sponsor',
+  silver: 'Silver Sponsor',
+  bronze: 'Bronze Sponsor',
+  exhibitor: 'Aussteller'
+}
+
+const sponsorGroups = computed(() => {
+  const sponsors = (page.value?.sponsors.items ?? []) as SponsorItem[]
+
+  return sponsorTierOrder
+    .map(tier => ({
+      tier,
+      label: sponsorTierLabels[tier],
+      items: sponsors.filter(item => item.tier === tier)
+    }))
+    .filter(group => group.items.length > 0)
+})
+
+function sponsorTierClasses(tier: SponsorTier) {
+  const common = 'h-full overflow-hidden border transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg'
+
+  switch (tier) {
+    case 'main':
+      return `${common} border-primary/30 bg-primary/5 shadow-sm`
+    case 'gold':
+      return `${common} border-amber-300/50 bg-amber-50/70`
+    case 'silver':
+      return `${common} border-slate-300/80 bg-slate-50/80`
+    case 'bronze':
+      return `${common} border-orange-200 bg-orange-50/70`
+    default:
+      return `${common} border-default/60 bg-default/80`
+  }
+}
 
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
 const workshopPosts = computed(() => [
@@ -419,6 +474,113 @@ const travelCards = computed(() => [
       </Motion>
     </UPageHero>
 
+    <UPageSection
+      id="sponsors"
+      :ui="{
+        root: 'scroll-mt-(--ui-header-height) py-16 sm:py-24',
+        container: 'max-w-5xl',
+        headline: 'font-mono font-medium text-xs text-primary uppercase tracking-[0.12em] text-center',
+        title: 'max-w-2xl mx-auto',
+        description: 'max-w-xl mx-auto text-dimmed'
+      }"
+    >
+      <template #headline>
+        <Motion
+          as="span"
+          v-bind="scrollMotion()"
+          class="inline-block"
+        >
+          {{ page.sponsors.headline }}
+        </Motion>
+      </template>
+
+      <template #title>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.1)"
+          class="inline-block"
+        >
+          {{ page.sponsors.title }}
+        </Motion>
+      </template>
+
+      <template #description>
+        <Motion
+          as="span"
+          v-bind="scrollMotion(0.2)"
+          class="inline-block"
+        >
+          {{ page.sponsors.description }}
+        </Motion>
+      </template>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotionLarge(0.25)"
+        class="w-full space-y-8"
+      >
+        <div
+          v-for="group in sponsorGroups"
+          :key="group.tier"
+          class="space-y-4"
+        >
+          <div class="flex items-center justify-center">
+            <span class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary/80">
+              {{ group.label }}
+            </span>
+          </div>
+
+          <div
+            :class="[
+              'grid gap-4',
+              group.tier === 'main' ? 'md:grid-cols-1' : 'md:grid-cols-2',
+              group.tier === 'silver' || group.tier === 'bronze' || group.tier === 'exhibitor' ? 'lg:grid-cols-3' : ''
+            ]"
+          >
+            <div
+              v-for="sponsor in group.items"
+              :key="sponsor.name"
+              class="group"
+            >
+              <NuxtLink
+                v-if="sponsor.to"
+                :to="sponsor.to"
+                :target="sponsor.target || '_self'"
+                class="block h-full"
+              >
+                <UCard :class="sponsorTierClasses(group.tier)">
+                  <div class="flex min-h-28 items-center justify-center p-4 sm:p-6">
+                    <img
+                      :src="sponsor.img"
+                      :alt="sponsor.name"
+                      class="max-h-16 w-full object-contain sm:max-h-20"
+                      loading="lazy"
+                    >
+                  </div>
+                </UCard>
+              </NuxtLink>
+
+              <div
+                v-else
+                class="h-full"
+              >
+                <UCard :class="sponsorTierClasses(group.tier)">
+                  <div class="flex min-h-28 items-center justify-center p-4 sm:p-6">
+                    <img
+                      :src="sponsor.img"
+                      :alt="sponsor.name"
+                      class="max-h-16 w-full object-contain sm:max-h-20"
+                      loading="lazy"
+                    >
+                  </div>
+                </UCard>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Motion>
+    </UPageSection>
+
     <!-- IRCP -->
     <UPageSection
       id="overview"
@@ -589,7 +751,21 @@ const travelCards = computed(() => [
                         th: 'bg-transparent',
                         td: 'align-top'
                       }"
-                    />
+                    >
+                      <template #event-cell="{ row }">
+                        <div class="min-w-0 whitespace-normal hyphens-auto font-medium">
+                          <p class="text-default">
+                            {{ row.original.event }}
+                          </p>
+                          <p
+                            v-if="programSpeakerNames(row.original)"
+                            class="italic text-primary"
+                          >
+                            {{ programSpeakerNames(row.original) }}
+                          </p>
+                        </div>
+                      </template>
+                    </UTable>
                   </UCard>
                 </div>
               </div>
