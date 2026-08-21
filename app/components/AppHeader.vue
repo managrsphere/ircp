@@ -18,7 +18,7 @@ const items = computed(() => [
         to: '/history'
       },
       {
-        label: 'IRCP 2026',
+        label: 'IRCP 2026 - aktuelle Informationen',
         to: '/2026'
       }
     ]

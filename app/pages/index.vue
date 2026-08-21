@@ -344,7 +344,7 @@ const ircpCards = computed(() => [
   },
   {
     id: 'ircp2026',
-    title: 'IRCP 2026',
+    title: 'IRCP 2026 - aktuelle Informationen',
     description: 'Mit dem IRCP 2026 in Regensburg wird der Kongress erstmals in Deutschland ausgerichtet – ein bedeutender Schritt für die Weiterentwicklung innovativer Versorgungsmodelle im deutschsprachigen Raum. Vernetzen Sie sich international, lernen Sie von globalen Best-Practice-Modellen und gestalten Sie die Zukunft des Rettungsdienstes aktiv mit.',
     image: '/ircp2026.jpg',
     alt: 'IRCP 2026 in Regensburg',
