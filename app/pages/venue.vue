@@ -42,5 +42,31 @@ useSeoMeta({
         />
       </div>
     </UPageSection>
+
+    <div class="w-full flex justify-center items-center my-4">
+      <UCarousel
+        v-slot="{ item }"
+        loop
+        arrows
+        :autoplay="{ delay: 2000 }"
+        wheel-gestures
+        :prev="{ variant: 'solid' }"
+        :next="{ variant: 'solid' }"
+        :items="page.venue.carousel"
+        :ui="{
+          item: 'basis-1/3 ps-0',
+          prev: 'sm:start-8',
+          next: 'sm:end-8',
+          container: 'ms-0'
+        }"
+        class="max-w-5xl"
+      >
+        <img
+          :src="item.img"
+          :alt="item.alt"
+          class="w-full h-64 object-cover"
+        >
+      </UCarousel>
+    </div>
   </div>
 </template>

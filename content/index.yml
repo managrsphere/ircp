@@ -70,11 +70,11 @@ program:
               - time: 07:30 – 11:00 Uhr
                 event: Registrierung
               - time: 09:00 – 09:10 Uhr
-                event: Eröffnung
+                event: Eröffnung des Forums
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
               - time: 09:10 – 09:30 Uhr
-                event: Vortrag
+                event: "Community Paramedic, präklinischer Fachspezialist, Gemeindenotfallsanitäter, Acute Community Nurse: Ein internationaler Vergleich verschiedener Paramedicmodelle"
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
               - time: 09:30 – 09:50 Uhr
@@ -94,18 +94,20 @@ program:
                 speakers:
                   - name: Tulja Rasku
               - time: 10:50 – 11:30 Uhr
-                event: Paneldiskussion
+                event: "Neue Wege für den Rettungsdienst: Bildung als Schlüssel für die Versorgung der Zukunft"
+                speakers:
+                  - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
           - title: Hauptprogramm
             rows:
-              - time: 13:00 – 13:45 Uhr
+              - time: 13:00 – 13:35 Uhr
                 event: Kongresseröffnung
-              - time: 13:45 – 14:15 Uhr
+              - time: 13:35 – 14:05 Uhr
                 event: "Community Paramedicine zwischen Akutversorgung und gemeindenaher Gesundheitsversorgung: Ein internationaler Vergleich neuer rettungsdienstlicher Versorgungsmodelle"
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
-              - time: 14:15 – 14:45 Uhr
+              - time: 14:05 – 14:35 Uhr
                 event: "Sprecherinfos folgen"
-              - time: 14:45 – 15:05 Uhr
+              - time: 14:35 – 15:05 Uhr
                 type: break
                 event: Pause/Besuch der Industrieausstellung
               - time: 15:05 – 15:35 Uhr
@@ -113,86 +115,92 @@ program:
                 speakers:
                   - name: Andreas Bauer
               - time: 15:35 – 16:15 Uhr
-                event: Panel I
+                event: "Sprecherinfos folgen"
               - time: 16:15 – 17:00 Uhr
                 event: Keynote I
-          # - title: Abendprogramm - Get Together
-          #   rows:
-          #     - time: 17:30 – 18:00 Uhr
-          #       event: Grußwort des Bayerischen Innenministers Joachim Herrmann
-          #     - time: 18:00 – 20:00 Uhr
-          #       event: Get Together mit Musik (Boazn Briada - Stimmungsband) und Essen (im Ticketpreis enthalten)
+                speakers:
+                  - name: Sprecherinfos folgen
+          - title: Abendprogramm - Get Together
+            rows:
+              - time: 17:30 – 18:00 Uhr
+                event: Infos folgen
+              - time: 18:00 – 19:30 Uhr
+                event: Get Together
       - label: Dienstag, 06. Oktober 2026
         slot: dienstag
         tracks:
           - title: Allgemeine Sitzung
             rows:
-              - time: 08:00 – 08:15 Uhr
+              - time: 08:00 – 08:10 Uhr
                 event: Kongresseröffnung Tag 2
-              - time: 08:15 – 08:45 Uhr
+              - time: 08:10 – 08:25 Uhr
+                event: "Sprecherinfos folgen"
+              - time: 08:25 – 08:55 Uhr
                 event: "Von der Notaufnahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat"
                 speakers:
                   - name: Marina Zöchling
-              - time: 08:45 – 09:15 Uhr
+              - time: 08:55 – 09:25 Uhr
                 event: "AKUT Pflege Tirol - Pilotprojekt im Rettungsdienst Tirol"
                 speakers:
                   - name: MBA, B.Sc. Christoph Schullern
-              - time: 09:15 – 09:45 Uhr
+              - time: 09:25 – 09:55 Uhr
                 event: Sprecherinfos folgen
-              - time: 09:45 – 10:05 Uhr
+              - time: 09:55 – 10:25 Uhr
                 type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
-              - time: 10:05 – 10:35 Uhr
+              - time: 10:25 – 10:55 Uhr
                 event: "Reimagining Safe Community Discharge: Applying Human Factors and Safety Science to Paramedic Decision-Making"
                 speakers:
                   - name: Andy Collen
-              - time: 10:35 – 11:05 Uhr
+              - time: 10:55 – 11:25 Uhr
                 event: "Präventive Versorgung von Frequent Usern des Rettungsdienstes als potenzielles Aufgabenfeld der Community Paramedicine in Deutschland - Erkenntnisse einer epidemiologischen Studie in einem ländlichen Rettungsdienstbereich Bayerns"
                 speakers:
                   - name: Prof. Patrick Ristau
-              - time: 11:05 – 11:50 Uhr
+              - time: 11:25 – 12:10 Uhr
                 event: Keynote II
-              - time: 11:50 – 12:50 Uhr
+                speakers:
+                  - name: Sprecherinfos folgen
+              - time: 12:10 – 13:40 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
-              - time: 12:50 – 13:20 Uhr
+              - time: 13:40 – 14:10 Uhr
                 event: "Informing Care Planning with the Interrail Community Paramedicine Contact Assessment"
                 speakers:
                   - name: PhD, M.A., B.Sc. Matthew S Leyenaar
-              - time: 13:20 – 13:50 Uhr
+              - time: 14:10 – 14:40 Uhr
                 event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg)"
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
                   - name: Chief Michael Nolan
                   - name: Prof. Dr. med. habil. Kathrin Burgmaier
-              - time : 13:50 – 14:20 Uhr
-                event: "Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education"
-                speakers:
-                  - name: LL.M. James Brogan
-              - time: 14:20 – 15:00 Uhr
-                event: Panel II
-              - time: 15:00 – 15:20 Uhr
+              - time : 14:40 – 15:20 Uhr
+                event: "Sprecherinfos folgen"
+              - time: 15:20 – 15:50 Uhr
                 type: break
                 event: Pause / Besuch der Industrieausstellung
-              - time: 15:20 – 15:50 Uhr
+              - time: 15:50 – 16:20 Uhr
                 event: "Work in Progress - Kompetenzerwartungen an deutsche Notfallsanitäterinnen und Notfallsanitäter"
                 speakers:
                   - name: Prof. Thomas Hofmann
-              - time: 15:50 – 16:20 Uhr
+              - time: 16:20 – 16:50 Uhr
                 event: "Developing an Associates in Applied Science Degree in Community Paramedicine (AAS-CP): Based on International Curriculum Frameworks"
                 speakers:
                   - name: Dip. HSc Jeff Wall
                   - name: Joseph Martinez
-              - time: 16:20 – 17:00 Uhr
-                event: Panel III
+              - time: 16:50 – 17:00 Uhr
+                event: Building an Academic Pathway for Community Paramedicine in Germany - Experiences from Developing a Bachelor's Degree Program
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
           - title: Abendprogramm - Get Together (Im Ticketpreis enthalten - extra Anmeldung erforderlich)
             rows:
               - time: 17:00 – 19:00 Uhr
-                event: Medizingeschichte in Regensburg - Stadtführung (Dr. Florian Kraus)
+                event: Medizingeschichte in Regensburg - Stadtführung
+                speakers:
+                  - name: Dr. Florian Kraus
               - time: 17:00 – 19:00 Uhr
-                event: Wasserrettung mit der Wasserwacht OG Regensburg (Andreas Bauer)
+                event: Wasserrettung mit der Wasserwacht OG Regensburg
+                speakers:
+                  - name: Andreas Bauer
       - label: Mittwoch, 07. Oktober 2026
         slot: mittwoch
         tracks:
@@ -214,36 +222,56 @@ program:
                 event: "From Response to Responsibility: Advancing Autonomous Paramedic Practice in Regional South Australia in response to Health Workforce Shortages"
                 speakers:
                   - name: Melissa Alexander
-              - time: 09:45 – 10:05 Uhr
+              - time: 09:45 – 10:15 Uhr
                 type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
-              - time: 10:05 – 11:50 Uhr
+              - time: 10:15 – 10:45 Uhr
                 event: Sprecherinfos folgen
-              - time: 11:50 – 12:50 Uhr
+              - time: 10:45 – 11:15 Uhr
+                event: Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education
+                speakers:
+                  - name: LL.M. James Brogan
+              - time: 11:15 – 12:00 Uhr
+                event: Keynote II
+                speakers:
+                  - name: Sprecherinfos folgen
+              - time: 12:00 - 13:30 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
-              - time: 12:50 – 13:20 Uhr
+              - time: 13:30 – 14:00 Uhr
                 event: "Prehospital Care in the Pacific: Recent Trends from a Rapidly Developing EMS in Vanuatu"
                 speakers:
                   - name: Matthew Earl
-              - time: 13:20 – 13:50 Uhr
+              - time: 14:00 - 14:30 Uhr
+                event: Vortragsinformationen folgen
+                speakers:
+                  - name: Dr. Michael Städtler
+              - time: 14:30 – 15:00 Uhr
                 event: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings"
                 speakers:
                   - name: Dr. Michael R. Wilcox
                   - name: Joseph Martinez
-              - time: 13:50 – 14:20 Uhr
+              - time: 15:00 – 15:30 Uhr
                 event: "Development and Application of a Mobile Integrated Healthcare Model: A Feasability Study in a Mid-Sized City in the Seoul Metropolitan Area, South Korea"
                 speakers:
                   - name: PhD, M.D. Sungwoon Moon
                   - name: M.D. Sukyo Lee
                   - name: M.D. Jonghak Park
-              - time: 14:20 – 15:00 Uhr
-                event: Panel IV
-              - time: 15:00 – 15:20 Uhr
+              - time: 15:30 – 16:00 Uhr
                 type: break
-                event: Pause / Besuch der Industrieausstellung
-              - time: 15:20 – 16:20 Uhr
+                event: Nachmittagspause / Besuch der Industrieausstellung
+              - time: 16:00 – 16:30 Uhr
+                event: Rettungsdienst als Teil der präklinischen Versorgung
+                speakers:
+                  - René Purgay
+              - time: 16:30 – 17:00 Uhr
                 event: Sprecherinfos folgen
+              - time: 17:00 – 17:30 Uhr
+                event: "Mesa Initative in Renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
+                speakers:
+                  - name: Mathieu Grenier
+                  - name: Michael Nolan
+                  - name: Stephanie Rose
 callForSpeakers:
   headline: Vorstellung
   title: "Unsere Speaker:innen"
@@ -350,12 +378,20 @@ callForSpeakers:
       description: "Wie können wir Forschung bereits während der Ausbildung von Paramedics erlebbar machen – und welchen Einfluss hat das später auf die Versorgung von Patient:innen? Beim IRCP 2026 in Regensburg gibt James Brogan, LL.M., SFHEA, MCPara von der Robert Gordon University in Schottland Einblicke in die Integration forschungsorientierter Praxisphasen in die Ausbildung von Paramedics vor der Berufszulassung. In seinem Vortrag geht es unter anderem darum, wie Studierende durch die aktive Mitarbeit an Forschungsprojekten wissenschaftliche Erkenntnisse nicht nur kennenlernen, sondern selbst mitgestalten – und welche Fähigkeiten sie dabei für ihre spätere berufliche Praxis entwickeln."
       language: en
       country: United Kingdom
-    # - name: Mathieu Grenier
-    #   role: "Deputy Chief, Chief and Commander, Country of Renfrew paramedic service"
-    #   title: "Mesa Initiative in renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
-    #   description: "Was passiert, wenn Community Paramedicine nicht nur als Ergänzung des Rettungsdienstes gedacht wird, sondern als Bindeglied zwischen Gesundheitsversorgung, sozialen Diensten und der Bevölkerung? Beim IRCP 2026 in Regensburg gibt Mathieu Grenier, MAL, ACP aus Kanada Einblicke in die Mesa Initiative in Renfrew County, Ontario – ein Modell für integrierte Versorgung im ländlichen Raum. Community Paramedics arbeiten dort eng mit kommunalen Diensten sowie Angeboten der Wohnungs-, Sucht-, Sozial- und Gesundheitsversorgung zusammen. Die Teams begegnen Menschen dort, wo Unterstützung tatsächlich benötigt wird: in Notunterkünften, Übergangswohnungen und direkt in ihrem persönlichen Lebensumfeld."
-    #   language: en
-    #   country: Canada
+    - speakers:
+        - name: Mathieu Grenier
+          role: "Deputy Chief, Chief and Commander, County of Renfrew paramedic service, MAL, ACP"
+          img: /mathieugrenier.jpg
+        - name: Michael Nolan
+          role: "Dip. Ed, CCP (F)M.A., Paramedic Chief, Director Emergency Services at County of Renfrew"
+          img: /michaelnolan.jpg
+        - name: Stephanie Rose
+          role: "Advanced Care Paramedic"
+          img: /stephanierose.jpg
+      title: "Mesa Initiative in renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
+      description: "Was kann Community Paramedicine bewirken, wenn medizinische Versorgung nicht isoliert betrachtet wird, sondern Gesundheit, Wohnen und soziale Unterstützung miteinander verbindet? Beim IRCP 2026 in Regensburg stellen Mathieu Grenier, Michael Nolan und Stephanie Rose die Mesa Initiative aus Renfrew County, Ontario vor – ein Community-Paramedicine-Modell, das sich gezielt an vulnerable Menschen mit komplexen gesundheitlichen und sozialen Bedürfnissen richtet. Die Community Paramedics arbeiten dabei eng mit Gesundheits-, Wohnungs-, Sucht- und Sozialdiensten zusammen und bringen die Versorgung direkt zu den Menschen. Im Mittelpunkt steht mehr als die reine medizinische Behandlung: Kontinuität, Vertrauen und koordinierte Versorgung werden zu zentralen Bestandteilen eines Systems, das Menschen mit komplexen Bedürfnissen tatsächlich erreicht. Die Erfahrungen aus Kanada zeigen eindrucksvoll, welches Potenzial Community Paramedicine gerade im ländlichen Raum entfalten kann, wenn unterschiedliche Hilfesysteme konsequent miteinander vernetzt werden."
+      language: en
+      country: Canada
     - speakers:
         - name: Florian Zahorka
           role: B.A., M.A., Notfallsanitäter NKI (AT), Transportsanitäter (CH), WiMa Vorstandsmitglied Bundesverband Rettungsdienst Österreich
@@ -379,6 +415,8 @@ callForSpeakers:
           img: /josephmartinez.jpg
       title: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings"
       description: "Wie kann Community Paramedicine die medizinische Versorgung auch in Justizvollzugseinrichtungen verbessern? Beim IRCP 2026 in Regensburg zeigen Michael Wilcox und Joseph Martinez, welches Potenzial Community Paramedics in diesem besonderen Versorgungsumfeld haben. Menschen in Justizvollzugseinrichtungen haben häufig komplexe medizinische Bedürfnisse – von chronischen Erkrankungen und psychischen Gesundheitsproblemen bis hin zu umfangreichen Medikamentenregimen. Gleichzeitig kann der zeitnahe Zugang zur notwendigen Versorgung eine Herausforderung darstellen. Im Vortrag geht es darum, wie Community Paramedics bestehende medizinische Teams unterstützen, frühzeitige Assessments ermöglichen, die Medikamentenadhärenz fördern und die Versorgungskontinuität stärken können. Gleichzeitig wird beleuchtet, wie dadurch vermeidbare Notfalltransporte reduziert werden könnten."
+      language: en
+      country: United States
     - speakers:
         - name: Sungwoon Moon
           role: M.D., PhD, Professor of Emergency Medicine, Korea University Ansan Hospital, Expert in EMS, prehospital and resuscitation
@@ -400,6 +438,14 @@ callForSpeakers:
       description: "Wie können Community Paramedics bereits beim ersten Kontakt systematisch erkennen, welche Versorgung ein Mensch tatsächlich benötigt – und daraus die richtige weitere Betreuung ableiten? Beim IRCP 2026 stellt Dr. Matthew Leyenaar, PhD, B.Sc., M.A., Health System Impact Scientist an der University of Prince Edward Island in Kanada, das interRAI Community Paramedicine Contact Assessment vor. Das standardisierte Assessment wurde entwickelt, um Community Paramedics bei einer strukturierten Einschätzung des individuellen Versorgungsbedarfs und der weiteren Versorgungsplanung zu unterstützen. In seinem Vortrag zeigt Matthew Leyenaar, wie ein standardisiertes Vorgehen dabei helfen kann, Versorgungslücken bereits beim Erstkontakt zu erkennen, relevante Informationen für die weitere Versorgungsplanung zu erfassen, sichere und bedarfsgerechte Entscheidungen zu unterstützen, Erkenntnisse für Qualitätsverbesserung und Programmevaluation zu gewinnen, Ressourcen gezielter einzusetzen und Community-Paramedicine-Programme weiterzuentwickeln. Damit geht der Vortrag über die einzelne Patient:innenversorgung hinaus: Wie können strukturierte Assessments dazu beitragen, Community Paramedicine messbar, vergleichbar und nachhaltig in Versorgungssysteme zu integrieren?"
       language: en
       country: Canada
+    - speakers:
+        - name: René Purgay
+          role: "Fachpfleger Rettungs- und Notfallmedizin, Freiberuflicher Hochschullehrer im Gesundheitswesen (FH) und Projektmanager"
+          img: /renepurgay.jpeg
+      title: "Rettungsdienst als Teil der präklinischen Versorgung"
+      description: "Wie ist das niederländische Versorgungssystem aufgebaut? Welche Rolle spielt der Rettungsdienst darin? Und wie arbeiten Rettungsdienst, Primärversorgung und verschiedene Berufsgruppen zusammen? René Purgay gibt beim IRCP 2026 spannende Einblicke in das niederländische Modell der präklinischen Versorgung – von Rapid Respondern über die Versorgungsleitstelle bis hin zur Verzahnung von Akut- und Primärversorgung. Dabei geht es um die Frage, wie unterschiedliche Akteure und Berufsgruppen zusammenwirken können, um Patientinnen und Patienten bedarfsgerecht zu versorgen – und welche Impulse daraus für die Weiterentwicklung der Community Paramedicine entstehen können."
+      language: de
+      country: Netherlands
   alert:
     icon: i-lucide-info
     title: Hinweis

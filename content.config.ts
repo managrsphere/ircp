@@ -217,6 +217,20 @@ export const collections = {
         headline: z.string().optional(),
         title: z.string().nonempty(),
         description: z.string().nonempty()
+      }),
+      recent: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        videos: z.array(z.object({
+          title: z.string().nonempty(),
+          src: z.string().nonempty()
+        })).optional(),
+        carousel_title: z.string().optional(),
+        img_carousel:
+          z.array(z.object({
+            img: z.string().nonempty(),
+            alt: z.string().nonempty()
+          })).optional()
       })
     })
   }),
@@ -250,7 +264,11 @@ export const collections = {
       venue: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        address: z.string().nonempty()
+        address: z.string().nonempty(),
+        carousel: z.array(z.object({
+          img: z.string().nonempty(),
+          alt: z.string().nonempty()
+        })).optional()
       })
     })
   }),

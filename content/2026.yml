@@ -5,3 +5,41 @@ ircp2026:
   headline: Seien Sie dabei - Jetzt Tickets sichern!
   title: Erstmals in Deutschland
   description: Mit dem IRCP 2026 in Regensburg wird der Kongress erstmals in Deutschland ausgerichtet – ein bedeutender Schritt für die Weiterentwicklung innovativer Versorgungsmodelle im deutschsprachigen Raum. Vernetzen Sie sich international, lernen Sie von globalen Best-Practice-Modellen und gestalten Sie die Zukunft des Rettungsdienstes aktiv mit.
+recent:
+  title: Aktuelles
+  description: Hier finden Sie die neuesten Nachrichten und Updates zum IRCP 2026.
+  videos:
+    - title: Wie sieht der Rettungsdienst der Zukunft aus?
+      src: /videos/BRK_IRCP_Voiceover_mp4.mov
+    - title: Muss eigentlich jeder Patient mit einem Rettungswagen ins Krankenhaus?
+      src: /videos/BRK_REF_Voiceover_mp4.mov
+    - title: Was können wir von anderen Ländern lernen?
+      src: /videos/BRK_IRCP_Was_kann_man_lernen_mp4.mov
+  carousel_title: Das REF - der Grundstein für Community Paramedicine in Bayern
+  img_carousel:
+    - img: /ref1.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref2.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref3.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref4.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref5.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref6.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref7.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref8.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref9.jpeg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref10.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref11.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref12.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+    - img: /ref13.jpg
+      alt: Das REF - der Grundstein für Community Paramedicine in Bayern

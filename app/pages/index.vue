@@ -163,7 +163,9 @@ function speakerCountryFlag(country?: SpeakerItem['country']) {
         'Canada': '🇨🇦',
         'United States': '🇺🇸',
         'USA': '🇺🇸',
-        'Vanuatu': '🇻🇺'
+        'Vanuatu': '🇻🇺',
+        'South Korea': '🇰🇷',
+        'Netherlands': '🇳🇱'
       }
 
       return flagMap[entry] ?? ''
@@ -222,7 +224,7 @@ type SponsorItem = {
 const sponsorTierOrder: SponsorTier[] = ['mainsponsor', 'sponsor']
 const sponsorTierLabels: Record<SponsorTier, string> = {
   mainsponsor: 'Hauptsponsor',
-  sponsor: 'Sponsoren'
+  sponsor: 'Sponsoren & Aussteller'
 }
 
 const sponsorGroups = computed(() => {
@@ -744,7 +746,7 @@ const travelCards = computed(() => [
                       :columns="programColumns"
                       :meta="{
                         class: {
-                          tr: row => isBreakRow(row.original) ? 'bg-neutral-200' : ''
+                          tr: row => isBreakRow(row.original) ? 'bg-neutral-100' : ''
                         }
                       }"
                       :ui="{
@@ -862,9 +864,6 @@ const travelCards = computed(() => [
                   </div>
 
                   <div class="space-y-1">
-                    <p class="text-sm font-semibold tracking-tight text-default line-clamp-2">
-                      {{ speakerHeadline(speaker) }}
-                    </p>
                     <p class="text-xs font-medium uppercase tracking-[0.12em] text-primary/80">
                       {{ speakerCardBadge(speaker) }}
                     </p>

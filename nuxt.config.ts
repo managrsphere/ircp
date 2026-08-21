@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@vueuse/nuxt',
     'motion-v/nuxt',
-    '@dargmuesli/nuxt-cookie-control'
+    '@dargmuesli/nuxt-cookie-control',
+    'nuxt-gtag'
   ],
 
   devtools: {
@@ -78,7 +79,6 @@ export default defineNuxtConfig({
           description: {
             de: 'Google Analytics zur Auswertung anonymisierter Besucherzahlen.'
           },
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-CYMSSCYN03',
           targetCookieIds: ['_ga', '_gat', '_gid'],
           isPreselected: false
         },
@@ -107,6 +107,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  gtag: {
+    id: 'G-CYMSSCYN03',
+    initMode: 'manual'
   },
 
   ogImage: {
