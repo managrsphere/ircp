@@ -74,13 +74,14 @@ program:
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
               - time: 09:10 – 09:30 Uhr
-                event: "Community Paramedic, präklinischer Fachspezialist, Gemeindenotfallsanitäter, Acute Community Nurse: Ein internationaler Vergleich verschiedener Paramedicmodelle"
+                # event: "Community Paramedic, präklinischer Fachspezialist, Gemeindenotfallsanitäter, Acute Community Nurse: Ein internationaler Vergleich verschiedener Paramedicmodelle"
+                event: Vortrag
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
               - time: 09:30 – 09:50 Uhr
                 event: Vortrag
                 speakers:
-                  - name: Julia Williams
+                  - name: Dr. Julia Williams
               - time: 09:50 – 10:10 Uhr
                 event: Vortrag
                 speakers:
@@ -92,9 +93,10 @@ program:
               - time: 10:30 – 10:50 Uhr
                 event: Vortrag
                 speakers:
-                  - name: Tulja Rasku
+                  - name: Dr. Tulja Rasku
               - time: 10:50 – 11:30 Uhr
-                event: "Neue Wege für den Rettungsdienst: Bildung als Schlüssel für die Versorgung der Zukunft"
+                # event: "Neue Wege für den Rettungsdienst: Bildung als Schlüssel für die Versorgung der Zukunft"
+                event: Vortrag
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
           - title: Hauptprogramm
