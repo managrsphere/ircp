@@ -265,7 +265,7 @@ program:
               - time: 16:00 – 16:30 Uhr
                 event: Rettungsdienst als Teil der präklinischen Versorgung
                 speakers:
-                  - René Purgay
+                  - name: René Purgay
               - time: 16:30 – 17:00 Uhr
                 event: Sprecherinfos folgen
               - time: 17:00 – 17:30 Uhr
