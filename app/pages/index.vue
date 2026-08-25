@@ -219,6 +219,10 @@ type SponsorItem = {
   tier?: SponsorTier
   to?: string
   target?: '_blank' | '_self'
+  info: Array<{
+    language: 'de' | 'en'
+    description: string
+  }>
 }
 
 const sponsorTierOrder: SponsorTier[] = ['mainsponsor', 'sponsor']
@@ -244,12 +248,25 @@ function sponsorTierClasses(tier: SponsorTier) {
 
   switch (tier) {
     case 'mainsponsor':
-      return `${common} border-primary/30 bg-primary/5 shadow-sm`
+      return `${common} border-yellow-500/30 bg-yellow-500/5 shadow-sm`
     case 'sponsor':
       return `${common} border-sky-300/50 bg-sky-50/70`
     default:
       return `${common} border-default/60 bg-default/80`
   }
+}
+
+const isSponsorModalOpen = ref(false)
+
+const selectedSponsor = ref<SponsorItem | null>(null)
+
+const selectedLanguage = ref<'de' | 'en'>('de')
+
+function openSponsorInfo(sponsor: SponsorItem) {
+  selectedSponsor.value = sponsor
+  // Prefer German, otherwise fall back to English
+
+  isSponsorModalOpen.value = true
 }
 
 const speakers = computed<SpeakerItem[]>(() => (page.value?.callForSpeakers.speaker ?? []) as SpeakerItem[])
@@ -493,7 +510,6 @@ const travelCards = computed(() => [
           {{ page.sponsors.headline }}
         </Motion>
       </template>
-
       <template #title>
         <Motion
           as="span"
@@ -503,7 +519,6 @@ const travelCards = computed(() => [
           {{ page.sponsors.title }}
         </Motion>
       </template>
-
       <template #description>
         <Motion
           as="span"
@@ -513,7 +528,6 @@ const travelCards = computed(() => [
           {{ page.sponsors.description }}
         </Motion>
       </template>
-
       <Motion
         as="div"
         v-bind="scrollMotionLarge(0.25)"
@@ -525,15 +539,18 @@ const travelCards = computed(() => [
           class="space-y-4"
         >
           <div class="flex items-center justify-center">
-            <span class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary/80">
+            <span
+              class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary/80"
+            >
               {{ group.label }}
             </span>
           </div>
-
           <div
             :class="[
               'grid gap-4',
-              group.tier === 'mainsponsor' ? 'md:grid-cols-1' : 'md:grid-cols-3'
+              group.tier === 'mainsponsor'
+                ? 'md:grid-cols-1'
+                : 'md:grid-cols-3'
             ]"
           >
             <div
@@ -541,14 +558,17 @@ const travelCards = computed(() => [
               :key="sponsor.name"
               class="group"
             >
+              <!-- Regular sponsor link -->
               <NuxtLink
-                v-if="sponsor.to"
+                v-if="!sponsor.info && sponsor.to"
                 :to="sponsor.to"
                 :target="sponsor.target || '_self'"
                 class="block h-full"
               >
                 <UCard :class="sponsorTierClasses(group.tier)">
-                  <div class="flex min-h-28 items-center justify-center p-4 sm:p-6">
+                  <div
+                    class="flex min-h-28 items-center justify-center p-4 sm:p-6"
+                  >
                     <img
                       :src="sponsor.img"
                       :alt="sponsor.name"
@@ -558,13 +578,40 @@ const travelCards = computed(() => [
                   </div>
                 </UCard>
               </NuxtLink>
-
+              <!-- Sponsor with information -->
+              <button
+                v-else-if="sponsor.info?.length"
+                type="button"
+                class="block h-full w-full text-left"
+                @click="openSponsorInfo(sponsor)"
+              >
+                <UCard
+                  :class="[
+                    sponsorTierClasses(group.tier),
+                    'h-full transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-lg'
+                  ]"
+                >
+                  <div
+                    class="flex min-h-28 items-center justify-center p-4 sm:p-6"
+                  >
+                    <img
+                      :src="sponsor.img"
+                      :alt="sponsor.name"
+                      class="max-h-16 w-full object-contain sm:max-h-20"
+                      loading="lazy"
+                    >
+                  </div>
+                </UCard>
+              </button>
+              <!-- Sponsor without link or information -->
               <div
                 v-else
                 class="h-full"
               >
                 <UCard :class="sponsorTierClasses(group.tier)">
-                  <div class="flex min-h-28 items-center justify-center p-4 sm:p-6">
+                  <div
+                    class="flex min-h-28 items-center justify-center p-4 sm:p-6"
+                  >
                     <img
                       :src="sponsor.img"
                       :alt="sponsor.name"
@@ -579,6 +626,52 @@ const travelCards = computed(() => [
         </div>
       </Motion>
     </UPageSection>
+    <!-- Sponsor information modal -->
+    <UModal v-model:open="isSponsorModalOpen">
+      <template #content>
+        <div
+          v-if="selectedSponsor"
+          class="p-6 sm:p-8"
+        >
+          <div class="mb-6 flex items-start justify-between gap-6">
+            <div class="min-w-0">
+              <h2 class="text-xl font-semibold">
+                {{ selectedSponsor.name }}
+              </h2>
+            </div>
+            <!-- Language toggle -->
+            <div
+              v-if="selectedSponsor.info?.length > 1"
+              class="flex shrink-0 rounded-lg bg-muted p-1"
+            >
+              <UButton
+                v-if="selectedSponsor.info.some(info => info.language === 'de')"
+                size="xs"
+                :variant="selectedLanguage === 'de' ? 'solid' : 'ghost'"
+                @click="() => {
+                  selectedLanguage = 'de'
+                }"
+              >
+                DE
+              </UButton>
+              <UButton
+                v-if="selectedSponsor.info.some(info => info.language === 'en')"
+                size="xs"
+                :variant="selectedLanguage === 'en' ? 'solid' : 'ghost'"
+                @click="() => {
+                  selectedLanguage = 'en'
+                }"
+              >
+                EN
+              </UButton>
+            </div>
+          </div>
+          <p class="text-sm leading-7 text-muted">
+            {{ selectedSponsor.info.find(info => info.language === selectedLanguage)?.description }}
+          </p>
+        </div>
+      </template>
+    </UModal>
 
     <!-- IRCP -->
     <UPageSection

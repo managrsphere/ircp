@@ -43,3 +43,15 @@ recent:
       alt: Das REF - der Grundstein für Community Paramedicine in Bayern
     - img: /ref13.jpg
       alt: Das REF - der Grundstein für Community Paramedicine in Bayern
+  challenge_coin:
+    title: Der IRCP 2026 Challenge Coin
+    description: "Für den IRCP 2026 in Regensburg haben wir einen eigenen Challenge Coin gestaltet. Das Design verbindet die Geschichte des International Roundtable on Community Paramedicine mit dem diesjährigen Veranstaltungsort. Eine Seite steht für den IRCP und das internationale Netzwerk, das seit 2005 Fachkräfte aus der Community Paramedicine zusammenbringt und den Austausch von Erfahrungen und Ideen ermöglicht. Die andere Seite ist Regensburg 2026 gewidmet – mit dem Bayerischen Roten Kreuz und der Silhouette der Gastgeberstadt. Challenge Coins stehen traditionell für Zugehörigkeit und Verbundenheit. Deshalb passt der Gedanke auch gut zum IRCP: Menschen aus unterschiedlichen Berufsgruppen, Organisationen und Ländern zusammenzubringen, voneinander zu lernen und Community Paramedicine gemeinsam weiterzuentwickeln."
+    img_carousel:
+      - img: /challenge_coin1.jpg
+        alt: Challenge Coin Instagram
+      - img: /challenge_coin2.jpg
+        alt: Challenge Coin Vorderseite
+      - img: /challenge_coin3.jpg
+        alt: Challenge Coin Rückseite
+      - img: /challenge_coin4.jpg
+        alt: Challenge Coin beide Seiten

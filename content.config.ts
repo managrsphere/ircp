@@ -32,7 +32,11 @@ export const collections = {
           name: z.string().nonempty(),
           tier: createEnum(['mainsponsor', 'sponsor']).optional(),
           to: z.string().nonempty().optional(),
-          target: createEnum(['_blank', '_self']).optional()
+          target: createEnum(['_blank', '_self']).optional(),
+          info: z.array(z.object({
+            language: z.enum(['de', 'en']),
+            description: z.string().nonempty()
+          })).optional()
         }))
       }),
       program: z.object({
@@ -230,7 +234,15 @@ export const collections = {
           z.array(z.object({
             img: z.string().nonempty(),
             alt: z.string().nonempty()
+          })).optional(),
+        challenge_coin: z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          img_carousel: z.array(z.object({
+            img: z.string().nonempty(),
+            alt: z.string().nonempty()
           })).optional()
+        }).optional()
       })
     })
   }),

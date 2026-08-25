@@ -37,11 +37,16 @@ sponsors:
   title: Sponsoren & Aussteller
   description: "Wir danken unseren Partnern für die Unterstützung des IRCP 2026. Gemeinsam gestalten wir die Zukunft der Community Paramedicine."
   items: 
-    # - img: /meddv.png
-    #   name: medDV
-    #   tier: main
-    #   to: https://www.meddv.de/
-    #   target: _blank
+    - img: /meddv.jpeg
+      name: medDV
+      tier: mainsponsor
+      to: https://www.meddv.de/
+      target: _blank
+      info:
+        - language: de
+          description: medDV steht für Innovation, Verlässlichkeit und Praxisnähe in der Notfallversorgung. Als Marktführer in Deutschland entwickeln wir die NIDA-Familie, das sind passgenaue Hard- und Softwarelösungen für Rettungsdienste, Leitstellen und Kliniken, um eine effiziente, sichere und vernetzte Patientenversorgung zu gewährleisten.  NIDA (Notfall-Informations-und-Dokumentations-Assistent) ist eine umfassende Lösung, um Prozesse und Dokumentation, Datenerfassung und -kommunikation im Rettungswesen zu optimieren. Die Anwendung unterstützt die Mitarbeiter in der Leitstelle, im Rettungsdienst sowie in der Klinik bei ihren individuellen Herausforderungen und bietet für die unterschiedlichen Anforderungen und Aufgaben passgenaue Lösungen. Gleichzeitig wird die Zusammenarbeit zwischen diesen drei Bereichen deutlich verbessert und beschleunigt. Patienten profitieren in kritischen Notfallsituationen von einer bestmöglichen Versorgung. Organisation und Träger können Prozesse optimieren und Kosten reduzieren. NIDA unterstützt sie mit einem elektronischen Notfallprotokoll und bei der Koordination von Einsätzen. Die Lösung vereinfacht Fakturierung und Abrechnung und bietet umfassende Auswertungsmöglichkeiten. Zur NIDA- Familie gehören unter anderem auch der Telenotarzt oder der Behandlungskapazitätennachweis.
+        - language: en
+          description: medDV stands for innovation, reliability, and practicality in emergency care. As the market leader in Germany, we develop the NIDA family—tailored hardware and software solutions for emergency medical services, dispatch centers, and hospitals—to ensure efficient, safe, and connected patient care NIDA (Emergency Information and Documentation Assistant) is a comprehensive solution designed to optimize processes, documentation, data collection , and communication in emergency medical services. The application supports staff at the dispatch center, in the emergency medical services, and at the hospital in meeting their individual challenges and offers tailored solutions for the various requirements and tasks. At the same time, collaboration between these three areas is significantly improved and accelerated. Patients benefit from the best possible care in critical emergency situations. Organizations and funding agencies can optimize processes and reduce costs.  NIDA supports them with an electronic emergency report and in coordinating emergency responses. The solution simplifies billing and accounting and offers comprehensive reporting capabilities. The NIDA family also includes, among other things, the tele-emergency physician service and the treatment capacity verification tool. 
     - img: /corpuls.jpg
       name: Corpuls
       tier: sponsor
@@ -448,6 +453,22 @@ callForSpeakers:
       description: "Wie ist das niederländische Versorgungssystem aufgebaut? Welche Rolle spielt der Rettungsdienst darin? Und wie arbeiten Rettungsdienst, Primärversorgung und verschiedene Berufsgruppen zusammen? René Purgay gibt beim IRCP 2026 spannende Einblicke in das niederländische Modell der präklinischen Versorgung – von Rapid Respondern über die Versorgungsleitstelle bis hin zur Verzahnung von Akut- und Primärversorgung. Dabei geht es um die Frage, wie unterschiedliche Akteure und Berufsgruppen zusammenwirken können, um Patientinnen und Patienten bedarfsgerecht zu versorgen – und welche Impulse daraus für die Weiterentwicklung der Community Paramedicine entstehen können."
       language: de
       country: Netherlands
+    - speakers: 
+        - name: Luke Giles
+          role: Advanced Clinical Practitioner – Paramedic, Clinical Innovator, Educator, National Health System (NHS)
+          img: /lukegiles.jpg
+      title: Do I need to go to hospital?
+      description: Muss die richtige Versorgung für Patient:innen immer im Krankenhaus stattfinden? Oder können Paramedics eine deutlich größere Rolle in der Primär- und gemeindenahen Versorgung übernehmen? Beim IRCP 2026 in Regensburg spricht Luke Giles, Advanced Clinical Practitioner – Paramedic, Clinical Innovator und Educator im NHS, über die Weiterentwicklung der Paramedicine über die klassische Notfallversorgung und den Transport hinaus. Im Fokus stehen alternative Versorgungswege, neue Rollen von Paramedics sowie die Frage, wie Patient:innen sicher dort versorgt werden können, wo ihre Bedürfnisse am besten erfüllt werden – sei es zu Hause, in der Primärversorgung oder durch die Anbindung an geeignete lokale Angebote. 
+      language: en
+      country: United Kingdom
+    - speakers:
+        - name: Julia Schmid
+          role: Notfallsanitäterin, Sozialarbeiterin
+          img: 
+      title: Vorbeugender Rettungsdienst
+      description: "Der Spielraum, mit einem Notruf umzugehen, ist gering. Gibt es ein Problem, wird ein RTW entsendet oder die Kassenärztliche Vereinigung informiert. Aber was, wenn gar keine medizinische Hilfe benötigt wird? Der Vorbeugende Rettungsdienst hilft dort, wo Blaulicht allein nicht reicht – mit Prävention, Sozialer Arbeit und der Erarbeitung neuer Versorgungswege. Beim IRCP 2026 in Regensburg zeigt Julia Schmid, Notfallsanitäterin und Sozialarbeiterin, wie Soziale Arbeit und Notfallrettung zusammengedacht werden können. Der Vorbeugende Rettungsdienst setzt dort an, wo klassische Notfallversorgung an ihre Grenzen stößt: mit Prävention, Sozialer Arbeit und der Entwicklung neuer, bedarfsgerechter Versorgungswege. Wie können wir Menschen frühzeitig erreichen, wiederkehrende Notrufe vermeiden und eine Versorgung schaffen, die nicht erst beginnt, wenn das Blaulicht eingeschaltet wird?"
+      language: de
+      country: Germany
   alert:
     icon: i-lucide-info
     title: Hinweis
