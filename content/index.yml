@@ -37,7 +37,7 @@ sponsors:
   title: Sponsoren & Aussteller
   description: "Wir danken unseren Partnern für die Unterstützung des IRCP 2026. Gemeinsam gestalten wir die Zukunft der Community Paramedicine."
   items: 
-    - img: /meddv.jpeg
+    - img: /meddv.png
       name: medDV
       tier: mainsponsor
       to: https://www.meddv.de/
