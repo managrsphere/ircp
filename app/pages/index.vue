@@ -540,7 +540,11 @@ const travelCards = computed(() => [
         >
           <div class="flex items-center justify-center">
             <span
-              class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-primary/80"
+              :class="['font-mono uppercase tracking-[0.2em]',
+                       group.tier === 'mainsponsor'
+                         ? 'text-2xl font-bold text-primary'
+                         : 'text-sm font-semibold '
+              ]"
             >
               {{ group.label }}
             </span>
@@ -627,18 +631,26 @@ const travelCards = computed(() => [
       </Motion>
     </UPageSection>
     <!-- Sponsor information modal -->
-    <UModal v-model:open="isSponsorModalOpen">
-      <template #content>
+    <UModal
+      v-model:open="isSponsorModalOpen"
+      scrollable
+      :title="selectedSponsor?.name"
+    >
+      <template #body>
         <div
           v-if="selectedSponsor"
           class="p-6 sm:p-8"
         >
           <div class="mb-6 flex items-start justify-between gap-6">
-            <div class="min-w-0">
-              <h2 class="text-xl font-semibold">
-                {{ selectedSponsor.name }}
-              </h2>
-            </div>
+            <UButton
+              v-if="selectedSponsor.to"
+              :to="selectedSponsor.to"
+              :target="selectedSponsor.target || '_self'"
+              icon="i-lucide-external-link"
+              class="shrink-0"
+            >
+              Website
+            </UButton>
             <!-- Language toggle -->
             <div
               v-if="selectedSponsor.info?.length > 1"
