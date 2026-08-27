@@ -445,26 +445,23 @@ callForSpeakers:
       description: "Wie können Community Paramedics bereits beim ersten Kontakt systematisch erkennen, welche Versorgung ein Mensch tatsächlich benötigt – und daraus die richtige weitere Betreuung ableiten? Beim IRCP 2026 stellt Dr. Matthew Leyenaar, PhD, B.Sc., M.A., Health System Impact Scientist an der University of Prince Edward Island in Kanada, das interRAI Community Paramedicine Contact Assessment vor. Das standardisierte Assessment wurde entwickelt, um Community Paramedics bei einer strukturierten Einschätzung des individuellen Versorgungsbedarfs und der weiteren Versorgungsplanung zu unterstützen. In seinem Vortrag zeigt Matthew Leyenaar, wie ein standardisiertes Vorgehen dabei helfen kann, Versorgungslücken bereits beim Erstkontakt zu erkennen, relevante Informationen für die weitere Versorgungsplanung zu erfassen, sichere und bedarfsgerechte Entscheidungen zu unterstützen, Erkenntnisse für Qualitätsverbesserung und Programmevaluation zu gewinnen, Ressourcen gezielter einzusetzen und Community-Paramedicine-Programme weiterzuentwickeln. Damit geht der Vortrag über die einzelne Patient:innenversorgung hinaus: Wie können strukturierte Assessments dazu beitragen, Community Paramedicine messbar, vergleichbar und nachhaltig in Versorgungssysteme zu integrieren?"
       language: en
       country: Canada
-    - speakers:
-        - name: René Purgay
-          role: "Fachpfleger Rettungs- und Notfallmedizin, Freiberuflicher Hochschullehrer im Gesundheitswesen (FH) und Projektmanager"
-          img: /renepurgay.jpeg
+    - img: /renepurgay.jpeg
+      name: René Purgay
+      role: "Fachpfleger Rettungs- und Notfallmedizin, Freiberuflicher Hochschullehrer im Gesundheitswesen (FH) und Projektmanager"
       title: "Rettungsdienst als Teil der präklinischen Versorgung"
       description: "Wie ist das niederländische Versorgungssystem aufgebaut? Welche Rolle spielt der Rettungsdienst darin? Und wie arbeiten Rettungsdienst, Primärversorgung und verschiedene Berufsgruppen zusammen? René Purgay gibt beim IRCP 2026 spannende Einblicke in das niederländische Modell der präklinischen Versorgung – von Rapid Respondern über die Versorgungsleitstelle bis hin zur Verzahnung von Akut- und Primärversorgung. Dabei geht es um die Frage, wie unterschiedliche Akteure und Berufsgruppen zusammenwirken können, um Patientinnen und Patienten bedarfsgerecht zu versorgen – und welche Impulse daraus für die Weiterentwicklung der Community Paramedicine entstehen können."
       language: de
       country: Netherlands
-    - speakers: 
-        - name: Luke Giles
-          role: Advanced Clinical Practitioner – Paramedic, Clinical Innovator, Educator, National Health System (NHS)
-          img: /lukegiles.jpg
+    - img: /lukegiles.jpg
+      name: Luke Giles
+      role: Advanced Clinical Practitioner – Paramedic, Clinical Innovator, Educator, National Health System (NHS)
       title: Do I need to go to hospital?
       description: Muss die richtige Versorgung für Patient:innen immer im Krankenhaus stattfinden? Oder können Paramedics eine deutlich größere Rolle in der Primär- und gemeindenahen Versorgung übernehmen? Beim IRCP 2026 in Regensburg spricht Luke Giles, Advanced Clinical Practitioner – Paramedic, Clinical Innovator und Educator im NHS, über die Weiterentwicklung der Paramedicine über die klassische Notfallversorgung und den Transport hinaus. Im Fokus stehen alternative Versorgungswege, neue Rollen von Paramedics sowie die Frage, wie Patient:innen sicher dort versorgt werden können, wo ihre Bedürfnisse am besten erfüllt werden – sei es zu Hause, in der Primärversorgung oder durch die Anbindung an geeignete lokale Angebote. 
       language: en
       country: United Kingdom
-    - speakers:
-        - name: Julia Schmid
-          role: Notfallsanitäterin, B.A. Sozialarbeiterin, Berliner Feuerwehr, Einsatzvorbereitung Rettungsdienst, Referat Vorbeugender Rettungsdienst
-          img: /juliaschmid.jpg
+    - img: /juliaschmid.jpg
+      role: Notfallsanitäterin, B.A. Sozialarbeiterin, Berliner Feuerwehr, Einsatzvorbereitung Rettungsdienst, Referat Vorbeugender Rettungsdienst
+      name: Julia Schmid
       title: "Vorbeugender Rettungsdienst - Soziale Arbeit trifft Berliner Notfallrettung: Multiprofessionelle Wege für eine ganzheitliche Versorgung"
       description: "Der Spielraum, mit einem Notruf umzugehen, ist gering. Gibt es ein Problem, wird ein RTW entsendet oder die Kassenärztliche Vereinigung informiert. Aber was, wenn gar keine medizinische Hilfe benötigt wird? Der Vorbeugende Rettungsdienst hilft dort, wo Blaulicht allein nicht reicht – mit Prävention, Sozialer Arbeit und der Erarbeitung neuer Versorgungswege. Beim IRCP 2026 in Regensburg zeigt Julia Schmid, Notfallsanitäterin und Sozialarbeiterin, wie Soziale Arbeit und Notfallrettung zusammengedacht werden können. Der Vorbeugende Rettungsdienst setzt dort an, wo klassische Notfallversorgung an ihre Grenzen stößt: mit Prävention, Sozialer Arbeit und der Entwicklung neuer, bedarfsgerechter Versorgungswege. Wie können wir Menschen frühzeitig erreichen, wiederkehrende Notrufe vermeiden und eine Versorgung schaffen, die nicht erst beginnt, wenn das Blaulicht eingeschaltet wird?"
       language: de
