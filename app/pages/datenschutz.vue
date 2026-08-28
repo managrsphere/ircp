@@ -168,7 +168,6 @@ definePageMeta({
               <li>
                 Websites, von denen das System des Nutzers auf unsere Internetseite gelangt
               </li>
-
               <li>
                 Websites, die vom System des Nutzers über unsere Website aufgerufen
                 werden
@@ -182,6 +181,140 @@ definePageMeta({
             <p class="text-base leading-relaxed">
               Die vorübergehende Speicherung der IP-Adresse durch das System ist notwendig, um eine Auslieferung der Website an den Rechner des Nutzers zu ermöglichen. Hierfür muss die IP-Adresse des Nutzers für die Dauer der Sitzung gespeichert bleiben. Die Daten werden bis zum Ende der jeweiligen Sitzung von uns gespeichert und dann automatisch gelöscht. Da diese Daten für den Betrieb der Webseite zwingend erforderlich sind, haben Sie als Nutzer keine Möglichkeit der Verarbeitung zu widersprechen.
             </p>
+          </div>
+
+          <!-- Registrierung IRCP 2026 -->
+          <div class="pt-4">
+            <h2 class="text-2xl font-semibold tracking-tight mb-4">
+              Registrierung zum IRCP 2026 über ircp-eu.store
+            </h2>
+
+            <p class="text-base leading-relaxed mb-6">
+              Diese Datenschutzerklärung gilt ergänzend auch für die unter
+              <ULink
+                to="https://ircp-eu.store"
+                target="_blank"
+                class="text-primary underline underline-offset-2"
+              >
+                https://ircp-eu.store
+              </ULink>
+              erreichbare Registrierungsseite zum International Roundtable on Community Paramedicine 2026.
+              Die Registrierungsseite wird technisch getrennt von der Hauptseite ircp-regensburg.de betrieben.
+            </p>
+
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight mb-3">
+                  Verarbeitung von Registrierungsdaten
+                </h3>
+
+                <p class="text-base leading-relaxed mb-3">
+                  Im Rahmen der Registrierung verarbeiten wir insbesondere folgende Daten:
+                </p>
+
+                <ul class="list-disc list-inside space-y-2 text-base leading-relaxed text-muted mb-4">
+                  <li>Art und Anzahl der gebuchten Tickets</li>
+                  <li>Namen und Kontaktdaten der teilnehmenden Personen</li>
+                  <li>Organisation beziehungsweise Institution und Land</li>
+                  <li>Angaben zu bisherigen IRCP-Teilnahmen</li>
+                  <li>Essenspräferenzen und gesprochene Sprachen</li>
+                  <li>Daten der bestellenden Person</li>
+                  <li>Rechnungsanschrift und E-Mail-Adresse</li>
+                  <li>Buchungsnummer und Gesamtbetrag</li>
+                </ul>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Die Verarbeitung erfolgt zur Bearbeitung und Verwaltung der Anmeldung, zur Zuordnung der gebuchten Tickets, zur Kommunikation mit den bestellenden und teilnehmenden Personen, zur organisatorischen Vorbereitung und Durchführung der Veranstaltung sowie zur Rechnungsstellung und Zahlungsabwicklung.
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Verarbeitung zur Durchführung des Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. Soweit gesetzliche Aufbewahrungs- oder Nachweispflichten bestehen, erfolgt die Verarbeitung zusätzlich auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO.
+                </p>
+
+                <p class="text-base leading-relaxed">
+                  Die im Formular enthaltene Bestätigung der Kenntnisnahme der Datenschutzerklärung stellt keine Einwilligung in eine darüber hinausgehende Datenverarbeitung dar.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight mb-3">
+                  Anmeldung weiterer Personen
+                </h3>
+
+                <p class="text-base leading-relaxed">
+                  Werden mehrere Tickets durch eine bestellende Person gebucht, können auch personenbezogene Daten weiterer teilnehmender Personen verarbeitet werden. In diesem Fall erhalten wir die Daten von der bestellenden Person. Die bestellende Person wird gebeten, die weiteren teilnehmenden Personen über die Verarbeitung ihrer Daten und diese Datenschutzerklärung zu informieren.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight mb-3">
+                  Speicherung und Übermittlung
+                </h3>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Die übermittelten Registrierungsdaten werden im geschützten Administrationsbereich der Registrierungsseite gespeichert und automatisiert per E-Mail an die für die Organisation und Abwicklung des IRCP 2026 zuständigen Stellen des BRK Kreisverbandes Regensburg übermittelt. Die bestellende Person erhält ebenfalls eine automatisierte Anmeldebestätigung.
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Innerhalb des BRK erhalten nur diejenigen Stellen Zugriff auf die Daten, die diese für die Organisation, Durchführung, Abrechnung oder Nachbereitung der Veranstaltung benötigen. Darüber hinaus können die mit dem technischen Betrieb, der Wartung und dem Hosting beauftragten Auftragsverarbeiter im erforderlichen Umfang Zugriff auf die Daten erhalten.
+                </p>
+
+                <p class="text-base leading-relaxed">
+                  Die Registrierungsdaten werden gelöscht, sobald sie für die Organisation, Durchführung und Nachbereitung der Veranstaltung nicht mehr benötigt werden und keine gesetzlichen Aufbewahrungs-, Dokumentations- oder Nachweispflichten entgegenstehen. Rechnungs- und buchhaltungsrelevante Daten werden entsprechend den jeweils geltenden gesetzlichen Aufbewahrungsfristen gespeichert.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight mb-3">
+                  Technischer Betrieb und Hosting
+                </h3>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Mit der technischen Einrichtung, dem Betrieb, der Wartung und der Betreuung der Registrierungsseite wurde die Steinhauser Morjan GmbH (Liskircherstr. 23, 93049 Regensburg) beauftragt. Die Steinhauser Morjan GmbH verarbeitet personenbezogene Daten ausschließlich im Auftrag und nach Weisung des BRK Kreisverbandes Regensburg auf Grundlage eines Vertrages zur Auftragsverarbeitung gemäß Art. 28 DSGVO.
+                </p>
+
+                <p class="text-base leading-relaxed mb-3">
+                  Für die Bereitstellung der technischen Hosting-Infrastruktur setzt die Steinhauser Morjan GmbH folgenden Unterauftragsverarbeiter ein:
+                </p>
+
+                <p class="text-sm leading-relaxed space-y-1 text-muted mb-4">
+                  <span class="block font-semibold text-default">checkdomain GmbH</span>
+                  <span class="block">Große Burgstraße 27/29</span>
+                  <span class="block">23552 Lübeck</span>
+                  <span class="block">Deutschland</span>
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Die checkdomain GmbH stellt den Webspace, die Datenbank und die für den Betrieb der Registrierungsseite erforderliche Server-Infrastruktur bereit.
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Beim Aufruf der Registrierungsseite werden technisch erforderliche Server-Logfiles verarbeitet. Diese können insbesondere die IP-Adresse, Datum und Uhrzeit des Zugriffs, die aufgerufene Seite beziehungsweise Datei, Browserinformationen, Referrer-Informationen und den HTTP-Statuscode enthalten.
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Die Verarbeitung erfolgt zur sicheren und stabilen Bereitstellung der Registrierungsseite, zur Fehleranalyse sowie zur Erkennung und Abwehr von Angriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt im sicheren und störungsfreien Betrieb der Registrierungsseite.
+                </p>
+
+                <p class="text-base leading-relaxed mb-4">
+                  Nach Angaben des Hostinganbieters werden Server-Logfiles spätestens nach 14 Tagen gelöscht. IP-Adressen werden, soweit technisch möglich und sinnvoll, bereits nach 24 Stunden anonymisiert.
+                </p>
+
+                <p class="text-base leading-relaxed">
+                  Die Steinhauser Morjan GmbH hat die checkdomain GmbH auf Grundlage eines Vertrages zur Auftragsverarbeitung gemäß Art. 28 DSGVO als Unterauftragsverarbeiter eingebunden.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight mb-3">
+                  Verschlüsselte Übertragung
+                </h3>
+
+                <p class="text-base leading-relaxed">
+                  Die Übertragung der Daten zwischen dem Endgerät der nutzenden Person und der Registrierungsseite erfolgt verschlüsselt über HTTPS beziehungsweise TLS.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

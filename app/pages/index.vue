@@ -1309,6 +1309,22 @@ const travelCards = computed(() => [
       >
         <UPricingPlans :plans="page.tickets.pricing" />
       </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotion(0.4)"
+        class="w-full"
+      >
+        <UButton
+          :to="page.tickets.payment.to"
+          :label="page.tickets.payment.label"
+          icon="i-lucide-info"
+          color="primary"
+          variant="subtle"
+          size="xl"
+          class="flex items-center justify-center mx-auto mt-6"
+        />
+      </Motion>
     </UPageSection>
 
     <!-- Travel -->

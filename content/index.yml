@@ -124,13 +124,13 @@ program:
               - time: 15:35 – 16:15 Uhr
                 event: "Sprecherinfos folgen"
               - time: 16:15 – 17:00 Uhr
-                event: Keynote I
+                event: Qualität, Wirtschaftlichkeit, Patientenorientierung - was sektorübergreifende Zusammenarbeit leisten kann
                 speakers:
-                  - name: Sprecherinfos folgen
+                  - name: Dr. Irmgard Stippler
           - title: Abendprogramm - Get Together
             rows:
               - time: 17:30 – 18:00 Uhr
-                event: Infos folgen
+                event: Begrüßungsworte aus Politik und Verbänden (Details folgen)
               - time: 18:00 – 19:30 Uhr
                 event: Get Together
       - label: Dienstag, 06. Oktober 2026
@@ -141,7 +141,9 @@ program:
               - time: 08:00 – 08:10 Uhr
                 event: Kongresseröffnung Tag 2
               - time: 08:10 – 08:25 Uhr
-                event: "Sprecherinfos folgen"
+                event: Produktpräsentation
+                speakers:
+                  - name: medDV
               - time: 08:25 – 08:55 Uhr
                 event: "Von der Notaufnahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat"
                 speakers:
@@ -151,7 +153,9 @@ program:
                 speakers:
                   - name: MBA, B.Sc. Christoph Schullern
               - time: 09:25 – 09:55 Uhr
-                event: Sprecherinfos folgen
+                event: "Do I need to go to hospital?"
+                speakers: 
+                  - name: Luke Giles
               - time: 09:55 – 10:25 Uhr
                 type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
@@ -216,11 +220,9 @@ program:
               - time: 08:00 – 08:15 Uhr
                 event: Kongresseröffnung Tag 3
               - time: 08:15 – 08:45 Uhr
-                event: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen"
+                event: Rettungsdienst als Teil der präklinischen Versorgung
                 speakers:
-                  - name: M.A., B.A. Florian Zahorka
-                  - name: Flavia Bütler
-                  - name: Michael Müller
+                  - name: René Purgay
               - time: 08:45 – 09:15 Uhr
                 event: "Advanced Practice Paramedic - Konzeption eines erweiterten Berufsprofils zwischen Patientenversorgung, Supervision und Wissenschaft"
                 speakers:
@@ -233,15 +235,17 @@ program:
                 type: break
                 event: Frühstückspause / Besuch der Industrieausstellung
               - time: 10:15 – 10:45 Uhr
-                event: Sprecherinfos folgen
+                event: Vortragsinformationen folgen
+                speakers:
+                  - name: Dr. Florian Breuer
               - time: 10:45 – 11:15 Uhr
                 event: Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education
                 speakers:
                   - name: LL.M. James Brogan
               - time: 11:15 – 12:00 Uhr
-                event: Keynote II
+                event: Vortragsinformationen folgen
                 speakers:
-                  - name: Sprecherinfos folgen
+                  - name: Dr. Michael Städtler
               - time: 12:00 - 13:30 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
@@ -250,9 +254,9 @@ program:
                 speakers:
                   - name: Matthew Earl
               - time: 14:00 - 14:30 Uhr
-                event: Vortragsinformationen folgen
+                event: "Vorbeugender Rettungsdienst - Soziale Arbeit trifft Berliner Notfallrettung: Multiprofessionelle Wege für eine ganzheitliche Versorgung"
                 speakers:
-                  - name: Dr. Michael Städtler
+                  - name: Julia Schmid
               - time: 14:30 – 15:00 Uhr
                 event: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings"
                 speakers:
@@ -268,11 +272,15 @@ program:
                 type: break
                 event: Nachmittagspause / Besuch der Industrieausstellung
               - time: 16:00 – 16:30 Uhr
-                event: Rettungsdienst als Teil der präklinischen Versorgung
+                event: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen"
                 speakers:
-                  - name: René Purgay
+                  - name: M.A., B.A. Florian Zahorka
+                  - name: Flavia Bütler
+                  - name: Michael Müller
               - time: 16:30 – 17:00 Uhr
-                event: Sprecherinfos folgen
+                event: Vortragsinformationen folgen
+                speakers:
+                  - name: Dr. John Galligan
               - time: 17:00 – 17:30 Uhr
                 event: "Mesa Initative in Renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
                 speakers:
@@ -506,6 +514,10 @@ tickets:
         to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
+  payment:
+    label: Zahlung per Überweisung - hier klicken!
+    to: https://ircp-eu.store/
+    target: _blank
 faq:
   headline: FAQ
   title: Häufig gestellte Fragen

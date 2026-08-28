@@ -130,7 +130,12 @@ export const collections = {
           }),
           badge: z.string().optional(),
           terms: z.string().optional()
-        }))
+        })),
+        payment: z.object({
+          label: z.string().nonempty(),
+          to: z.string().nonempty(),
+          target: createEnum(['_blank', '_self']).optional()
+        })
       }),
       faq: z.object({
         headline: z.string().optional(),
