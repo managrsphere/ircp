@@ -1318,6 +1318,7 @@ const travelCards = computed(() => [
         <UButton
           :to="page.tickets.payment.to"
           :label="page.tickets.payment.label"
+          :target="page.tickets.payment.target"
           icon="i-lucide-info"
           color="primary"
           variant="subtle"

@@ -57,6 +57,11 @@ sponsors:
       tier: sponsor
       to: https://healthcaresoftware.com.au/
       target: _blank
+    - img: /hglobal.jpg
+      name: HGlobal Technologies Inc
+      tier: sponsor
+      to: https://hglobaltech.com/
+      target: _blank
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.
   title: Programm
@@ -122,7 +127,11 @@ program:
                 speakers:
                   - name: Andreas Bauer
               - time: 15:35 – 16:15 Uhr
-                event: "Sprecherinfos folgen"
+                event: "Standardising From the Bottom Up: A Multi-Agency Approach to Community Paramedicine Data and Reimbursement Reform"
+                speakers:
+                  - name: Tyler McKinnon
+                  - name: Greg Friese
+                  - name: Catherine Lichtenbelt
               - time: 16:15 – 17:00 Uhr
                 event: Qualität, Wirtschaftlichkeit, Patientenorientierung - was sektorübergreifende Zusammenarbeit leisten kann
                 speakers:
@@ -131,8 +140,8 @@ program:
             rows:
               - time: 17:30 – 18:00 Uhr
                 event: Begrüßungsworte aus Politik und Verbänden (Details folgen)
-              - time: 18:00 – 19:30 Uhr
-                event: Get Together
+              - time: 18:00 – 20:00 Uhr
+                event: Get Together mit musikalischer Begleitung (Boazn Briada)
       - label: Dienstag, 06. Oktober 2026
         slot: dienstag
         tracks:
@@ -185,7 +194,12 @@ program:
                   - name: Chief Michael Nolan
                   - name: Prof. Dr. med. habil. Kathrin Burgmaier
               - time : 14:40 – 15:20 Uhr
-                event: "Sprecherinfos folgen"
+                event: "Physician Perspectives: Discovering, Adopting, and Advocating for Community Paramedicine"
+                speakers:
+                  - name: Dr. Michelle Grinman
+                  - name: Dr. Thomas E. Charlton
+                  - name: Dr. Gina Argawal
+                  - name: "& weitere"
               - time: 15:20 – 15:50 Uhr
                 type: break
                 event: Pause / Besuch der Industrieausstellung
@@ -198,17 +212,17 @@ program:
                 speakers:
                   - name: Dip. HSc Jeff Wall
                   - name: Joseph Martinez
-              - time: 16:50 – 17:00 Uhr
+              - time: 16:50 – 17:30 Uhr
                 event: Building an Academic Pathway for Community Paramedicine in Germany - Experiences from Developing a Bachelor's Degree Program
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
           - title: Abendprogramm - Get Together (Im Ticketpreis enthalten - extra Anmeldung erforderlich)
             rows:
-              - time: 17:00 – 19:00 Uhr
+              - time: 17:30 – 19:30 Uhr
                 event: Medizingeschichte in Regensburg - Stadtführung
                 speakers:
                   - name: Dr. Florian Kraus
-              - time: 17:00 – 19:00 Uhr
+              - time: 17:30 – 19:30 Uhr
                 event: Wasserrettung mit der Wasserwacht OG Regensburg
                 speakers:
                   - name: Andreas Bauer
@@ -256,7 +270,7 @@ program:
               - time: 14:00 - 14:30 Uhr
                 event: "Vorbeugender Rettungsdienst - Soziale Arbeit trifft Berliner Notfallrettung: Multiprofessionelle Wege für eine ganzheitliche Versorgung"
                 speakers:
-                  - name: Julia Schmid
+                  - name: B.A. Julia Schmid
               - time: 14:30 – 15:00 Uhr
                 event: "Community Paramedics as a Catalyst for Improved Healthcare in Correctional Settings"
                 speakers:
@@ -474,6 +488,13 @@ callForSpeakers:
       description: "Der Spielraum, mit einem Notruf umzugehen, ist gering. Gibt es ein Problem, wird ein RTW entsendet oder die Kassenärztliche Vereinigung informiert. Aber was, wenn gar keine medizinische Hilfe benötigt wird? Der Vorbeugende Rettungsdienst hilft dort, wo Blaulicht allein nicht reicht – mit Prävention, Sozialer Arbeit und der Erarbeitung neuer Versorgungswege. Beim IRCP 2026 in Regensburg zeigt Julia Schmid, Notfallsanitäterin und Sozialarbeiterin, wie Soziale Arbeit und Notfallrettung zusammengedacht werden können. Der Vorbeugende Rettungsdienst setzt dort an, wo klassische Notfallversorgung an ihre Grenzen stößt: mit Prävention, Sozialer Arbeit und der Entwicklung neuer, bedarfsgerechter Versorgungswege. Wie können wir Menschen frühzeitig erreichen, wiederkehrende Notrufe vermeiden und eine Versorgung schaffen, die nicht erst beginnt, wenn das Blaulicht eingeschaltet wird?"
       language: de
       country: Germany
+    - img: /johngalligan.jpeg
+      role: Dr. rer. Nat., Wissenschaftlicher Mitarbeiter, Fraunhofer-Institut für Zelltherapie und Immunologie, Institutsteil für Bioanalytik und Bioprozesse
+      name: Dr. John Galligan
+      title: Digital networks and diagnostics-based care in rural and remote communities in Germany - challenges, prospects and perspectives
+      description: "Vortragsinformationen folgen"
+      language: en
+      country: Germany
   alert:
     icon: i-lucide-info
     title: Hinweis
@@ -493,7 +514,7 @@ tickets:
   description: One Profession. Worldwide Community.
   callout:
     title: Was ist alles im Ticketpreis enthalten?
-    description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Zahlung auch per Überweisung möglich. Weitere Infos unter: ircp.210@brk.de"
+    description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Zahlung auch auf Rechnung möglich. Weitere Infos unter: ircp.210@brk.de"
   pricing:
     - title: Teilnehmer:in
       description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
@@ -515,7 +536,7 @@ tickets:
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
   payment:
-    label: Zahlung per Überweisung - hier klicken!
+    label: Jetzt auch Zahlung auf Rechnung möglich - für weitere Informationen hier klicken!
     to: https://ircp-eu.store/
     target: _blank
 faq:
