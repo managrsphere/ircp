@@ -864,53 +864,6 @@ const travelCards = computed(() => [
 
       <Motion
         as="div"
-        v-bind="scrollMotion(0.3)"
-        class="w-full"
-      >
-        <div
-          role="button"
-          tabindex="0"
-          class="group mx-auto max-w-3xl cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
-          aria-label="Flyer vergrößern"
-          @click="flyerModalOpen = true"
-          @keydown.enter.prevent="flyerModalOpen = true"
-          @keydown.space.prevent="flyerModalOpen = true"
-        >
-          <UCard class="overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
-            <div class="relative overflow-hidden rounded-md border border-default/60 bg-neutral-100">
-              <iframe
-                :src="flyerPdfUrl"
-                title="Vorschau des IRCP-Flyers"
-                class="pointer-events-none h-72 w-full sm:h-96"
-              />
-              <div class="absolute inset-x-0 bottom-0 flex items-center justify-center bg-default/90 px-4 py-3 text-sm font-medium text-default backdrop-blur-sm">
-                Flyer vergrößern
-                <UIcon
-                  name="i-lucide-maximize-2"
-                  class="ml-2 size-4"
-                />
-              </div>
-            </div>
-          </UCard>
-        </div>
-      </Motion>
-
-      <UModal
-        v-model:open="flyerModalOpen"
-        title="IRCP-Flyer"
-        :ui="{ content: 'sm:max-w-6xl' }"
-      >
-        <template #body>
-          <iframe
-            :src="flyerPdfUrl"
-            title="IRCP-Flyer"
-            class="h-[75vh] min-h-128 w-full rounded-md border border-default/60"
-          />
-        </template>
-      </UModal>
-
-      <Motion
-        as="div"
         v-bind="scrollMotionLarge(0.4)"
         class="w-full overflow-hidden"
       >
@@ -946,35 +899,37 @@ const travelCards = computed(() => [
                     </UBadge>
                   </div>
 
-                  <div
-                    v-if="track.description || track.goals?.length"
-                    class="space-y-4 rounded-2xl border border-primary/20 bg-primary/5 p-4 sm:p-5"
-                  >
-                    <p
-                      v-if="track.description"
-                      class="max-w-4xl text-sm leading-relaxed text-dimmed"
-                    >
-                      {{ track.description }}
-                    </p>
+                  <UCard class="overflow-hidden border border-default/60 bg-neutral-300/70">
                     <div
-                      v-if="track.goals?.length"
-                      class="space-y-2"
+                      v-if="track.description || track.goals?.length"
+                      class="space-y-2 border-b border-default/60 p-4 sm:p-5"
                     >
                       <h4 class="text-sm font-semibold text-default">
-                        Lernziele
+                        Was ist das Bildungsforum?
                       </h4>
-                      <ul class="list-disc space-y-1 pl-5 text-sm leading-relaxed text-dimmed">
-                        <li
-                          v-for="goal in track.goals"
-                          :key="goal"
-                        >
-                          {{ goal }}
-                        </li>
-                      </ul>
+                      <p
+                        v-if="track.description"
+                        class="max-w-4xl text-sm leading-relaxed text-muted"
+                      >
+                        {{ track.description }}
+                      </p>
+                      <div
+                        v-if="track.goals?.length"
+                        class="space-y-2"
+                      >
+                        <h4 class="text-sm font-semibold text-default">
+                          Lernziele
+                        </h4>
+                        <ul class="list-disc space-y-1 pl-5 text-sm leading-relaxed text-muted">
+                          <li
+                            v-for="goal in track.goals"
+                            :key="goal"
+                          >
+                            {{ goal }}
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-
-                  <UCard class="overflow-hidden border border-default/60 bg-neutral-300/70">
                     <UTable
                       :data="track.rows"
                       :columns="programColumns"
@@ -1011,6 +966,53 @@ const travelCards = computed(() => [
           </UTabs>
         </div>
       </Motion>
+
+      <Motion
+        as="div"
+        v-bind="scrollMotion(0.3)"
+        class="w-full"
+      >
+        <div
+          role="button"
+          tabindex="0"
+          class="group mx-auto max-w-3xl cursor-pointer text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+          aria-label="Flyer vergrößern"
+          @click="flyerModalOpen = true"
+          @keydown.enter.prevent="flyerModalOpen = true"
+          @keydown.space.prevent="flyerModalOpen = true"
+        >
+          <UCard class="overflow-hidden border border-default/60 bg-default/80 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+            <div class="relative overflow-hidden rounded-md border border-default/60 bg-neutral-100">
+              <iframe
+                :src="flyerPdfUrl"
+                title="Vorschau des IRCP-Flyers"
+                class="pointer-events-none h-48 w-full sm:h-64"
+              />
+              <div class="absolute inset-x-0 bottom-0 flex items-center justify-center bg-default/90 px-4 py-3 text-sm font-medium text-default backdrop-blur-sm">
+                Flyer vergrößern
+                <UIcon
+                  name="i-lucide-maximize-2"
+                  class="ml-2 size-4"
+                />
+              </div>
+            </div>
+          </UCard>
+        </div>
+      </Motion>
+
+      <UModal
+        v-model:open="flyerModalOpen"
+        title="IRCP-Flyer"
+        :ui="{ content: 'sm:max-w-6xl' }"
+      >
+        <template #body>
+          <iframe
+            :src="flyerPdfUrl"
+            title="IRCP-Flyer"
+            class="h-[75vh] min-h-128 w-full rounded-md border border-default/60"
+          />
+        </template>
+      </UModal>
     </UPageSection>
 
     <!-- Speakers -->

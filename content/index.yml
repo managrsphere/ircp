@@ -64,7 +64,7 @@ program:
       - label: Montag, 05. Oktober 2026
         slot: montag
         tracks:
-          - title: "Research and Education Forum: Collaborative Innovation through Academic Standards"
+          - title: "Research and Education Forum: Collaborative Innovation through Academic Standards (Im Ticketpreis enthalten - extra Anmeldung erforderlich)"
             description: >-
               Wie können akademische Standards in Community Paramedicine und Mobile Integrated Healthcare international gemeinsam weiterentwickelt werden? Das Forum bringt unterschiedliche nationale Bildungs- und Versorgungsmodelle zusammen und diskutiert, welche Standards übertragbar sind, wo nationale Rahmenbedingungen berücksichtigt werden müssen und wie internationale Zusammenarbeit die Profession stärken kann.
             goals:
@@ -505,6 +505,8 @@ callForSpeakers:
           role: "NRP, CP-C, CNA Program Manager"
           img: /catherinelichtenbelt.jpeg
       title: "Panel Discussion: Standardising From the Bottom Up: A Multi-Agency Approach to Community Paramedicine Data and Reimbursement Reform"
+      language: en
+      country: United States
   alert:
     icon: i-lucide-info
     title: Hinweis
