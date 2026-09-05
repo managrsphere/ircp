@@ -54,6 +54,8 @@ export const collections = {
             slot: z.string().nonempty(),
             tracks: z.array(z.object({
               title: z.string().nonempty(),
+              description: z.string().optional(),
+              goals: z.array(z.string().nonempty()).optional(),
               rows: z.array(z.object({
                 time: z.string().nonempty(),
                 type: createEnum(['break', 'session']).optional(),
