@@ -27,7 +27,22 @@ useSeoMeta({
     <UBanner
       id="tickets"
       icon="i-lucide-tickets"
-      title="Jetzt Tickets sichern - Alle Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, interaktive Workshops, offizielles Kongressmaterial und Programmunterlagen & Vollverpflegung an allen drei Tagen!"
+      title="Tagestickets ab jetzt verfügbar!"
+      :actions="[
+        {
+          label: 'Jetzt kaufen',
+          variant: 'soft',
+          to: 'https://buy.stripe.com/dRm00k4gv4qL2vceM99R606',
+          target: '_blank',
+          trailingIcon: 'i-lucide-external-link'
+        },
+        {
+          label: 'Student:innen',
+          variant: 'soft',
+          to: 'https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607',
+          target: '_blank',
+          trailingIcon: 'i-lucide-external-link'
+        }]"
       close
     />
     <AppHeader />

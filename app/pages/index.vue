@@ -511,36 +511,65 @@ const travelCards = computed(() => [
       :ui="{ content: 'sm:max-w-lg' }"
     >
       <template #body>
-        <div class="space-y-3 p-6 sm:p-8">
-          <p class="text-sm leading-relaxed text-dimmed">
-            Wählen Sie die passende Ticketoption für Ihre Teilnahme am IRCP 2026.
-          </p>
-          <UButton
-            :to="page.tickets.pricing[0]?.button.to"
-            :target="page.tickets.pricing[0]?.button.target"
-            label="Ticket"
-            color="primary"
-            size="lg"
-            block
-          />
-          <UButton
-            :to="page.tickets.pricing[1]?.button.to"
-            :target="page.tickets.pricing[1]?.button.target"
-            label="Ticket (Student:in)"
-            color="primary"
-            variant="soft"
-            size="lg"
-            block
-          />
-          <UButton
-            :to="page.tickets.payment.to"
-            :target="page.tickets.payment.target"
-            label="Ticketkauf auf Rechnung"
-            color="primary"
-            variant="outline"
-            size="lg"
-            block
-          />
+        <div class="space-y-6 p-6 sm:p-8">
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-default">
+              Allgemeiner Ticketverkauf
+            </h3>
+            <p class="text-sm leading-relaxed text-dimmed">
+              Wählen Sie die passende Ticketoption für Ihre Teilnahme am IRCP 2026.
+            </p>
+            <UButton
+              :to="page.tickets.pricing[0]?.button.to"
+              :target="page.tickets.pricing[0]?.button.target"
+              label="Ticket"
+              color="primary"
+              size="lg"
+              block
+            />
+            <UButton
+              :to="page.tickets.pricing[1]?.button.to"
+              :target="page.tickets.pricing[1]?.button.target"
+              label="Ticket (Student:in)"
+              color="primary"
+              variant="soft"
+              size="lg"
+              block
+            />
+            <UButton
+              :to="page.tickets.payment.to"
+              :target="page.tickets.payment.target"
+              label="Ticketkauf auf Rechnung"
+              color="primary"
+              variant="outline"
+              size="lg"
+              block
+            />
+          </section>
+
+          <USeparator />
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-default">
+              Tagestickets
+            </h3>
+            <UButton
+              to="https://buy.stripe.com/dRm00k4gv4qL2vceM99R606"
+              target="_blank"
+              label="Tagesticket (Normal)"
+              color="primary"
+              size="lg"
+              block
+            />
+            <UButton
+              to="https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607"
+              target="_blank"
+              label="Tagesticket (Student:in)"
+              variant="soft"
+              size="lg"
+              block
+            />
+          </section>
         </div>
       </template>
     </UModal>
@@ -1490,6 +1519,31 @@ const travelCards = computed(() => [
 
       <Motion
         as="div"
+        v-bind="scrollMotion(0.3)"
+        class="w-full"
+      >
+        <div class="w-full flex items-center justify-between gap-8">
+          <UButton
+            label="Neu: Tagesticket"
+            class="w-full hover:cursor-pointer"
+            size="xl"
+            variant="subtle"
+            to="https://buy.stripe.com/dRm00k4gv4qL2vceM99R606"
+            target="_blank"
+          />
+          <UButton
+            label="Neu: Tagesticket Student:in"
+            class="w-full hover:cursor-pointer"
+            size="xl"
+            variant="subtle"
+            to="https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607"
+            target="_blank"
+          />
+        </div>
+      </Motion>
+
+      <Motion
+        as="div"
         v-bind="scrollMotion(0.4)"
         class="w-full"
       >
@@ -1499,7 +1553,7 @@ const travelCards = computed(() => [
           :target="page.tickets.payment.target"
           icon="i-lucide-info"
           color="primary"
-          variant="subtle"
+          variant="outline"
           size="xl"
           class="flex items-center justify-center mx-auto mt-6"
         />
