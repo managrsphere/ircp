@@ -1015,7 +1015,7 @@ const travelCards = computed(() => [
               <iframe
                 :src="flyerPdfUrl"
                 title="Vorschau des IRCP-Flyers"
-                class="pointer-events-none h-48 w-full sm:h-64"
+                class="pointer-events-none h-32 w-full sm:h-48 lg:h-64"
               />
               <div class="absolute inset-x-0 bottom-0 flex items-center justify-center bg-default/90 px-4 py-3 text-sm font-medium text-default backdrop-blur-sm">
                 Flyer vergrößern
@@ -1032,14 +1032,30 @@ const travelCards = computed(() => [
       <UModal
         v-model:open="flyerModalOpen"
         title="IRCP-Flyer"
-        :ui="{ content: 'sm:max-w-6xl' }"
+        scrollable
+        :ui="{
+          content: '!w-[calc(100vw-2rem)] !max-w-none min-w-0 sm:!w-full sm:!max-w-6xl',
+          body: 'min-w-0 max-w-full overflow-x-hidden'
+        }"
       >
         <template #body>
-          <iframe
-            :src="flyerPdfUrl"
-            title="IRCP-Flyer"
-            class="h-[75vh] min-h-128 w-full rounded-md border border-default/60"
-          />
+          <div class="min-w-0 max-w-full space-y-3">
+            <div class="min-w-0 max-w-full overflow-hidden overscroll-contain rounded-md border border-default/60 bg-neutral-100 [touch-action:pan-y]">
+              <iframe
+                :src="flyerPdfUrl"
+                title="IRCP-Flyer"
+                class="block h-[calc(100dvh-12rem)] min-h-96 w-full max-w-full min-w-0 sm:h-[75vh] sm:min-h-128"
+              />
+            </div>
+            <UButton
+              :to="flyerPdfUrl"
+              target="_blank"
+              label="PDF öffnen"
+              icon="i-lucide-external-link"
+              variant="outline"
+              block
+            />
+          </div>
         </template>
       </UModal>
     </UPageSection>
@@ -1209,7 +1225,7 @@ const travelCards = computed(() => [
               <iframe
                 :src="speakerDirectoryPdfUrl"
                 title="Vorschau des Sprecherverzeichnisses"
-                class="pointer-events-none h-72 w-full sm:h-96"
+                class="pointer-events-none h-48 w-full sm:h-72 lg:h-96"
               />
               <div class="absolute inset-x-0 bottom-0 flex items-center justify-center bg-default/90 px-4 py-3 text-sm font-medium text-default backdrop-blur-sm">
                 Sprecherverzeichnis vergrößern
@@ -1318,14 +1334,30 @@ const travelCards = computed(() => [
       <UModal
         v-model:open="speakerDirectoryModalOpen"
         title="Sprecherverzeichnis"
-        :ui="{ content: 'sm:max-w-6xl' }"
+        scrollable
+        :ui="{
+          content: '!w-[calc(100vw-2rem)] !max-w-none min-w-0 sm:!w-full sm:!max-w-6xl',
+          body: 'min-w-0 max-w-full overflow-x-hidden'
+        }"
       >
         <template #body>
-          <iframe
-            :src="speakerDirectoryPdfUrl"
-            title="Sprecherverzeichnis"
-            class="h-[75vh] min-h-128 w-full rounded-md border border-default/60"
-          />
+          <div class="min-w-0 max-w-full space-y-3">
+            <div class="min-w-0 max-w-full overflow-hidden overscroll-contain rounded-md border border-default/60 bg-neutral-100 [touch-action:pan-y]">
+              <iframe
+                :src="speakerDirectoryPdfUrl"
+                title="Sprecherverzeichnis"
+                class="block h-[calc(100dvh-12rem)] min-h-96 w-full max-w-full min-w-0 sm:h-[75vh] sm:min-h-128"
+              />
+            </div>
+            <UButton
+              :to="speakerDirectoryPdfUrl"
+              target="_blank"
+              label="PDF öffnen"
+              icon="i-lucide-external-link"
+              variant="outline"
+              block
+            />
+          </div>
         </template>
       </UModal>
     </UPageSection>
@@ -1514,32 +1546,10 @@ const travelCards = computed(() => [
         v-bind="scrollMotionLarge(0.2)"
         class="w-full"
       >
-        <UPricingPlans :plans="page.tickets.pricing" />
-      </Motion>
-
-      <Motion
-        as="div"
-        v-bind="scrollMotion(0.3)"
-        class="w-full"
-      >
-        <div class="w-full flex items-center justify-between gap-8">
-          <UButton
-            label="Neu: Tagesticket"
-            class="w-full hover:cursor-pointer"
-            size="xl"
-            variant="subtle"
-            to="https://buy.stripe.com/dRm00k4gv4qL2vceM99R606"
-            target="_blank"
-          />
-          <UButton
-            label="Neu: Tagesticket Student:in"
-            class="w-full hover:cursor-pointer"
-            size="xl"
-            variant="subtle"
-            to="https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607"
-            target="_blank"
-          />
-        </div>
+        <UPricingPlans
+          :plans="page.tickets.pricing"
+          :ui="{ base: 'lg:grid-cols-2' }"
+        />
       </Motion>
 
       <Motion

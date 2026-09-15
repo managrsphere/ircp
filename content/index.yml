@@ -51,6 +51,11 @@ sponsors:
       tier: sponsor
       to: https://hglobaltech.com/
       target: _blank
+    - img: /axon.jpg
+      name: Axon
+      tier: sponsor
+      to: https://www.axon.com/
+      target: _blank
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.
   title: Programm
@@ -179,7 +184,7 @@ program:
               - time: 11:25 – 12:10 Uhr
                 event: Vortragsinformationen folgen
                 speakers:
-                  - name: Dr. med. Poloczek
+                  - name: Dr. med. Stefan Poloczek
               - time: 12:10 – 13:40 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
@@ -507,6 +512,13 @@ callForSpeakers:
       title: "Panel Discussion: Standardising From the Bottom Up: A Multi-Agency Approach to Community Paramedicine Data and Reimbursement Reform"
       language: en
       country: United States
+    - speakers:
+        - name: Irmgard Stippler
+          role: Dr. rer. oec., Vorstandsvorsitzende AOK Bayern
+          img: /irmgardstippler.jpg
+      title: Qualität, Wirschaftlichkeit, Patientenorientierung - was sektorübergreifende Zusammenarbeit leisten kann
+      language: de
+      country: Germany
   alert:
     icon: i-lucide-info
     title: Hinweis
@@ -545,6 +557,25 @@ tickets:
       button:
         label: Jetzt registrieren
         to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
+        target: _blank
+      terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
+    - title: 1-Tages Ticket
+      description: Für alle, die nur an einem Tag teilnehmen möchten.
+      price: 132€
+      highlight: false
+      billingCycle: Person
+      button:
+        label: Jetzt registrieren
+        to: https://buy.stripe.com/dRm00k4gv4qL2vceM99R606
+        target: _blank
+    - title: 1-Tages Ticket Student:in
+      description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
+      price: 54€
+      highlight: false
+      billingCycle: Person
+      button:
+        label: Jetzt registrieren
+        to: https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
   payment:
