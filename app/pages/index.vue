@@ -263,8 +263,8 @@ const isTicketModalOpen = ref(false)
 const flyerModalOpen = ref(false)
 const speakerDirectoryModalOpen = ref(false)
 
-const flyerPdfUrl = '/docs/IRCP_Flyer_05.09.26.pdf'
-const speakerDirectoryPdfUrl = '/docs/Sprecherverzeichnis_05.09%5B79%5D.pdf'
+const flyerPdfUrl = '/docs/IRCP_Flyer_18.09_3.pdf'
+const speakerDirectoryPdfUrl = '/docs/IRCP_Sprecherverzeichnis.pdf'
 
 const selectedSponsor = ref<SponsorItem | null>(null)
 
@@ -536,15 +536,6 @@ const travelCards = computed(() => [
               size="lg"
               block
             />
-            <UButton
-              :to="page.tickets.payment.to"
-              :target="page.tickets.payment.target"
-              label="Ticketkauf auf Rechnung"
-              color="primary"
-              variant="outline"
-              size="lg"
-              block
-            />
           </section>
 
           <USeparator />
@@ -566,6 +557,23 @@ const travelCards = computed(() => [
               target="_blank"
               label="Tagesticket (Student:in)"
               variant="soft"
+              size="lg"
+              block
+            />
+          </section>
+
+          <USeparator />
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-default">
+              Tickets auf Rechnung
+            </h3>
+            <UButton
+              :to="page.tickets.payment.to"
+              :target="page.tickets.payment.target"
+              label="Ticketkauf auf Rechnung"
+              color="primary"
+              variant="outline"
               size="lg"
               block
             />

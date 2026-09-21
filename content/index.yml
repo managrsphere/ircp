@@ -255,13 +255,13 @@ program:
               - time: 10:15 – 10:45 Uhr
                 event: Vortragsinformationen folgen
                 speakers:
-                  - name: Dr. Florian Breuer
+                  - name: Sprecherinformationen folgen
               - time: 10:45 – 11:15 Uhr
                 event: Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education
                 speakers:
                   - name: LL.M. James Brogan
               - time: 11:15 – 12:00 Uhr
-                event: Vortragsinformationen folgen
+                event: Zwischen Vorhaltung und Vorsorge - die bayerische Rettungsdienststrategie im Spannungsfeld von Auftrag und Vision
                 speakers:
                   - name: Dr. Michael Städtler
               - time: 12:00 - 13:30 Uhr
@@ -517,6 +517,13 @@ callForSpeakers:
           role: Dr. rer. oec., Vorstandsvorsitzende AOK Bayern
           img: /irmgardstippler.jpg
       title: Qualität, Wirschaftlichkeit, Patientenorientierung - was sektorübergreifende Zusammenarbeit leisten kann
+      language: de
+      country: Germany
+    - speakers:
+        - name: Michael Städtler
+          role: Dr. med., Bayerisches Staatsministerium des Innern, für Sport und Integration; Ärztlicher Bezirksbeauftragter RD Obb Ost
+          img: /michaelstaedtler.jpg
+      title: Zwischen Vorhaltung und Vorsorge - die bayerische Rettungsdienststrategie im Spannungsfeld von Auftrag und Vision
       language: de
       country: Germany
   alert:
