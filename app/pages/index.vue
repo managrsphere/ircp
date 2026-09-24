@@ -263,7 +263,7 @@ const isTicketModalOpen = ref(false)
 const flyerModalOpen = ref(false)
 const speakerDirectoryModalOpen = ref(false)
 
-const flyerPdfUrl = '/docs/IRCP_Flyer_18.09_3.pdf'
+const flyerPdfUrl = '/docs/IRCP_Flyer_18_09_3.pdf'
 const speakerDirectoryPdfUrl = '/docs/IRCP_Sprecherverzeichnis.pdf'
 
 const selectedSponsor = ref<SponsorItem | null>(null)

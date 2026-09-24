@@ -140,9 +140,9 @@ program:
           - title: Abendprogramm - Get Together (Im Ticketpreis enthalten)
             rows:
               - time: 17:30 – 18:00 Uhr
-                event: Begrüßungsworte aus Politik und Verbänden
+                event: Grußwort des Staatssekretärs im Bayerischen Staatsministerium des Innern, für Sport und Integration
                 speakers:
-                  - name: Details folgen
+                  - name: Sandro Kirchner
               - time: 18:00 – 20:00 Uhr
                 event: Get Together mit musikalischer Begleitung
                 speakers: 
