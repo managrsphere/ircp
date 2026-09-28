@@ -56,6 +56,11 @@ sponsors:
       tier: sponsor
       to: https://www.axon.com/
       target: _blank
+    - img: /zoll.jpg
+      name: ZOLL Medical Deutschland GmbH
+      tier: sponsor
+      to: https://www.zoll.com/de-de
+      target: _blank
 program:
   headline: Internationale Expertise. Praxisnaher Austausch.
   title: Programm
@@ -113,13 +118,17 @@ program:
           - title: Hauptprogramm
             rows:
               - time: 13:00 – 13:35 Uhr
-                event: Kongresseröffnung
+                event: Offizielle Eröffnungszeremonie
+                speakers:
+                  - name: IRCP Eröffnungskomitee
               - time: 13:35 – 14:05 Uhr
                 event: "Community Paramedicine zwischen Akutversorgung und gemeindenaher Gesundheitsversorgung: Ein internationaler Vergleich neuer rettungsdienstlicher Versorgungsmodelle"
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
               - time: 14:05 – 14:35 Uhr
-                event: "Sprecherinfos folgen"
+                event: Vortragsinformationen folgen
+                speakers:
+                  - name: "Sprecherinfos folgen"
               - time: 14:35 – 15:05 Uhr
                 type: break
                 event: Pause/Besuch der Industrieausstellung
@@ -296,7 +305,7 @@ program:
                   - name: Flavia Bütler
                   - name: Michael Müller
               - time: 16:30 – 17:00 Uhr
-                event: Vortragsinformationen folgen
+                event: Digital networks and diagnostics-based care in rural and remote communities in Germany - challenges, prospects and perspectives
                 speakers:
                   - name: Dr. John Galligan
               - time: 17:00 – 17:30 Uhr
@@ -524,6 +533,13 @@ callForSpeakers:
           role: Dr. med., Bayerisches Staatsministerium des Innern, für Sport und Integration; Ärztlicher Bezirksbeauftragter RD Obb Ost
           img: /michaelstaedtler.jpg
       title: Zwischen Vorhaltung und Vorsorge - die bayerische Rettungsdienststrategie im Spannungsfeld von Auftrag und Vision
+      language: de
+      country: Germany
+    - speakers:
+        - name: Sandro Kirchner
+          role: Staatssekretär im Bayerischen Staatsministerium des Innern, für Sport und Integration
+          img: /sandrokirchner.jpg
+      title: Grußwort
       language: de
       country: Germany
   alert:
