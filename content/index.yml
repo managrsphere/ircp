@@ -90,29 +90,21 @@ program:
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
               - time: 09:10 – 09:30 Uhr
-                # event: "Community Paramedic, präklinischer Fachspezialist, Gemeindenotfallsanitäter, Acute Community Nurse: Ein internationaler Vergleich verschiedener Paramedicmodelle"
-                event: Vortrag
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
               - time: 09:30 – 09:50 Uhr
-                event: Vortrag
                 speakers:
                   - name: Dr. Julia Williams
               - time: 09:50 – 10:10 Uhr
-                event: Vortrag
                 speakers:
                   - name: Dr. Peter O'Meara
               - time: 10:10 – 10:30 Uhr
-                event: Vortrag
                 speakers:
                   - name: Dr. Alan Batt
               - time: 10:30 – 10:50 Uhr
-                event: Vortrag
                 speakers:
                   - name: Dr. Tulja Rasku
               - time: 10:50 – 11:30 Uhr
-                # event: "Neue Wege für den Rettungsdienst: Bildung als Schlüssel für die Versorgung der Zukunft"
-                event: Vortrag
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
           - title: Hauptprogramm
@@ -126,9 +118,11 @@ program:
                 speakers:
                   - name: Prof. Dr. Christoph Redelsteiner
               - time: 14:05 – 14:35 Uhr
-                event: Vortragsinformationen folgen
+                event: "Development and Application of a Mobile Integrated Healthcare Model: A Feasibility Study in a Mid-Sized City in the Seoul Metropolitan Area, South Korea"
                 speakers:
-                  - name: "Sprecherinfos folgen"
+                  - name: PhD, M.D. Sungwoon Moon
+                  - name: M.D. Sukyo Lee
+                  - name: M.D. Jonghak Park
               - time: 14:35 – 15:05 Uhr
                 type: break
                 event: Pause/Besuch der Industrieausstellung
@@ -137,7 +131,7 @@ program:
                 speakers:
                   - name: Andreas Bauer
               - time: 15:35 – 16:15 Uhr
-                event: "Standardising From the Bottom Up: A Multi-Agency Approach to Community Paramedicine Data and Reimbursement Reform"
+                event: "Building the Case from the Ground Up: Community Paramedicine Where No National Standards Exist"
                 speakers:
                   - name: Tyler McKinnon
                   - name: Greg Friese
@@ -153,7 +147,7 @@ program:
                 speakers:
                   - name: Sandro Kirchner
               - time: 18:00 – 20:00 Uhr
-                event: Get Together mit musikalischer Begleitung
+                event: Get Together mit Musik & Essen
                 speakers: 
                   - name: Boazn Briada
       - label: Dienstag, 06. Oktober 2026
@@ -163,10 +157,13 @@ program:
             rows:
               - time: 08:00 – 08:10 Uhr
                 event: Kongresseröffnung Tag 2
+                speakers:
+                  - name: Gary Wingrove
+                  - name: Scott Willits
               - time: 08:10 – 08:25 Uhr
                 event: Produktpräsentation
                 speakers:
-                  - name: medDV
+                  - name: medDV - Hauptsponsor
               - time: 08:25 – 08:55 Uhr
                 event: "Von der Notaufnahme zur Versorgung: Wie eine pflegegeleitete Triage die Bearbeitung von Notrufen verändert hat"
                 speakers:
@@ -176,7 +173,7 @@ program:
                 speakers:
                   - name: MBA, B.Sc. Christoph Schullern
               - time: 09:25 – 09:55 Uhr
-                event: "Do I need to go to hospital?"
+                event: "Do I need to go to hospital? Rethinking the Role of Paramedics in Primary and Community Care"
                 speakers: 
                   - name: Luke Giles
               - time: 09:55 – 10:25 Uhr
@@ -193,7 +190,7 @@ program:
               - time: 11:25 – 12:10 Uhr
                 event: Vortragsinformationen folgen
                 speakers:
-                  - name: Dr. med. Stefan Poloczek
+                  - name: Sprecherinformationen folgen
               - time: 12:10 – 13:40 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
@@ -205,7 +202,7 @@ program:
                 event: "Implementation of an International Longitudial Community Paramedicine Registry for Professional Development and Health System Innovation - the Community Paramedicine Registry (CP-Reg)"
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
-                  - name: Chief Michael Nolan
+                  - name: Chief Paramedic Michael Nolan
                   - name: Prof. Dr. med. habil. Kathrin Burgmaier
               - time : 14:40 – 15:20 Uhr
                 event: "Physician Perspectives: Discovering, Adopting, and Advocating for Community Paramedicine"
@@ -229,6 +226,11 @@ program:
                 event: Building an Academic Pathway for Community Paramedicine in Germany - Experiences from Developing a Bachelor's Degree Program
                 speakers:
                   - name: Prof. Dr. Dr. med. habil. Mathias Burgmaier
+                  - name: Prof. Dr. Christoph Redelsteiner
+                  - name: JD Heffern
+                  - name: Sebastian Lange
+                  - name: Andreas Bauer
+                  - name: Chief Paramedic Michael Nolan
           - title: Abendprogramm - Get Together (Im Ticketpreis enthalten - extra Anmeldung erforderlich)
             rows:
               - time: 17:30 – 19:30 Uhr
@@ -246,6 +248,9 @@ program:
             rows:
               - time: 08:00 – 08:15 Uhr
                 event: Kongresseröffnung Tag 3
+                speakers:
+                  - name: Gary Wingrove
+                  - name: Scott Willits
               - time: 08:15 – 08:45 Uhr
                 event: Rettungsdienst als Teil der präklinischen Versorgung
                 speakers:
@@ -264,11 +269,11 @@ program:
               - time: 10:15 – 10:45 Uhr
                 event: Vortragsinformationen folgen
                 speakers:
-                  - name: Sprecherinformationen folgen
+                  - name: PD Dr. Stephan Prückner
               - time: 10:45 – 11:15 Uhr
-                event: Incorporation of Research Practice Based Learning Placements within pre-registration Paramedic education
+                event: Vortragsinformationen folgen
                 speakers:
-                  - name: LL.M. James Brogan
+                  - name: Sprecherinformationen folgen
               - time: 11:15 – 12:00 Uhr
                 event: Zwischen Vorhaltung und Vorsorge - die bayerische Rettungsdienststrategie im Spannungsfeld von Auftrag und Vision
                 speakers:
@@ -290,29 +295,23 @@ program:
                   - name: Dr. Michael R. Wilcox
                   - name: Joseph Martinez
               - time: 15:00 – 15:30 Uhr
-                event: "Development and Application of a Mobile Integrated Healthcare Model: A Feasability Study in a Mid-Sized City in the Seoul Metropolitan Area, South Korea"
-                speakers:
-                  - name: PhD, M.D. Sungwoon Moon
-                  - name: M.D. Sukyo Lee
-                  - name: M.D. Jonghak Park
-              - time: 15:30 – 16:00 Uhr
-                type: break
-                event: Nachmittagspause / Besuch der Industrieausstellung
-              - time: 16:00 – 16:30 Uhr
                 event: "Einführung von Präklinischen Fachspezialist*innen (PFS) in der Schweiz - Einblicke aus Zürich und St. Gallen"
                 speakers:
                   - name: M.A., B.A. Florian Zahorka
                   - name: Flavia Bütler
                   - name: Michael Müller
-              - time: 16:30 – 17:00 Uhr
+              - time: 15:30 – 16:00 Uhr
+                type: break
+                event: Nachmittagspause / Besuch der Industrieausstellung
+              - time: 16:00 – 16:30 Uhr
                 event: Digital networks and diagnostics-based care in rural and remote communities in Germany - challenges, prospects and perspectives
                 speakers:
                   - name: Dr. John Galligan
-              - time: 17:00 – 17:30 Uhr
+              - time: 16:30 – 17:00 Uhr
                 event: "Mesa Initative in Renfrew County, Ontario: Advancing Community Paramedicine as a Model for System Integration in Rural Settings"
                 speakers:
                   - name: Mathieu Grenier
-                  - name: Chief Michael Nolan
+                  - name: Chief Paramedic Michael Nolan
                   - name: Stephanie Rose
 callForSpeakers:
   headline: Vorstellung
@@ -503,7 +502,7 @@ callForSpeakers:
       country: Germany
     - img: /johngalligan.jpeg
       role: Dr. rer. Nat., Wissenschaftlicher Mitarbeiter, Fraunhofer-Institut für Zelltherapie und Immunologie, Institutsteil für Bioanalytik und Bioprozesse
-      name: Dr. John Galligan
+      name: John Galligan
       title: Digital networks and diagnostics-based care in rural and remote communities in Germany - challenges, prospects and perspectives
       description: "Vortragsinformationen folgen"
       language: en
@@ -518,34 +517,76 @@ callForSpeakers:
         - name: Catherine Lichtenbelt
           role: "NRP, CP-C, CNA Program Manager"
           img: /catherinelichtenbelt.jpeg
-      title: "Panel Discussion: Standardising From the Bottom Up: A Multi-Agency Approach to Community Paramedicine Data and Reimbursement Reform"
+      title: "Panel Discussion: Building the Case from the Ground Up: Community Paramedicine Where No National Standards Exist"
       language: en
       country: United States
-    - speakers:
-        - name: Irmgard Stippler
-          role: Dr. rer. oec., Vorstandsvorsitzende AOK Bayern
-          img: /irmgardstippler.jpg
+    - name: Irmgard Stippler
+      role: Dr. rer. oec., Vorstandsvorsitzende AOK Bayern
+      img: /irmgardstippler.jpg
       title: Qualität, Wirschaftlichkeit, Patientenorientierung - was sektorübergreifende Zusammenarbeit leisten kann
       language: de
       country: Germany
-    - speakers:
-        - name: Michael Städtler
-          role: Dr. med., Bayerisches Staatsministerium des Innern, für Sport und Integration; Ärztlicher Bezirksbeauftragter RD Obb Ost
-          img: /michaelstaedtler.jpg
+    - name: Michael Städtler
+      role: Dr. med., Bayerisches Staatsministerium des Innern, für Sport und Integration; Ärztlicher Bezirksbeauftragter RD Obb Ost
+      img: /michaelstaedtler.jpg
       title: Zwischen Vorhaltung und Vorsorge - die bayerische Rettungsdienststrategie im Spannungsfeld von Auftrag und Vision
       language: de
       country: Germany
-    - speakers:
-        - name: Sandro Kirchner
-          role: Staatssekretär im Bayerischen Staatsministerium des Innern, für Sport und Integration
-          img: /sandrokirchner.jpg
+    - name: Sandro Kirchner
+      role: Staatssekretär im Bayerischen Staatsministerium des Innern, für Sport und Integration
+      img: /sandrokirchner.jpg
       title: Grußwort
       language: de
       country: Germany
+    - name: Stephan Prückner
+      role: "PD Dr., Institut für Notfallmedizin und Medizinmanagement (INM)"
+      img: /stephanprueckner.jpg
+      language: de
+      country: Germany
+    - speakers:
+        - name: Michelle Grinman
+          role: Dr., University of Calgary
+          img: /michellegrinman.jpg
+        - name: Thomas E. Charlton
+          role: Dr., Optum Home & Community Care Delivery Solutions
+          img: /thomasecharlton.jpeg
+      title: "Physician Perspectives: Discovering, Adopting, and Advocating for Community Paramedicine"
+      language: en
+      country: Canada | United States
+    - name: Sebastian Lange
+      role: Landesgeschäftsstelle des Bayerischen Roten Kreuzes
+      img: /sebastianlange.jpg
+      title: "Building an Academic Pathway for CP in Germany – Experiences from Developing a Bachelor´s Degree Program"
+      language: en
+      country: Germany
+    - name: Julia Williams
+      role: Dr., Paramedic Science; South East Coast Ambulance Service; College of Paramedics
+      img: /juliawilliams.jpg
+      title: Bildungsforum
+      language: en
+      country: United Kingdom
+    - name: Peter O’Meara
+      role: Dr., Monash University, Department of Paramedicine
+      img: /peteromeara.jpg
+      title: Bildungsforum
+      language: en
+      country: Australia
+    - name: Alan Batt
+      role: Dr., University of Toronto
+      img: /alanbatt.jpg
+      title: Bildungsforum
+      language: en
+      country: Canada
+    - name: Tuija Rasku
+      role: Dr., Tampere Universities
+      img: /tuijarasku.jpg
+      title: Bildungsforum
+      language: en
+      country: Finland
   alert:
     icon: i-lucide-info
     title: Hinweis
-    description: Weitere Speaker:innen werden in Kürze veröffentlicht. Änderungen vorbehalten.
+    description: Änderungen vorbehalten.
 workshops:
   headline: Praxisnah. Begrenzte Plätze.
   title: Workshops

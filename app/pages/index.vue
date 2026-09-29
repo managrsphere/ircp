@@ -167,7 +167,8 @@ function speakerCountryFlag(country?: SpeakerItem['country']) {
         'USA': '🇺🇸',
         'Vanuatu': '🇻🇺',
         'South Korea': '🇰🇷',
-        'Netherlands': '🇳🇱'
+        'Netherlands': '🇳🇱',
+        'Finland': '🇫🇮'
       }
 
       return flagMap[entry] ?? ''
@@ -263,8 +264,8 @@ const isTicketModalOpen = ref(false)
 const flyerModalOpen = ref(false)
 const speakerDirectoryModalOpen = ref(false)
 
-const flyerPdfUrl = '/docs/IRCP_Flyer_18_09_3.pdf'
-const speakerDirectoryPdfUrl = '/docs/IRCP_Sprecherverzeichnis.pdf'
+const flyerPdfUrl = '/docs/Flyer_28.09.pdf'
+const speakerDirectoryPdfUrl = '/docs/Sprecherverzeichnis_28.09.pdf'
 
 const selectedSponsor = ref<SponsorItem | null>(null)
 
