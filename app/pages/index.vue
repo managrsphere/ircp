@@ -562,23 +562,6 @@ const travelCards = computed(() => [
               block
             />
           </section>
-
-          <USeparator />
-
-          <section class="space-y-3">
-            <h3 class="text-base font-semibold text-default">
-              Tickets auf Rechnung
-            </h3>
-            <UButton
-              :to="page.tickets.payment.to"
-              :target="page.tickets.payment.target"
-              label="Ticketkauf auf Rechnung"
-              color="primary"
-              variant="outline"
-              size="lg"
-              block
-            />
-          </section>
         </div>
       </template>
     </UModal>

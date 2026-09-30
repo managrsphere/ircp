@@ -602,7 +602,7 @@ tickets:
   description: One Profession. Worldwide Community.
   callout:
     title: Was ist alles im Ticketpreis enthalten?
-    description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Zahlung auch auf Rechnung möglich. Weitere Infos unter: ircp.210@brk.de"
+    description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Weitere Infos unter: ircp.210@brk.de"
   pricing:
     - title: Teilnehmer:in
       description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
@@ -642,10 +642,6 @@ tickets:
         to: https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607
         target: _blank
       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
-  payment:
-    label: Jetzt auch Zahlung auf Rechnung möglich - für weitere Informationen hier klicken!
-    to: https://ircp-eu.store/
-    target: _blank
 faq:
   headline: FAQ
   title: Häufig gestellte Fragen
