@@ -1543,23 +1543,6 @@ const travelCards = computed(() => [
           :ui="{ base: 'lg:grid-cols-2' }"
         />
       </Motion>
-
-      <Motion
-        as="div"
-        v-bind="scrollMotion(0.4)"
-        class="w-full"
-      >
-        <UButton
-          :to="page.tickets.payment.to"
-          :label="page.tickets.payment.label"
-          :target="page.tickets.payment.target"
-          icon="i-lucide-info"
-          color="primary"
-          variant="outline"
-          size="xl"
-          class="flex items-center justify-center mx-auto mt-6"
-        />
-      </Motion>
     </UPageSection>
 
     <!-- Travel -->
