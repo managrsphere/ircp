@@ -293,6 +293,10 @@ const workshopPosts = computed(() => [
     alt: 'Workshop 2'
   },
   {
+    src: '/workshop4.jpg',
+    alt: 'Workshop 3'
+  },
+  {
     src: '/abendprogramm1.jpg',
     alt: 'Abendprogramm'
   },
@@ -500,7 +504,7 @@ const travelCards = computed(() => [
         <img
           :src="'/marinaforum.jpg'"
           alt="REF in front of marinaforum Regensburg"
-          class="w-full rounded-lg shadow-lg"
+          class="w-full rounded-lg shadow-lg border border-default/60"
           loading="lazy"
         >
       </Motion>
@@ -1400,7 +1404,7 @@ const travelCards = computed(() => [
         v-bind="scrollMotionLarge(0.35)"
         class="w-full"
       >
-        <div class="grid gap-6 md:grid-cols-3">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <button
             v-for="post in workshopPosts"
             :key="post.src"

@@ -190,7 +190,7 @@ program:
               - time: 11:25 – 12:10 Uhr
                 event: Vortragsinformationen folgen
                 speakers:
-                  - name: Sprecherinformationen folgen
+                  - name: Dr. Stefan Poloczek
               - time: 12:10 – 13:40 Uhr
                 type: break
                 event: Mittagspause / Besuch der Industrieausstellung
@@ -209,6 +209,7 @@ program:
                 speakers:
                   - name: Dr. Michelle Grinman
                   - name: Dr. Thomas E. Charlton
+                  - name: Dr. Bastian Prechtl
                   - name: "& weitere"
               - time: 15:20 – 15:50 Uhr
                 type: break
@@ -583,6 +584,11 @@ callForSpeakers:
       title: Bildungsforum
       language: en
       country: Finland
+    - name: Bastian Prechtl
+      role: Dr. med. univ., Arzt in der Zentralen Notaufnahme, Notfallsanitäter, Notruftelefonist in der Integrierten Leitstelle
+      img: /bastianprechtl.jpeg
+      language: de
+      country: Germany
   alert:
     icon: i-lucide-info
     title: Hinweis
