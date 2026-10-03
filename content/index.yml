@@ -8,12 +8,12 @@ hero:
   links:
     - label: Programm
       size: xl
-      color: neutral
-      variant: soft
+      color: primary
+      variant: solid
       to: '#program'
     - label: Speaker:innen
       size: xl
-      color: neutral
+      color: primary
       variant: soft
       to: '#speakers'
     - label: Workshops
@@ -602,52 +602,52 @@ workshops:
     description: Schreiben Sie uns einfach per E-Mail, wenn Sie einen Platz anfragen möchten.
     mail: ircp.210@brk.de
     subject: Workshop-Anmeldung IRCP 2026
-tickets:
-  headline: Jetzt Teil des IRCP 2026 werden
-  title: Tickets & Registrierung
-  description: One Profession. Worldwide Community.
-  callout:
-    title: Was ist alles im Ticketpreis enthalten?
-    description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Weitere Infos unter: ircp.210@brk.de"
-  pricing:
-    - title: Teilnehmer:in
-      description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
-      price: 395€
-      highlight: true
-      billingCycle: Person
-      button:
-        label: Jetzt registrieren
-        to: https://buy.stripe.com/5kQ9AU9APf5p8TA6fD9R603
-        target: _blank
-    - title: Student:in
-      description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
-      price: 160€
-      highlight: false
-      billingCycle: Person
-      button:
-        label: Jetzt registrieren
-        to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
-        target: _blank
-      terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
-    - title: 1-Tages Ticket
-      description: Für alle, die nur an einem Tag teilnehmen möchten.
-      price: 132€
-      highlight: false
-      billingCycle: Person
-      button:
-        label: Jetzt registrieren
-        to: https://buy.stripe.com/dRm00k4gv4qL2vceM99R606
-        target: _blank
-    - title: 1-Tages Ticket Student:in
-      description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
-      price: 54€
-      highlight: false
-      billingCycle: Person
-      button:
-        label: Jetzt registrieren
-        to: https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607
-        target: _blank
-      terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
+# tickets:
+#   headline: Jetzt Teil des IRCP 2026 werden
+#   title: Tickets & Registrierung
+#   description: One Profession. Worldwide Community.
+#   callout:
+#     title: Was ist alles im Ticketpreis enthalten?
+#     description: "Die Tickets beinhalten spannende Vorträge, Keynotes, Roundtables und Fachsessions, alle Workshops, offizielles Kongressmaterial, Programmunterlagen und Vollverpflegung an allen drei Tagen. Weitere Infos unter: ircp.210@brk.de"
+#   pricing:
+#     - title: Teilnehmer:in
+#       description: Für Expert:innen aus Rettungsdienst, Gesundheitswesen, Forschung, Verwaltung und Politik.
+#       price: 395€
+#       highlight: true
+#       billingCycle: Person
+#       button:
+#         label: Jetzt registrieren
+#         to: https://buy.stripe.com/5kQ9AU9APf5p8TA6fD9R603
+#         target: _blank
+#     - title: Student:in
+#       description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
+#       price: 160€
+#       highlight: false
+#       billingCycle: Person
+#       button:
+#         label: Jetzt registrieren
+#         to: https://buy.stripe.com/cNidRaeV95uP5HodI59R604
+#         target: _blank
+#       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
+#     - title: 1-Tages Ticket
+#       description: Für alle, die nur an einem Tag teilnehmen möchten.
+#       price: 132€
+#       highlight: false
+#       billingCycle: Person
+#       button:
+#         label: Jetzt registrieren
+#         to: https://buy.stripe.com/dRm00k4gv4qL2vceM99R606
+#         target: _blank
+#     - title: 1-Tages Ticket Student:in
+#       description: Für Student:innen in anerkannten Ausbildungs- oder Studiengängen.
+#       price: 54€
+#       highlight: false
+#       billingCycle: Person
+#       button:
+#         label: Jetzt registrieren
+#         to: https://buy.stripe.com/7sYbJ27sHbTd1r8bzX9R607
+#         target: _blank
+#       terms: "Hinweis: Für dieses Ticket ist ein Nachweis des Studierendenstatus erforderlich."
 faq:
   headline: FAQ
   title: Häufig gestellte Fragen

@@ -260,7 +260,7 @@ function sponsorTierClasses(tier: SponsorTier) {
 }
 
 const isSponsorModalOpen = ref(false)
-const isTicketModalOpen = ref(false)
+// const isTicketModalOpen = ref(false)
 const flyerModalOpen = ref(false)
 const speakerDirectoryModalOpen = ref(false)
 
@@ -480,12 +480,12 @@ const travelCards = computed(() => [
           class="flex flex-wrap justify-center gap-6"
           v-bind="enterMotion(0.65)"
         >
-          <UButton
+          <!-- <UButton
             label="Tickets"
             color="primary"
             size="xl"
             @click="() => { isTicketModalOpen = true }"
-          />
+          /> -->
           <template
             v-for="link in page.hero.links"
             :key="link.label"
@@ -510,7 +510,7 @@ const travelCards = computed(() => [
       </Motion>
     </UPageHero>
 
-    <UModal
+    <!-- <UModal
       v-model:open="isTicketModalOpen"
       title="Tickets & Registrierung"
       :ui="{ content: 'sm:max-w-lg' }"
@@ -568,7 +568,7 @@ const travelCards = computed(() => [
           </section>
         </div>
       </template>
-    </UModal>
+    </UModal> -->
 
     <UPageSection
       id="sponsors"
@@ -1483,7 +1483,7 @@ const travelCards = computed(() => [
     </UPageSection>
 
     <!-- Tickets -->
-    <UPageSection
+    <!-- <UPageSection
       id="tickets"
       :ui="{
         root: 'py-16 sm:py-24 scroll-mt-(--ui-header-height) ',
@@ -1547,7 +1547,7 @@ const travelCards = computed(() => [
           :ui="{ base: 'lg:grid-cols-2' }"
         />
       </Motion>
-    </UPageSection>
+    </UPageSection> -->
 
     <!-- Travel -->
     <UPageSection

@@ -82,7 +82,7 @@ nuxtApp.hooks.hookOnce('page:loading:end', () => {
     }
   }, { rootMargin: '-50% 0px -50% 0px' })
 
-  document.querySelectorAll('#program, #speakers, #workshops, #tickets, #faq, #contact').forEach(el => observer.observe(el))
+  document.querySelectorAll('#program, #speakers, #workshops, #faq, #contact').forEach(el => observer.observe(el))
 })
 
 const variants: Record<string, VariantType | ((custom: unknown) => VariantType)> = {
@@ -119,13 +119,13 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
       :items="items"
     />
 
-    <template #right>
+    <!-- <template #right>
       <UButton
         label="Tickets"
         class="hidden lg:flex"
         to="/#tickets"
       />
-    </template>
+    </template> -->
 
     <template #toggle="{ open, toggle, ui }">
       <UButton
@@ -188,13 +188,13 @@ const variants: Record<string, VariantType | ((custom: unknown) => VariantType)>
         orientation="vertical"
       />
 
-      <div class="mt-4 flex flex-col gap-2">
+      <!-- <div class="mt-4 flex flex-col gap-2">
         <UButton
           label="Tickets"
           block
           to="/#tickets"
         />
-      </div>
+      </div> -->
     </template>
   </UHeader>
 </template>

@@ -24,7 +24,7 @@ useSeoMeta({
 
 <template>
   <UApp :toaster="{ expand: false }">
-    <UBanner
+    <!-- <UBanner
       id="tickets"
       icon="i-lucide-tickets"
       title="Tagestickets ab jetzt verfügbar!"
@@ -44,7 +44,7 @@ useSeoMeta({
           trailingIcon: 'i-lucide-external-link'
         }]"
       close
-    />
+    /> -->
     <AppHeader />
 
     <UMain>

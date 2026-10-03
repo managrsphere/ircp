@@ -111,29 +111,29 @@ export const collections = {
           subject: z.string().nonempty()
         })
       }),
-      tickets: z.object({
-        headline: z.string().optional(),
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        callout: z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty()
-        }),
-        pricing: z.array(z.object({
-          title: z.string().nonempty(),
-          description: z.string().nonempty(),
-          price: z.string().nonempty(),
-          highlight: z.boolean().optional(),
-          billingCycle: z.string().optional(),
-          button: z.object({
-            label: z.string().nonempty(),
-            to: z.string().nonempty(),
-            target: createEnum(['_blank', '_self']).optional()
-          }),
-          badge: z.string().optional(),
-          terms: z.string().optional()
-        }))
-      }),
+      // tickets: z.object({
+      //   headline: z.string().optional(),
+      //   title: z.string().nonempty(),
+      //   description: z.string().nonempty(),
+      //   callout: z.object({
+      //     title: z.string().nonempty(),
+      //     description: z.string().nonempty()
+      //   }),
+      //   pricing: z.array(z.object({
+      //     title: z.string().nonempty(),
+      //     description: z.string().nonempty(),
+      //     price: z.string().nonempty(),
+      //     highlight: z.boolean().optional(),
+      //     billingCycle: z.string().optional(),
+      //     button: z.object({
+      //       label: z.string().nonempty(),
+      //       to: z.string().nonempty(),
+      //       target: createEnum(['_blank', '_self']).optional()
+      //     }),
+      //     badge: z.string().optional(),
+      //     terms: z.string().optional()
+      //   }))
+      // }),
       faq: z.object({
         headline: z.string().optional(),
         title: z.string().nonempty(),
